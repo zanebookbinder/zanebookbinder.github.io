@@ -57,3 +57,11 @@ li {
 .more-text-paragraph {
 	margin-bottom: 30px;
 }
+
+.bottom-columns {
+	display: flex;
+}
+
+.column {
+	flex: 1;
+}

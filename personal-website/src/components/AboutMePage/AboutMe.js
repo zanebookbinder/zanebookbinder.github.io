@@ -202,6 +202,38 @@ function AboutMe() {
 				Thanks for checking out my website!
 			</p>
 		</div>
+		<div className="bottom-columns">
+			<div className="column">
+				<div className="section">
+					<h1>Education</h1>
+					<p className="bottom-text">Bowdoin College (2020-2024): Computer Science major, Economics minor</p>
+					<p className="bottom-text">Milton Academy (2016-2020)</p>
+				</div>
+				<div className="section">
+					<h1>Awards</h1>
+					<p>2021-2022 Bowdoin Book Award (4.0 GPA)</p>
+					<p>2021-2022 Sarah and James Bowdoin Scholar (Dean's List)</p>
+					<p>Graduated Cum Laude from Milton Academy</p>
+				</div>
+			</div>
+			<div className="column">
+				<div className="section">
+					<h1>Technical Skills</h1>
+					<p>Programming Languages: Python, Java, JavaScript, HTML/CSS, C, R, SQL</p>
+					<p>Libraries and Tools: React, Flask, MySQL, AWS RDS, Pandas, Hadoop, Git, Snowflake, Airflow, Postman</p>
+					<p>Concepts: OOP, Agile Development, REST APIs, Algorithms, Data Structures</p>
+				</div>
+				<div className="section">
+					<h1>Languages</h1>
+					<p>Conversational Spanish (8 years of classes, lived in Spain for June 2018 and Spring 2023)</p>
+				</div>
+				<div className="section">
+					<h1>Interests</h1>
+					<p>Data Science/Machine Learning, Professional sports (particularly Boston teams), Golf, Skiing</p>
+				</div>
+			</div>
+			
+		</div>
 	  </div>
 	);
   }
