@@ -33,6 +33,7 @@ function ExperiencePage() {
 							"A website that allows students to review courses at Bowdoin College",
 							"Uses React for the frontend, a Flask API for the backend, and MySQL for the database",
 						]}
+						startOpen
 					/>
 					<ProjectBlock
 						title="Global PassStore (GPS)"
@@ -72,6 +73,7 @@ function ExperiencePage() {
 							"A functional web server written in C using sockets and threading to handle concurrent requests",
 							"Hosts a website including multiple pages, links, and images"
 						]}
+						link="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/distributed/22spring/p1.php"
 					/>
 					<ProjectBlock
 						title="Homework Planner App"
@@ -91,6 +93,7 @@ function ExperiencePage() {
 							"Implemented using RPCs and a client-server architecture",
 							"Includes user-friendly client programs written in both Java and Python",
 						]}
+						link="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/distributed/22spring/p2.php"
 					/>
 					<ProjectBlock
 						title="Cache Simulator"
@@ -101,6 +104,7 @@ function ExperiencePage() {
 							"Implemented using an LRU replacement policy",
 							"User can choose cache size, block size, and associativity"
 						]}
+						link="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/systems/22fall/lab5.php"
 					/>
 					<ProjectBlock
 						title="Jeopardy! Natural Language Processing"

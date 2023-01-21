@@ -1,12 +1,16 @@
 .project-title {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	gap: 20px;
 	font-size: 20px;
-	border-bottom: 1px solid black;
-	padding-right: 1rem;
-	width: fit-content;
-	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.project-title-right {
+	display: flex;
+	align-items: center;
+	gap: 25px;
 }
 
 .project-name {
@@ -23,14 +27,26 @@
 	margin-left: 1rem;
 }
 
-.description-text {
-	margin-bottom: 5px;
-}
-
 .programming-languages {
 	margin-bottom: 10px;
 }
 
 .detail {
 	line-height: 1.5;
+	margin-top: 10px;
+}
+
+.bowdoin-logo {
+	width: 28px;
+	height: 28px;
+}
+
+.project-link {
+	height: fit-content;
+}
+
+.project-details ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 30px;
 }

@@ -5,7 +5,8 @@
 .content {
 	display: flex;
 	gap: 1rem;
-	margin-right: 1rem;
+	margin-right: 3rem;
+	margin-bottom: 3rem;
 }
 
 .content > * {
@@ -21,7 +22,7 @@
 .projects-list {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 10px;
 }
 
 .projects {
