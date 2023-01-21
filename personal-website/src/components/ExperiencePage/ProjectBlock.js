@@ -28,7 +28,8 @@ const AccordionSummary = styled((props) => (
 	display: 'flex',
 	alignItems: 'center',
 	fontSize: '20px',
-	// borderBottom: '1px solid black',
+	minHeight: '33.5px',
+	marginBottom: '5px',
 	padding: '0px',
 	height: 'fit-content',
 	backgroundColor:
@@ -66,7 +67,7 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 
 	const [expanded, setExpanded] = useState(expandedStart);
 
-	let linkImage = <FaGithub fontSize={32}/>;
+	let linkImage = <FaGithub fontSize={29}/>;
 
 	if (link && link.includes("sbarker")) {
 		linkImage = <img src={BowdoinLogo} alt="Bowdoin Logo" className="bowdoin-logo" />;

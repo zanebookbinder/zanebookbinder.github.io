@@ -10,15 +10,70 @@ function ExperiencePage() {
 				<h1>Work Experience</h1>
 				<div className="experience-list">
 					<WorkExperience
-						companyTitle="Bowdoin College"
-						location="Brunswick, ME"
-						date="2021-2022"
-						position="Software Engineering Intern"
-						programmingLanguages={["Python", "Javascript", "CSS", "React", "Flask", "MySQL", "AWS RDS"]}
+						companyTitle="Amazon"
+						date="Summer 2023"
+						position="Software Engineer Intern"
 						details={[
-							"Developed a website that allows students to review courses at Bowdoin College",
-							"Used React for the frontend, a Flask API for the backend, and MySQL for the database",
+							"I'm looking forward to starting in June 2023!",
 						]}
+						link="https://aws.amazon.com/"
+					/>
+					<WorkExperience
+						companyTitle="Datto"
+						date="Summer 2022"
+						position="Data Engineer Intern"
+						programmingLanguages={["Python", "SQL", "Snowflake", "Airflow", "REST APIs", "Postman"]}
+						details={[
+							"Migrated a Revenue Recognition database schema containing 75+ tables, views, and stored procedures from MySQL to Snowflake, reducing monthly runtimes by 80%",
+							"Wrote and shipped data pipelines to help Financial, Data Analytics, and Product teams access crucial data",
+							"Created Airflow DAGs with data from the Stripe and Eventbrite APIs in preparation for analysis"
+						]}
+						link="https://www.datto.com/"
+					/>
+					<WorkExperience
+						companyTitle="Bowdoin CS"
+						date="2021-Present"
+						position="Learning Assistant and Grader"
+						programmingLanguages={["Python", "C", "Algorithms", "Data Structures"]}
+						details={[
+							"Run weekly study groups, answering questions and helping students work through problems",
+							"Grade assignments and quizzes and write solutions to in-class lab problems",
+						]}
+						link="https://www.bowdoin.edu/computer-science/"
+					/>
+					<WorkExperience
+						companyTitle="Beamlab, Harvard"
+						date="Summer 2021"
+						position="Data Science and ML Intern"
+						programmingLanguages={["Python", "Data Science", "Google Collab", "Neural Networks", "Random Forest", "Logistic Regression"]}
+						details={[
+							"Studied risk factors of Bronchopulmonary Dysplasia (a severe neonatal lung disease) by compiling and cleaning neonatal data from MIMIC-III database",
+							"Created, trained, and tested three Machine learning models: Random Forest Classifier (AUC = 0.95), Logistic Regression (AUC = 0.93), and Neural Network (AUC = 0.90)",
+						]}
+						link="http://beamlab.org/"
+					/>
+					<WorkExperience
+						companyTitle="Brain Power Co."
+						date="Summer 2019"
+						position="Software Engineer Intern"
+						programmingLanguages={["Unity", "C#", "Google Glass", "Android Studio", "Java", "IOS", "Swift"]}
+						details={[
+							"Independently prepared the Empowered Brain mobile app for release on the IOS and Google App Stores",
+							"Used Unity game development engine to add features, sound effects, and images to Google Glass app",
+						]}
+						link="https://brain-power.com/"
+					/>
+					<WorkExperience
+						companyTitle="J.P. Morgan"
+						date="April 2022"
+						position="Data for Good Hackathon"
+						programmingLanguages={["Python", "SQL", "Pandas", "Seaborn", "Scikit-learn"]}
+						details={[
+							"One of 130 participants selected from nearly 1000 applicants for a 24-hour hackathon",
+							"Used data quantifying the environmental and social impacts of foreign investment",
+							"Produced real-world solutions using the economic concepts of Marginal Social Benefit and Marginal Social Cost"
+						]}
+						link="https://careers.jpmorgan.com/in/en/students/programs/code-for-good?search=&tags=location__Americas__UnitedStatesofAmerica"
 					/>
 				</div>
 			</div>
@@ -33,7 +88,6 @@ function ExperiencePage() {
 							"A website that allows students to review courses at Bowdoin College",
 							"Uses React for the frontend, a Flask API for the backend, and MySQL for the database",
 						]}
-						startOpen
 					/>
 					<ProjectBlock
 						title="Global PassStore (GPS)"

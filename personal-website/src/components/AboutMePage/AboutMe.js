@@ -179,7 +179,7 @@ function AboutMe() {
 				<p className="small-text more-text-paragraph">
 					My current endeavor outside of school is creating a
 					<span> course review website </span>
-					for Bowdoin along with my girlfriend Olivia! 
+					for Bowdoin along with my girlfriend <a href="https://owirsching.github.io/" style={{textDecoration: "underline"}} target="_blank" rel="noreferrer">Olivia</a>! 
 					We always hear friends and classmates asking around about 
 					certain professors and courses. So, we decided to give students 
 					a way to shout out their favorite professors at Bowdoin or warn 
@@ -207,16 +207,16 @@ function AboutMe() {
 				<div className="section">
 					<h1>Education</h1>
 					<ul>
-						<li><p className="bottom-text"><span>Bowdoin College: </span>Computer Science major, Economics minor (2020-2024)</p></li>
-						<li><p className="bottom-text"><span>Milton Academy:</span> (2016-2020)</p></li>
+						<li><p className="bottom-text"><span><a href="https://www.bowdoin.edu/" target="_blank" rel="noreferrer">Bowdoin College:</a> </span>Computer Science major, Economics minor (2020-2024)</p></li>
+						<li><p className="bottom-text"><span><a href="https://www.milton.edu/" target="_blank" rel="noreferrer">Milton Academy:</a></span> (2016-2020)</p></li>
 					</ul>
 				</div>
 				<div className="section">
 					<h1>Awards</h1>
 					<ul>
-						<li><p><span>Bowdoin Book Award for a 4.0 GPA</span> (2021-2022)</p></li>
-						<li><p><span>Sarah and James Bowdoin Scholar — Dean's List</span> (2021-2022)</p></li>
-						<li><p><span>Graduated Cum Laude</span> from Milton Academy (2020)</p></li>
+						<li><p><span><a href="https://www.bowdoin.edu/admissions/book-award/" target="_blank" rel="noreferrer">Bowdoin Book Award</a> for a 4.0 GPA</span> (2021-2022)</p></li>
+						<li><p><span><a href="https://www.bowdoin.edu/events/family-weekend/sarah-and-james-bowdoin-day.html" target="_blank" rel="noreferrer">Sarah and James Bowdoin Scholar</a> — Dean's List</span> (2021-2022)</p></li>
+						<li><p><span><a href="https://www.milton.edu/news/graduation-2020/" target="_blank" rel="noreferrer">Graduated Cum Laude</a></span> from Milton Academy (2020)</p></li>
 					</ul>
 				</div>
 				<div className="section">

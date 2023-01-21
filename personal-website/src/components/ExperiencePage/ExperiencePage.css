@@ -1,10 +1,10 @@
 .experience-page {
-	margin-left: 6rem;
+	margin-left: 3rem;
 }
 
 .content {
 	display: flex;
-	gap: 1rem;
+	gap: 3rem;
 	margin-right: 3rem;
 	margin-bottom: 3rem;
 }
@@ -16,7 +16,7 @@
 .experience-list {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 10px;
 }
 
 .projects-list {

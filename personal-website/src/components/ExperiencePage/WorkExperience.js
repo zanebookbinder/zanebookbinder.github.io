@@ -1,35 +1,104 @@
 import "./WorkExperience.css";
+import { useState } from "react";
+import { styled } from '@mui/material/styles';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import MuiAccordion from '@mui/material/Accordion';
+import MuiAccordionSummary from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
-function WorkExperience({ companyTitle, location, date, position, details, programmingLanguages, link}) {
+const Accordion = styled((props) => (<MuiAccordion disableGutters elevation={0} square {...props} />))(({ theme }) => ({
+	'&:not(:last-child)': {
+	  borderBottom: 0,
+	},
+	'&:before': {
+	  display: 'none',
+	},
+}));
+
+const AccordionSummary = styled((props) => (
+	<MuiAccordionSummary
+	  expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
+	  {...props}
+	/>
+  ))(({ theme }) => ({
+	display: 'flex',
+	alignItems: 'center',
+	fontSize: '20px',
+	padding: '0px',
+	height: 'fit-content',
+	minHeight: '33.5px',
+	marginBottom: '5px',
+	backgroundColor:
+		'white',
+	flexDirection: 'row-reverse',
+	'& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+	  transform: 'rotate(90deg)',
+	},
+	'& .MuiAccordionSummary-content': {
+	  marginLeft: theme.spacing(1),
+	  marginTop: '0px',
+	  marginBottom: '0px',
+	},
+}));
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+	padding: "8px",
+	paddingBottom: '0px',
+	borderTop: '1px solid black',
+	'& .MuiCollapse-wrapperInner': {
+		marginBottom: '0px',
+	},
+  }));
+
+function WorkExperience({ companyTitle, date, position, details, programmingLanguages, link, startOpen}) {
+	let expandedStart = false;
+	if (startOpen) {
+		expandedStart = true;
+	}
+
+	const [expanded, setExpanded] = useState(expandedStart);
+
 	return (
-		<div className="experience-block">
-			<div className="experience-title">
-				<div className="left-title">
-					<h3 className="position">{position}</h3>
-					<h3 className="company-title">{companyTitle}</h3>	
-				</div>
-				<div className="right-title">
-					<p className="date">{location}</p>
-					<p className="date">{date}</p>
-				</div>
-				{/* {link &&
-					<a href={link} target="_blank" rel="noreferrer" className="experience-link"></a>
-				} */}
-			</div>
-			<div className="experience-details">
-				<p className="programming-languages"><span>Tools used:</span> {programmingLanguages.join(", ")}</p>
-				<div className="description">
-					<div className="description-text">
-						<span>Description:</span>
+		<Accordion
+			expanded={expanded} 
+			onChange={() => setExpanded(!expanded)}
+		>
+			<AccordionSummary>
+				<div className="experience-title">
+					<div className="left-title">
+						<h3 className="position">{position}</h3>
 					</div>
-					<ul>
-						{details.map((detail, index) => {
-							return <li className="detail" key={index}>{detail}</li>
-						})}
-					</ul>
+					<div className="right-title">
+						<a href={link} target="_blank" rel="noreferrer">
+							<p className="company-title">{companyTitle}</p>
+						</a>
+						<p className="date">{date}</p>
+					</div>
+					{/* {link &&
+						<a href={link} target="_blank" rel="noreferrer" className="experience-link"></a>
+					} */}
 				</div>
-			</div>
-		</div>
+			</AccordionSummary>
+			<AccordionDetails>
+				<div className="experience-details">
+					{programmingLanguages &&
+						<p className="programming-languages"><span>Tools used:</span> {programmingLanguages.join(", ")}</p>
+					}
+					{details &&
+						<div className="description">
+							<div className="description-text">
+								<span>Description:</span>
+							</div>
+							<ul>
+								{details.map((detail, index) => {
+									return <li className="detail" key={index}>{detail}</li>
+								})}
+							</ul>
+						</div>
+				}
+				</div>
+			</AccordionDetails>
+		</Accordion>
 	)
 }
 

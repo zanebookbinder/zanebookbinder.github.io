@@ -14,8 +14,8 @@
 }
 
 .project-name {
-	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 .date {
@@ -37,8 +37,8 @@
 }
 
 .bowdoin-logo {
-	width: 28px;
-	height: 28px;
+	width: 25px;
+	height: 25px;
 }
 
 .project-link {
