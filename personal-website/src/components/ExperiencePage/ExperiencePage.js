@@ -1,8 +1,24 @@
 import "./ExperiencePage.css"
 import ProjectBlock from "./ProjectBlock";
 import WorkExperience from "./WorkExperience";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function ExperiencePage() {
+	const location = useLocation();
+
+	let openItem = null;
+	if (location.state) {
+		openItem = location.state.scrollTo || null;
+	}
+
+	useEffect(() => {
+		if (openItem) {
+			const element = document.getElementById(openItem);
+			if (element) element.scrollIntoView({behavior: "smooth"});
+		}
+	}, [openItem]);
+
 	return (
 	  <div className="experience-page">
 		<div className="content">
@@ -18,18 +34,21 @@ function ExperiencePage() {
 						]}
 						link="https://aws.amazon.com/"
 					/>
-					<WorkExperience
-						companyTitle="Datto"
-						date="Summer 2022"
-						position="Data Engineer Intern"
-						programmingLanguages={["Python", "SQL", "Snowflake", "Airflow", "REST APIs", "Postman"]}
-						details={[
-							"Migrated a Revenue Recognition database schema containing 75+ tables, views, and stored procedures from MySQL to Snowflake, reducing monthly runtimes by 80%",
-							"Wrote and shipped data pipelines to help Financial, Data Analytics, and Product teams access crucial data",
-							"Created Airflow DAGs with data from the Stripe and Eventbrite APIs in preparation for analysis"
-						]}
-						link="https://www.datto.com/"
-					/>
+					<div id="datto">
+						<WorkExperience
+							companyTitle="Datto"
+							date="Summer 2022"
+							position="Data Engineer Intern"
+							programmingLanguages={["Python", "SQL", "Snowflake", "Airflow", "REST APIs", "Postman"]}
+							details={[
+								"Migrated a Revenue Recognition database schema containing 75+ tables, views, and stored procedures from MySQL to Snowflake, reducing monthly runtimes by 80%",
+								"Wrote and shipped data pipelines to help Financial, Data Analytics, and Product teams access crucial data",
+								"Created Airflow DAGs with data from the Stripe and Eventbrite APIs in preparation for analysis"
+							]}
+							link="https://www.datto.com/"
+							startOpen={openItem === "datto"}
+						/>
+					</div>
 					<WorkExperience
 						companyTitle="Bowdoin CS"
 						date="2021-Present"
@@ -89,17 +108,21 @@ function ExperiencePage() {
 							"Uses React for the frontend, a Flask API for the backend, and MySQL for the database",
 						]}
 					/>
-					<ProjectBlock
-						title="Global PassStore (GPS)"
-						date="2022"
-						programmingLanguages={["Python", "Bash"]}
-						details={[
-							"A Distributed System that stores passwords by breaking them into chunks and storing each chunk on a different machine",
-							"Employs functional homogeneity, threading, replication, location-based clustering, and smart clients",
-							"Runs on a 44-node network of AWS EC2 instances",
-							"Wrote a 13-page technical paper detailing the purpose, design, implementation, and testing of the system (see Github)"
-						]}
-						link="https://github.com/zanebookbinder/Global-PassStore" />
+					<div id="GPS">
+						<ProjectBlock
+							title="Global PassStore (GPS)"
+							date="2022"
+							programmingLanguages={["Python", "Bash"]}
+							details={[
+								"A Distributed System that stores passwords by breaking them into chunks and storing each chunk on a different machine",
+								"Employs functional homogeneity, threading, replication, location-based clustering, and smart clients",
+								"Runs on a 44-node network of AWS EC2 instances",
+								"Wrote a 13-page technical paper detailing the purpose, design, implementation, and testing of the system (see Github)"
+							]}
+							link="https://github.com/zanebookbinder/Global-PassStore"
+							startOpen={openItem === "GPS"}
+						/>
+					</div>
 					<ProjectBlock
 						title="Polar Bear Places"
 						date="2022"

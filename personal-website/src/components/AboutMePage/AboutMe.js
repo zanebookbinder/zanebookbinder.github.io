@@ -1,11 +1,12 @@
+import "./AboutMe.css"
 import ZaneImage from "../../images/Zane2.jpeg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import "./AboutMe.css"
+import { useLocation } from "react-router-dom";
 
 const Accordion = styled((props) => (
 	<MuiAccordion disableGutters elevation={0} square {...props} />
@@ -51,6 +52,19 @@ function AboutMe() {
 	const [expanded2, setExpanded2] = useState(false);
 	const [expanded3, setExpanded3] = useState(false);
 	const [expanded4, setExpanded4] = useState(false);
+
+	const location = useLocation();
+	let scrollTo = null;
+
+	if (location.state) {
+		scrollTo = location.state.scrollTo || null;
+	}
+
+	useEffect(() => {
+		if (scrollTo) {
+			document.getElementById(scrollTo).scrollIntoView({behavior: "smooth"});
+		}
+	}, [scrollTo]);
 
 	return (
 	  <div className="about-me">
@@ -175,7 +189,7 @@ function AboutMe() {
 						</AccordionDetails>
 					</Accordion>
 				</div>
-				<h1>What I'm working on now</h1>
+				<h1 id="working-on-now">What I'm working on now</h1>
 				<p className="small-text more-text-paragraph">
 					My current endeavor outside of school is creating a
 					<span> course review website </span>
@@ -220,7 +234,7 @@ function AboutMe() {
 					</ul>
 				</div>
 				<div className="section">
-					<h1>Interests</h1>
+					<h1 id="interests">Interests</h1>
 					<ul>
 						<li>
 							<p>AI/ML, Professional sports (particularly Boston teams), Golf, Skiing</p>
@@ -230,7 +244,7 @@ function AboutMe() {
 			</div>
 			<div className="column">
 				<div className="section">
-					<h1>Technical Skills</h1>
+					<h1 id="skills">Technical Skills</h1>
 					<ul>
 						<li>
 							<p className="technicalskill-line"><span>Programming Languages:</span> Python, Java, JavaScript, HTML/CSS, C, R, SQL</p>

@@ -74,9 +74,6 @@ function WorkExperience({ companyTitle, date, position, details, programmingLang
 						</a>
 						<p className="date">{date}</p>
 					</div>
-					{/* {link &&
-						<a href={link} target="_blank" rel="noreferrer" className="experience-link"></a>
-					} */}
 				</div>
 			</AccordionSummary>
 			<AccordionDetails>

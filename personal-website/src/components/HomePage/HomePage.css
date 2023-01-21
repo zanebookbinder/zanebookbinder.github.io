@@ -1,12 +1,16 @@
 .homePage {
 	margin-left: 6rem;
 	margin-top: 5rem;
+}
+
+.text-and-image {
 	display: flex;
 }
 
 .homePageText {
 	width: 80%;
 	line-height: 1.75;
+	margin-bottom: 40px;
 }
 
 .zane-image {
@@ -16,4 +20,32 @@
 	width: auto;
 	margin-right: 4rem;
 	margin-left: 2rem;
+}
+
+.quicklinks {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.quicklinks > a {
+	padding: 10px 15px;
+	border: 1.5px solid black;
+	border-radius: 30px;
+	font-weight: 600;
+}
+
+.quicklinks > a:hover {
+	background-color: black;
+	color: white;
+	text-decoration: underline;
+}
+
+.quicklink-title {
+	font-weight: 600;
+	font-size: 1.25rem;
+	margin-bottom: 10px;
+	padding-bottom: 2px;
+	border-bottom: 2px solid black;
+	width: fit-content;
 }

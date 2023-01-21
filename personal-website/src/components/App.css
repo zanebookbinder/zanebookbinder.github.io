@@ -25,7 +25,14 @@ a:hover {
 }
 
 .on-page {
-  text-decoration: underline;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+
+.on-page:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .title {
