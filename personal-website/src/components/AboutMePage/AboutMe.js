@@ -151,7 +151,7 @@ function AboutMe() {
 								<li>Web Server (C, 2021)</li>
 								<li>Cache Simulator (C, 2021)</li>
 								<li>Polar Bear Places (Ruby on Rails, 2022)</li>
-								<li>Jeopardy Question Difficulties (Python, 2020)</li>
+								<li>Jeopardy Natural Language Processing (Python, 2020)</li>
 								<li>NBA Spread Model (Python, 2020)</li>
 								<li>Homework Planner App (Swift, 2020)</li>
 							</ul>

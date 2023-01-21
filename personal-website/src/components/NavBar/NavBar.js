@@ -18,10 +18,10 @@ function Navbar() {
             <p>zane.bookbinder@gmail.com</p>
             <p>(617) 862-7987</p>
             <div className="icons">
-              <a href="https://www.linkedin.com/in/zane-bookbinder/">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/zane-bookbinder/">
                 <FaLinkedin />
               </a>
-              <a href="https://github.com/zanebookbinder">
+              <a target="_blank" rel="noreferrer" href="https://github.com/zanebookbinder">
                 <FaGithub />
               </a>
             </div>

@@ -1,0 +1,36 @@
+.project-title {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	font-size: 20px;
+	border-bottom: 1px solid black;
+	padding-right: 1rem;
+	width: fit-content;
+	margin-bottom: 1rem;
+}
+
+.project-name {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.date {
+	font-weight: 345;
+}
+
+.project-details {
+	font-size: 18px;
+	margin-left: 1rem;
+}
+
+.description-text {
+	margin-bottom: 5px;
+}
+
+.programming-languages {
+	margin-bottom: 10px;
+}
+
+.detail {
+	line-height: 1.5;
+}

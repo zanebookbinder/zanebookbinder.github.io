@@ -1,0 +1,71 @@
+.experience-title {
+	display: flex;
+	/* max-width: 500px; */
+	margin-right: 30px;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid black;
+	padding-bottom: 5px;
+
+	/* align-items: center;
+	gap: 20px;
+
+	border-bottom: 1px solid black;
+	padding-right: 1rem;
+	width: fit-content;
+	margin-bottom: 1rem; */
+}
+
+.experience-name {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.date {
+	font-weight: 345;
+}
+
+.experience-details {
+	font-size: 18px;
+	margin-left: 1rem;
+}
+
+.description-text {
+	margin-bottom: 5px;
+}
+
+.programming-languages {
+	margin-bottom: 10px;
+}
+
+.detail {
+	line-height: 1.5;
+}
+
+.left-title {
+	display: flex;
+	flex-direction: column;
+}
+
+.bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.position {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.company-title {
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.right-title {
+	display: flex;
+	gap: 15px;
+}
