@@ -1,0 +1,59 @@
+.about-me {
+	margin-left: 6rem;
+}
+
+.bio-and-image {
+	display: flex;
+	margin-right: 20px;
+}
+
+.bio {
+	margin-right: 20px;
+	max-width: 600px;
+}
+
+.about-me-text {
+	margin-bottom: 10px;
+}
+
+.zane-second-image {
+	margin-inline: auto;
+	max-height: 464px;
+}
+
+.accordions {
+	margin-left: 10px;
+}
+
+ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 30px;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+.section-title {
+	margin-bottom: 5px;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.multiple-lists {
+	margin-left: 10px;
+}
+
+.list-section {
+	margin-bottom: 10px;
+}
+
+.more-text {
+	margin-top: 30px;
+	max-width: 900px;
+}
+
+.more-text-paragraph {
+	margin-bottom: 30px;
+}

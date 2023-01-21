@@ -1,9 +1,19 @@
 .homePage {
 	margin-left: 6rem;
 	margin-top: 5rem;
+	display: flex;
 }
 
 .homePageText {
-	width: 40%;
+	width: 80%;
 	line-height: 1.75;
+}
+
+.zane-image {
+	max-width: 460px;
+	max-height: 406px;
+	height: auto;
+	width: auto;
+	margin-right: 4rem;
+	margin-left: 2rem;
 }

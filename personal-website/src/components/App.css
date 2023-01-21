@@ -1,18 +1,42 @@
+:root {
+  --primary-text: black;
+  --primary-text-hover: gray;
+  --secondary-text: blue;
+}
+
 body {
   background-color: white;
   font-family: 'Roboto';
-  color: black;
+  color: var(--primary-text);
+}
+
+p {
+  margin: 1px;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--primary-text);
 }
 
 a:hover {
-	color: gray;
+	color: var(--primary-text-hover);
 }
 
 .on-page {
   text-decoration: underline;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.small-text {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+img {
+  border: 2px solid black;
+	border-radius: 30px;
 }

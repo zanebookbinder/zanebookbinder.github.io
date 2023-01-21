@@ -1,0 +1,35 @@
+.resume-block {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.resume-embed {
+	width: 60vw;
+	height: 100vh;
+	margin-inline: auto;
+	border: none;
+}
+
+.download {
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	margin-bottom: 20px;
+	gap: 5px;
+	height: 35px;
+}
+
+.here-link {
+	/* text-decoration: underline; */
+	border: 2px solid blue;
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+
+.here-link:hover {
+	border: 3px solid blue;
+	color: var(--primary-text);
+	font-weight: 700;
+}
