@@ -18,7 +18,7 @@
 
 .zane-second-image {
 	margin-inline: auto;
-	max-height: 464px;
+	max-height: 650px;
 }
 
 .accordions {
@@ -50,7 +50,6 @@ li {
 }
 
 .more-text {
-	margin-top: 30px;
 	max-width: 900px;
 }
 
@@ -58,10 +57,23 @@ li {
 	margin-bottom: 30px;
 }
 
+.more-text-paragraph span {
+	font-style: italic;
+}
+
 .bottom-columns {
 	display: flex;
+	margin-bottom: 30px;
 }
 
 .column {
 	flex: 1;
+}
+
+.technicalskill-line {
+	margin-top: 0px;
+}
+
+.icons > * {
+	font-size: 22px;
 }

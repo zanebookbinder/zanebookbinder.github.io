@@ -1,4 +1,4 @@
-import ZaneImage from "../../images/Zane.jpg";
+import ZaneImage from "../../images/Zane2.jpeg";
 import { useState } from "react";
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -28,9 +28,6 @@ const AccordionSummary = styled((props) => (
 	fontSize: '1.125rem',
 	backgroundColor:
 		'white',
-	//   theme.palette.mode === 'dark'
-	// 	? 'rgba(255, 255, 255, .05)'
-	// 	: 'rgba(0, 0, 0, .03)',
 	flexDirection: 'row-reverse',
 	'& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
 	  transform: 'rotate(90deg)',
@@ -178,24 +175,27 @@ function AboutMe() {
 						</AccordionDetails>
 					</Accordion>
 				</div>
+				<h1>What I'm working on now</h1>
+				<p className="small-text more-text-paragraph">
+					My current endeavor outside of school is creating a
+					<span> course review website </span>
+					for Bowdoin along with my girlfriend Olivia! 
+					We always hear friends and classmates asking around about 
+					certain professors and courses. So, we decided to give students 
+					a way to shout out their favorite professors at Bowdoin or warn 
+					others about tough courses they took. I had never tried my 
+					hand at
+					<span> web development </span>
+					before November 2022, but by early 
+					January 2023 we had a MySQL back-end hosted on AWS, a Flask API
+					with 40 endpoints, and a beautiful and nearly-complete React 
+					front-end. Now, we're making some final touches and working 
+					with the Bowdoin IT Department and Student Government to get it online!
+				</p>
 			</div>
-			<img className="zane-second-image" src={ZaneImage} />
+			<img className="zane-second-image" alt="Zane" src={ZaneImage} />
 		</div>
 		<div className="more-text">
-			<h1>What I'm working on now</h1>
-			<p className="small-text more-text-paragraph">
-				My current endeavor outside of school is creating a course 
-				review website for Bowdoin along with my girlfriend Olivia! 
-				We always hear friends and classmates asking around about 
-				certain professors and courses. So, we decided to give students 
-				a way to shout out their favorite professors at Bowdoin or warn 
-				others about tough courses they took. I had never tried my 
-				hand at web development before November 2022, but by early 
-				January 2023 we had a MySQL back-end hosted on AWS, a Flask API
-				 with 40 endpoints, and a beautiful and nearly-complete React 
-				 front-end. Now, we're making some final touches and working 
-				 with the Bowdoin IT Department and Student Government to get it online!
-			</p>
 			<p className="small-text">
 				I'd love to connect if any of that caught your attention! Odds are, 
 				if you email or text me I'll get back to you within a few hours. 
@@ -206,30 +206,54 @@ function AboutMe() {
 			<div className="column">
 				<div className="section">
 					<h1>Education</h1>
-					<p className="bottom-text">Bowdoin College (2020-2024): Computer Science major, Economics minor</p>
-					<p className="bottom-text">Milton Academy (2016-2020)</p>
+					<ul>
+						<li><p className="bottom-text"><span>Bowdoin College: </span>Computer Science major, Economics minor (2020-2024)</p></li>
+						<li><p className="bottom-text"><span>Milton Academy:</span> (2016-2020)</p></li>
+					</ul>
 				</div>
 				<div className="section">
 					<h1>Awards</h1>
-					<p>2021-2022 Bowdoin Book Award (4.0 GPA)</p>
-					<p>2021-2022 Sarah and James Bowdoin Scholar (Dean's List)</p>
-					<p>Graduated Cum Laude from Milton Academy</p>
+					<ul>
+						<li><p><span>Bowdoin Book Award for a 4.0 GPA</span> (2021-2022)</p></li>
+						<li><p><span>Sarah and James Bowdoin Scholar — Dean's List</span> (2021-2022)</p></li>
+						<li><p><span>Graduated Cum Laude</span> from Milton Academy (2020)</p></li>
+					</ul>
+				</div>
+				<div className="section">
+					<h1>Interests</h1>
+					<ul>
+						<li>
+							<p>AI/ML, Professional sports (particularly Boston teams), Golf, Skiing</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div className="column">
 				<div className="section">
 					<h1>Technical Skills</h1>
-					<p>Programming Languages: Python, Java, JavaScript, HTML/CSS, C, R, SQL</p>
-					<p>Libraries and Tools: React, Flask, MySQL, AWS RDS, Pandas, Hadoop, Git, Snowflake, Airflow, Postman</p>
-					<p>Concepts: OOP, Agile Development, REST APIs, Algorithms, Data Structures</p>
+					<ul>
+						<li>
+							<p className="technicalskill-line"><span>Programming Languages:</span> Python, Java, JavaScript, HTML/CSS, C, R, SQL</p>
+						</li>
+						<li>
+							<p className="technicalskill-line"><span>Libraries and Tools:</span> React, Flask, MySQL, AWS RDS, Pandas, Hadoop, Git, Snowflake, Airflow, Postman</p>
+						</li>
+						<li>
+							<p className="technicalskill-line"><span>Concepts:</span> OOP, Agile Development, REST APIs, Algorithms, Data Structures</p>
+						</li>
+					</ul>
 				</div>
 				<div className="section">
 					<h1>Languages</h1>
-					<p>Conversational Spanish (8 years of classes, lived in Spain for June 2018 and Spring 2023)</p>
-				</div>
-				<div className="section">
-					<h1>Interests</h1>
-					<p>Data Science/Machine Learning, Professional sports (particularly Boston teams), Golf, Skiing</p>
+					<ul>
+						<li><span>Fluent English</span></li>
+						<li><span>Conversational Spanish</span></li>
+						<ul>
+							<li>10 years of spanish classes</li>
+							<li>Lived in Madrid with a Spanish family in June 2018</li>
+							<li>Studying abroad in Madrid in Spring 2023</li>
+						</ul>
+					</ul>
 				</div>
 			</div>
 			

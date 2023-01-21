@@ -36,3 +36,8 @@
 	margin: 3px;
 
 }
+
+.icons {
+	display: flex;
+	gap: 10px;
+}
