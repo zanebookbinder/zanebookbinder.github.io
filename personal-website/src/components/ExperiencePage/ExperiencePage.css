@@ -25,6 +25,22 @@
 	gap: 10px;
 }
 
-.projects {
-	width: 45%;
+@media screen and (max-width: 1100px) and (min-width: 800px) {
+	.experience-page h1 {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.experience-page {
+		margin-left: 3rem;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin-right: 3rem;
+		margin-bottom: 3rem;
+	}
 }

@@ -1,11 +1,11 @@
 :root {
-  --primary-text: black;
-  --primary-text-hover: gray;
-  --secondary-text: blue;
+  --primary-text: #a8c2e3;
+  --primary-text-hover: #e6ecf5;
+  --background-color: #212f4f;
 }
 
 body {
-  background-color: white;
+  background-color: var(--background-color);
   font-family: 'Satoshi', sans-serif;
   color: var(--primary-text);
 }
@@ -21,18 +21,8 @@ a {
 }
 
 a:hover {
-	color: var(--primary-text-hover);
-}
-
-.on-page {
-  background-color: black;
-  color: white;
-  border-radius: 30px;
-}
-
-.on-page:hover {
-  color: white;
-  text-decoration: none;
+  background-color: var(--primary-text);
+  color: var(--background-color);
 }
 
 .title {
@@ -45,10 +35,29 @@ a:hover {
 }
 
 img {
-  border: 2px solid black;
+  border: 2px solid var(--primary-text);
 	border-radius: 30px;
 }
 
 span {
   font-weight: bold;
+}
+
+.MuiAcordion-root {
+  background-color: var(--background-color) !important;
+  color: var(--primary-text) !important;
+}
+
+.MuiAccordionSummary-root {
+  background-color: var(--background-color) !important;
+  color: var(--primary-text) !important;
+}
+
+.MuiAccordionDetails-root {
+  background-color: var(--background-color) !important;
+  color: var(--primary-text) !important;
+}
+
+.MuiSvgIcon-root {
+  color: var(--primary-text) !important;
 }

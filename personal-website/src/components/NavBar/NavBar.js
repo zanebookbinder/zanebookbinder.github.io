@@ -8,26 +8,54 @@ function Navbar() {
   const location = useLocation();
 
 	return (
-		<NavBarElement className="navbar" bg="dark" variant="dark">
-      <NavBarElement.Brand className="name" href="/">Zane Bookbinder</NavBarElement.Brand>
-      <div className="navbar-content">
-        <Link className={"navbar-link " + (location.pathname === '/experience' ? "on-page" : "")} to="/experience">Experience</Link>
-        <Link className={"navbar-link " + (location.pathname === '/aboutme' ? "on-page" : "")} to="/aboutme">About Me</Link>
-        <Link className={"navbar-link " + (location.pathname === '/resume' ? "on-page" : "")} to="/resume">Resume</Link>
-        <div className="contactInfo">
-            <p>zane.bookbinder@gmail.com</p>
-            <p>(617) 862-7987</p>
-            <div className="icons">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/zane-bookbinder/">
-                <FaLinkedin />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/zanebookbinder">
-                <FaGithub />
-              </a>
-            </div>
-        </div>
+    <div className="all">
+      <div className='non-mobile'>
+        <NavBarElement className="navbar" bg="dark" variant="dark">
+              <NavBarElement.Brand className="name" href="/">Zane Bookbinder</NavBarElement.Brand>
+              <div className="navbar-content">
+                <Link className={"navbar-link " + (location.pathname === '/experience' ? "on-page" : "")} to="/experience"><p className="link-text">Experience</p></Link>
+                <Link className={"navbar-link " + (location.pathname === '/aboutme' ? "on-page" : "")} to="/aboutme"><p className='link-text'>About Me</p></Link>
+                <Link className={"navbar-link " + (location.pathname === '/resume' ? "on-page" : "")} to="/resume"><p className='link-text'>Resume</p></Link>
+                <div className="contactInfo">
+                    <p>zane.bookbinder@gmail.com</p>
+                    <p>(617) 862-7987</p>
+                    <div className="icons">
+                      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/zane-bookbinder/">
+                        <FaLinkedin className='navbar-logo linkedin'/>
+                      </a>
+                      <a target="_blank" rel="noreferrer" href="https://github.com/zanebookbinder">
+                        <FaGithub className='navbar-logo github'/>
+                      </a>
+                    </div>
+                </div>
+              </div>
+            </NavBarElement>
       </div>
-    </NavBarElement>
+      <div className='mobile'>
+        <NavBarElement className="navbar" bg="dark" variant="dark">
+              <div className='top'>
+                <NavBarElement.Brand className="name" href="/">Zane Bookbinder</NavBarElement.Brand>
+                <div className="contactInfo">
+                      <p>zane.bookbinder@gmail.com</p>
+                      <p>(617) 862-7987</p>
+                      <div className="icons">
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/zane-bookbinder/">
+                          <FaLinkedin className='navbar-logo linkedin'/>
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/zanebookbinder">
+                          <FaGithub className='navbar-logo github'/>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+              <div className="navbar-content">
+                <Link className={"navbar-link " + (location.pathname === '/experience' ? "on-page" : "")} to="/experience"><p className="link-text">Experience</p></Link>
+                <Link className={"navbar-link " + (location.pathname === '/aboutme' ? "on-page" : "")} to="/aboutme"><p className='link-text'>About Me</p></Link>
+                <Link className={"navbar-link " + (location.pathname === '/resume' ? "on-page" : "")} to="/resume"><p className='link-text'>Resume</p></Link>
+              </div>
+            </NavBarElement>
+      </div>
+    </div>
 	)
 }
 

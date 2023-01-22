@@ -12,13 +12,16 @@
 }
 
 .company-title {
-	font-weight: 345;
+	font-weight: 400;
+	line-height: 1;
+	white-space: nowrap;
 }
 
-.date {
+.experience-title .date {
 	font-weight: 345;
 	min-width: 125px;
 	text-align: right;
+	line-height: 1;
 }
 
 .experience-details {
@@ -60,4 +63,74 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left: 30px;
+}
+
+.company-link {
+	border-radius: 30px;
+	padding: 5px 10px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 800px) {
+	.experience-title {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.position {
+		font-size: 20px;
+		margin-left: 5px;
+	}
+
+	.right-title {
+		font-size: 16px;
+		gap: 10px;
+	}
+
+	.experience-title .date {
+		min-width: unset;
+	}
+
+	.company-link {
+		padding-inline: 5px;
+	}
+
+	.experience-details {
+		font-size: 16px;
+	}
+
+	.detail {
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/* .experience-title {
+		flex-direction: column;
+		align-items: flex-start;
+	} */
+
+	.position {
+		font-size: 22px;
+	}
+
+	/* .right-title {
+		font-size: 16px;
+		gap: 10px;
+	} */
+
+	/* .experience-title .date {
+		min-width: unset;
+	} */
+
+	.company-link {
+		padding-inline: 5px;
+	}
+
+	.experience-details {
+		font-size: 17px;
+	}
+
+	.detail {
+		margin-top: 5px;
+	}
 }

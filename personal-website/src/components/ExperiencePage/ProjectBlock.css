@@ -19,7 +19,9 @@
 }
 
 .date {
-	font-weight: 345;
+    font-weight: 345;
+    min-width: 100px;
+    text-align: right;
 }
 
 .project-details {
@@ -36,17 +38,64 @@
 	margin-top: 10px;
 }
 
-.bowdoin-logo {
+.logo {
 	width: 25px;
 	height: 25px;
+	border-radius: 25px;
+	vertical-align: top;
+	border: 2px solid var(--background-color);
+}
+
+.logo:hover {
+	background-color: var(--primary-text);
+	border: 2px solid var(--primary-text);
+	color: var(--background-color)
 }
 
 .project-link {
 	height: fit-content;
 }
 
+.project-link:hover {
+	background-color: var(--background-color);
+}
+
 .project-details ul {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left: 30px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 800px) {
+	.project-name {
+		font-size: 20px;
+	}
+
+	.project-title-right {
+		font-size: 16px;
+		gap: 15px;
+	}
+
+	.logo {
+		width: 23px;
+		height: 23px;
+	}
+
+	.project-title .date {
+		min-width: 85px;
+	}
+
+	.project-details {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.project-details {
+		font-size: 17px;
+	}
+
+	.content > * {
+		flex: auto;
+	}
 }

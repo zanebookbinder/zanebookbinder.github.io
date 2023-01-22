@@ -7,6 +7,7 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
 const Accordion = styled((props) => (<MuiAccordion disableGutters elevation={0} square {...props} />))(({ theme }) => ({
+	backgroundColor: 'var(--background-color)',
 	'&:not(:last-child)': {
 	  borderBottom: 0,
 	},
@@ -28,8 +29,6 @@ const AccordionSummary = styled((props) => (
 	height: 'fit-content',
 	minHeight: '33.5px',
 	marginBottom: '5px',
-	backgroundColor:
-		'white',
 	flexDirection: 'row-reverse',
 	'& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
 	  transform: 'rotate(90deg)',
@@ -44,7 +43,7 @@ const AccordionSummary = styled((props) => (
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 	padding: "8px",
 	paddingBottom: '0px',
-	borderTop: '1px solid black',
+	borderTop: '1px solid var(--primary-text)',
 	'& .MuiCollapse-wrapperInner': {
 		marginBottom: '0px',
 	},
@@ -69,7 +68,7 @@ function WorkExperience({ companyTitle, date, position, details, programmingLang
 						<h3 className="position">{position}</h3>
 					</div>
 					<div className="right-title">
-						<a href={link} target="_blank" rel="noreferrer">
+						<a className="company-link" href={link} target="_blank" rel="noreferrer">
 							<p className="company-title">{companyTitle}</p>
 						</a>
 						<p className="date">{date}</p>

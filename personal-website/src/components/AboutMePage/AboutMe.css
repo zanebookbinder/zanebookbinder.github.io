@@ -35,6 +35,11 @@
 	margin-bottom: 10px;
 }
 
+.about-me a {
+	padding: 5px 5px;
+	border-radius: 40px;
+}
+
 .section-title {
 	margin-bottom: 5px;
 	font-weight: 400;
@@ -74,6 +79,10 @@
 	margin-top: 0px;
 }
 
-.icons > * {
+.about-me .icons > * {
 	font-size: 22px;
+}
+
+.no-link {
+	padding-left: 10px;
 }

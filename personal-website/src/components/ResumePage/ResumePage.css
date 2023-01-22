@@ -22,14 +22,14 @@
 }
 
 .here-link {
-	/* text-decoration: underline; */
-	border: 2px solid blue;
+	border: 2px solid var(--primary-text);
 	border-radius: 20px;
 	padding: 5px 10px;
+	font-weight: 600;
 }
 
 .here-link:hover {
-	border: 3px solid blue;
-	color: var(--primary-text);
-	font-weight: 700;
+	color: var(--background-color);
+	background-color: var(--primary-text);
+	/* border: 2px solid var(); */
 }

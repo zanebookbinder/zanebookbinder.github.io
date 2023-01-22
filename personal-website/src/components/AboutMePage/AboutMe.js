@@ -6,14 +6,15 @@ import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 const Accordion = styled((props) => (
 	<MuiAccordion disableGutters elevation={0} square {...props} />
   ))(({ theme }) => ({
-	'&:not(:last-child)': {
-	  borderBottom: 0,
-	},
+	borderBottom: 0,
+	// '&:not(:last-child)': {
+	//   borderBottom: 0,
+	// },
 	'&:before': {
 	  display: 'none',
 	},
@@ -27,8 +28,6 @@ const AccordionSummary = styled((props) => (
   ))(({ theme }) => ({
 	padding: '0px',
 	fontSize: '1.125rem',
-	backgroundColor:
-		'white',
 	flexDirection: 'row-reverse',
 	'& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
 	  transform: 'rotate(90deg)',
@@ -44,7 +43,8 @@ const AccordionSummary = styled((props) => (
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 	padding: theme.spacing(2),
 	paddingBottom: '5px',
-	borderTop: '1px solid rgba(0, 0, 0, .125)',
+	borderTop: '1px solid var(--primary-text)',
+	borderBottom: '0px'
   }));
 
 function AboutMe() {
@@ -98,10 +98,10 @@ function AboutMe() {
 						</AccordionSummary>
 						<AccordionDetails>
 							<ul>
-								<li>Software Engineer Intern at Amazon (Summer 2023)</li>
-								<li>Data Engineer Intern at Datto (Summer 2022)</li>
-								<li>Machine Learning and AI Intern at Beamlab (Summer 2021)</li>
-								<li>Software Engineer Intern at Brainpower (Summer 2019) </li>
+								<li><Link to='/experience' state={{scrollTo: 'amazon'}}>Software Engineer Intern at Amazon (Summer 2023)</Link></li>
+								<li><Link to='/experience' state={{scrollTo: 'datto'}}>Data Engineer Intern at Datto (Summer 2022)</Link></li>
+								<li><Link to='/experience' state={{scrollTo: 'beamlab'}}>Machine Learning and AI Intern at Beamlab (Summer 2021)</Link></li>
+								<li><Link to='/experience' state={{scrollTo: 'brain-power'}}>Software Engineer Intern at Brainpower (Summer 2019)</Link> </li>
 							</ul>
 						</AccordionDetails>
 					</Accordion>
@@ -119,27 +119,27 @@ function AboutMe() {
 								<div className="list-section">
 									<p className="section-title">Bowdoin College (Brunswick, Maine)</p>
 									<ul>
-										<li>CSCI 2101: Data Structures (Java, 2020)</li>
-										<li>CSCI 2200: Algorithms (2021)</li>
-										<li>CSCI 2330: Foundations of Computer Systems (C, 2021)</li>
-										<li>CSCI 3325: Distributed Systems (C/Java/Python, 2022)</li>
-										<li>CSCI 2320: Principles of Programming Languages (Python, 2022)</li>
-										<li>CSCI 2400: Artificial Intelligence (Python, 2022)</li>
-										<li>CSCI 2210: Theory of Computation (2022)</li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/ds/21fall/">CSCI 2101: Data Structures (Java, 2020)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs231/fall13/">CSCI 2200: Algorithms (2021)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/systems/22fall/">CSCI 2330: Foundations of Computer Systems (C, 2021)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/distributed/22spring/">CSCI 3325: Distributed Systems (C/Java/Python, 2022)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~mirfan/CSCI-2320.html">CSCI 2320: Principles of Programming Languages (Python, 2022)</a></li>
+										<li className="no-link">CSCI 2400: Artificial Intelligence (Python, 2022)</li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~smajerci/teaching/cs2210/2019spring/index.html">CSCI 2210: Theory of Computation (2022)</a></li>
 									</ul>
 								</div>
 								<div className="list-section">
 									<p className="section-title">Milton Academy (Milton, MA)</p>
 									<ul>
-										<li>Computer Programming 1 (Java, 2017-2018)</li>
-										<li>Computer Programming 2 (Java, 2018-2019)</li>
-										<li>Advanced Computer Programming: Applied Math & AI (Python, 2019-2020)</li>
+										<li><a target="_blank" rel="noreferrer" href="https://www.milton.edu/academics/academic-departments/computer-science-courses/">Computer Programming 1 (Java, 2017-2018)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://www.milton.edu/academics/academic-departments/computer-science-courses/">Computer Programming 2 (Java, 2018-2019)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://www.milton.edu/academics/academic-departments/computer-science-courses/">Advanced Computer Programming: Applied Math & AI (Python, 2019-2020)</a></li>
 									</ul>
 								</div>
 								<div>
 									<p className="section-title">Spring 2023:</p>
 									<ul>
-										<li>CSCI 18179: Software Development at University Carlos III (Madrid, Spain)</li>
+										<li><a target="_blank" rel="noreferrer" href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=218&anio=2022&plan=489&asig=18179&idioma=2">CSCI 18179: Software Development at University Carlos III (Madrid, Spain)</a></li>
 									</ul>
 								</div>
 							</div>
@@ -158,16 +158,16 @@ function AboutMe() {
 						<AccordionDetails>
 							<p className="section-title">Here are some of my favorites:</p>
 							<ul>
-								<li>Bowdoin Course Reviews (React/Flask/MySQL, 2022-2023)</li>
-								<li>Global PassStore (Python/Bash, 2022)</li>
-								<li>BPD Models (Python/SQL, 2022)</li>
-								<li>Online Bookstore - Nile (Java/Python, 2022)</li>
-								<li>Web Server (C, 2021)</li>
-								<li>Cache Simulator (C, 2021)</li>
-								<li>Polar Bear Places (Ruby on Rails, 2022)</li>
-								<li>Jeopardy Natural Language Processing (Python, 2020)</li>
-								<li>NBA Spread Model (Python, 2020)</li>
-								<li>Homework Planner App (Swift, 2020)</li>
+								<li><Link to="/experience" state={{scrollTo: "bcr"}}>Bowdoin Course Reviews (React/Flask/MySQL, 2022-2023)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "GPS"}}>Global PassStore (Python/Bash, 2022)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "beamlab"}}>BPD Models (Python/SQL, 2022)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "nile"}}>Online Bookstore - Nile (Java/Python, 2022)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "web-server"}}>Web Server (C, 2021)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "cache-simulator"}}>Cache Simulator (C, 2021)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "polar-bear-places"}}>Polar Bear Places (Ruby on Rails, 2022)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "jeopardy"}}>Jeopardy Natural Language Processing (Python, 2020)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "nba-spread-model"}}>NBA Spread Model (Python, 2020)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "homework-planner-app"}}>Homework Planner App (Swift, 2020)</Link></li>
 							</ul>
 						</AccordionDetails>
 					</Accordion>
@@ -193,7 +193,9 @@ function AboutMe() {
 				<p className="small-text more-text-paragraph">
 					My current endeavor outside of school is creating a
 					<span> course review website </span>
-					for Bowdoin along with my girlfriend <a href="https://owirsching.github.io/" style={{textDecoration: "underline"}} target="_blank" rel="noreferrer">Olivia</a>! 
+					for Bowdoin along with my girlfriend 
+					<a href="https://owirsching.github.io/" style={{padding: '5px', marginInline: '3px'}} target="_blank" rel="noreferrer">Olivia</a>
+					! 
 					We always hear friends and classmates asking around about 
 					certain professors and courses. So, we decided to give students 
 					a way to shout out their favorite professors at Bowdoin or warn 
@@ -221,16 +223,16 @@ function AboutMe() {
 				<div className="section">
 					<h1>Education</h1>
 					<ul>
-						<li><p className="bottom-text"><span><a href="https://www.bowdoin.edu/" target="_blank" rel="noreferrer">Bowdoin College:</a> </span>Computer Science major, Economics minor (2020-2024)</p></li>
-						<li><p className="bottom-text"><span><a href="https://www.milton.edu/" target="_blank" rel="noreferrer">Milton Academy:</a></span> (2016-2020)</p></li>
+						<li><p className="bottom-text"><span><a href="https://www.bowdoin.edu/" target="_blank" rel="noreferrer">Bowdoin College:</a></span>Computer Science major, Economics minor (2020-2024)</p></li>
+						<li><p className="bottom-text"><span><a href="https://www.milton.edu/" target="_blank" rel="noreferrer">Milton Academy:</a></span>(2016-2020)</p></li>
 					</ul>
 				</div>
 				<div className="section">
 					<h1>Awards</h1>
 					<ul>
-						<li><p><span><a href="https://www.bowdoin.edu/admissions/book-award/" target="_blank" rel="noreferrer">Bowdoin Book Award</a> for a 4.0 GPA</span> (2021-2022)</p></li>
-						<li><p><span><a href="https://www.bowdoin.edu/events/family-weekend/sarah-and-james-bowdoin-day.html" target="_blank" rel="noreferrer">Sarah and James Bowdoin Scholar</a> — Dean's List</span> (2021-2022)</p></li>
-						<li><p><span><a href="https://www.milton.edu/news/graduation-2020/" target="_blank" rel="noreferrer">Graduated Cum Laude</a></span> from Milton Academy (2020)</p></li>
+						<li><p><span><a href="https://www.bowdoin.edu/admissions/book-award/" target="_blank" rel="noreferrer">Bowdoin Book Award</a>for a 4.0 GPA</span> (2021-2022)</p></li>
+						<li><p><span><a href="https://www.bowdoin.edu/events/family-weekend/sarah-and-james-bowdoin-day.html" target="_blank" rel="noreferrer">Sarah and James Bowdoin Scholar</a>— Dean's List</span> (2021-2022)</p></li>
+						<li><p><span><a href="https://www.milton.edu/news/graduation-2020/" target="_blank" rel="noreferrer">Graduated Cum Laude</a></span>from Milton Academy (2020)</p></li>
 					</ul>
 				</div>
 				<div className="section">
