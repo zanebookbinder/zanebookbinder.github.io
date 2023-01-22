@@ -1,9 +1,13 @@
-import { useState } from "react";
 import "./ResumePage.css"
+import { useState } from "react";
 
 function ResumePage() {
 
 	const [resumeLoaded, setResumeLoaded] = useState(false);
+
+	const handleLoad = () => {
+		setResumeLoaded(true);
+	};
 
 	return (
 	  <div className="resume-page">
@@ -19,18 +23,15 @@ function ResumePage() {
 							>Download a copy</a>
 					</div>
 				}
-				<iframe 
-					className="resume-embed" 
-					title="my-resume" 
-					src="https://docs.google.com/document/d/1RYVTr9UIftXe9wNYGP4er3veGcPmxAIO/preview" 
-					allow="autoplay" 
-					onLoad={() => {setResumeLoaded(true)}}
+				<iframe
+					className="resume-embed"
+					onLoad={handleLoad}
+					title="my-resume"
+					src="https://drive.google.com/file/d/1bSxDxnaEyKzFwzymyE8sTTSPhSatx5xR/preview"
+					allow="autoplay"
 				></iframe>
-			</div>
-			
+			</div>		
 		</div>
-		{/* <div className="download">
-		</div> */}
 	  </div>
 	);
   }

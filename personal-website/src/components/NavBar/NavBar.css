@@ -164,6 +164,7 @@
 	}
 
 	.navbar-link {
-		padding-left: 0px;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 }

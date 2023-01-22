@@ -3,13 +3,14 @@
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 2rem;
 }
 
 .resume-embed {
 	width: 60vw;
 	height: 100vh;
 	margin-inline: auto;
-	border: none;
+	border: 0;
 }
 
 .download {
@@ -31,5 +32,16 @@
 .here-link:hover {
 	color: var(--background-color);
 	background-color: var(--primary-text);
-	/* border: 2px solid var(); */
+}
+
+@media screen and (max-width: 1000px) {
+	.resume-embed {
+		width: 90vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.resume-embed {
+		height: 55vh;
+	}
 }
