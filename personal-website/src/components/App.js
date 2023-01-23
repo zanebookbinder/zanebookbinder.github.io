@@ -5,6 +5,7 @@ import ExperiencePage from './ExperiencePage/ExperiencePage';
 import AboutMe from './AboutMePage/AboutMe';
 import Navbar from './NavBar/NavBar';
 import ResumePage from './ResumePage/ResumePage';
+import PageNotFound from './PageNotFound';
 
 function App() {
 
@@ -12,14 +13,11 @@ function App() {
     <Router >
       <Navbar />
       <Routes>
-        <Route path="/" element={
-          <HomePage/>
-        } />
+        <Route path="/" element={<HomePage/>} />
         <Route path="/experience" element={<ExperiencePage/>} />
-        <Route path="/aboutme" element={
-          <AboutMe/>
-        } />
+        <Route path="/aboutme" element={<AboutMe/>} />
         <Route path="/resume" element={<ResumePage />} />
+        <Route path="*" element={<PageNotFound/>} />
       </Routes>
     </Router>
   );

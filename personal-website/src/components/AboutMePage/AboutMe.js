@@ -66,6 +66,10 @@ function AboutMe() {
 		}
 	}, [scrollTo]);
 
+	useEffect(() => {
+		document.title = "About Me | Zane Bookbinder";
+	}, []);
+
 	return (
 	  <div className="about-me">
 		<div className="top-line">

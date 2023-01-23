@@ -19,6 +19,10 @@ function ExperiencePage() {
 		}
 	}, [openItem]);
 
+	useEffect(() => {
+		document.title = "Experience | Zane Bookbinder";
+	}, []);
+
 	return (
 	  <div className="experience-page">
 		<div className="content">

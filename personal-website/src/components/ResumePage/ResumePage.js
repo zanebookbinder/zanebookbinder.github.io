@@ -1,5 +1,5 @@
 import "./ResumePage.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ResumePage() {
 
@@ -8,6 +8,10 @@ function ResumePage() {
 	const handleLoad = () => {
 		setResumeLoaded(true);
 	};
+
+	useEffect(() => {
+		document.title = "Resume | Zane Bookbinder";
+	}, []);
 
 	return (
 	  <div className="resume-page">
