@@ -11,6 +11,7 @@
 .navbar-content {
 	display: flex;
 	align-items: center;
+	margin-right: 20px;
 }
 
 .name {
@@ -26,11 +27,6 @@
 .name:hover {
 	background-color: var(--background-color);
 	color: white;
-}
-
-.navbar-content {
-	display: flex;
-	margin-right: 20px;
 }
 
 .navbar-link {
@@ -160,7 +156,8 @@
 	}
 
 	.navbar-content {
-		margin-left: 1rem;
+		margin-left: 20px;
+		justify-content: space-between;
 	}
 
 	.navbar-link {
