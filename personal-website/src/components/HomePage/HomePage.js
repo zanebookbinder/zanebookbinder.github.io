@@ -41,6 +41,7 @@ function HomePage({workingOnNow, technicalSkills, mostRecentInternship, favorite
 			<div className="top">
 				<div className="top-left">
 					<h1 className="title">Hi, I'm Zane!</h1>
+					<img className="zane-image" src={ZaneImage} alt="Zane" />
 					<p className="small-text homePageText">
 						I'm a junior at Bowdoin College majoring in Computer Science and
 						minoring in Economics. I'm really passionate about software,
@@ -49,7 +50,6 @@ function HomePage({workingOnNow, technicalSkills, mostRecentInternship, favorite
 						Please check out my bio, projects, and resume. I would love to connect!
 					</p>
 				</div>
-				<img className="zane-image" src={ZaneImage} alt="Zane" />
 			</div>
 			<p className="quicklink-title">Check out my:</p>
 			<div className="quicklinks">
