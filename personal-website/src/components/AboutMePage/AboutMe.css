@@ -1,5 +1,6 @@
 .about-me {
 	margin-left: 6rem;
+	margin-right: 1rem;
 }
 
 .bio-and-image {
@@ -69,6 +70,7 @@
 .bottom-columns {
 	display: flex;
 	margin-bottom: 30px;
+	gap: 10px;
 }
 
 .column {
@@ -85,4 +87,110 @@
 
 .no-link {
 	padding-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+	.zane-second-image {
+		max-height: 500px;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.about-me {
+		margin-left: 3rem;
+	}
+
+	.bio-and-image {
+		flex-direction: column-reverse;
+	}
+
+	.zane-second-image {
+		margin-left: 0px;
+		max-height: 300px;
+		margin-bottom: 27px;
+	}
+
+	.bio {
+		max-width: unset;
+		width: 80%;
+	}
+
+	.more-text .small-text {
+		width: 80%;
+	}
+
+	.top-line .title {
+		margin-top: 15px;
+		font-size: 34px;
+	}
+
+	.bio-and-image h1 {
+		font-size: 28px;
+	}
+
+	.bottom-columns h1 {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.bio {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.about-me {
+		margin-left: 2rem;
+	}
+
+	.bottom-columns {
+		flex-direction: column;
+		width: 80%;
+		gap: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about-me {
+		margin-left: 1rem;
+	}
+
+	.about-me p {
+		font-size: 17px;
+	}
+
+	.about-me .MuiAccordionSummary-content {
+		font-size: 18px;
+	}
+
+	.bio-and-image h1 {
+		font-size: 26px;
+	}
+
+	.bottom-columns h1 {
+		font-size: 26px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.about-me p {
+		font-size: 16px;
+	}
+
+	.about-me .MuiAccordionSummary-content {
+		font-size: 17px;
+	}
+
+	.top-line .title {
+		font-size: 30px;
+	}
+
+	.bio-and-image h1 {
+		font-size: 24px;
+	}
+
+	.bottom-columns h1 {
+		font-size: 24px;
+	}
 }

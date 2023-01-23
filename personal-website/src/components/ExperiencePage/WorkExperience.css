@@ -70,11 +70,11 @@
 	padding: 5px 10px;
 }
 
-@media screen and (max-width: 1100px) and (min-width: 800px) {
-	.experience-title {
+@media screen and (max-width: 1100px) {
+	/* .experience-title {
 		flex-direction: column;
 		align-items: flex-start;
-	}
+	} */
 
 	.position {
 		font-size: 20px;
@@ -104,23 +104,10 @@
 }
 
 @media screen and (max-width: 800px) {
-	/* .experience-title {
-		flex-direction: column;
-		align-items: flex-start;
-	} */
 
 	.position {
 		font-size: 22px;
 	}
-
-	/* .right-title {
-		font-size: 16px;
-		gap: 10px;
-	} */
-
-	/* .experience-title .date {
-		min-width: unset;
-	} */
 
 	.company-link {
 		padding-inline: 5px;
