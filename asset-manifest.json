@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.b8aad885.css",
-    "main.js": "/static/js/main.534c5965.js",
+    "main.js": "/static/js/main.06aa1333.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Zane2.jpeg": "/static/media/Zane2.eb68d0adeb4cef5ce535.jpeg",
     "static/media/bowdoin-logo.png": "/static/media/bowdoin-logo.c60526a65bd945ee5b83.png",
     "static/media/Zane.jpg": "/static/media/Zane.0b9c058912ad3c6c1c9c.jpg",
     "index.html": "/index.html",
     "main.b8aad885.css.map": "/static/css/main.b8aad885.css.map",
-    "main.534c5965.js.map": "/static/js/main.534c5965.js.map",
+    "main.06aa1333.js.map": "/static/js/main.06aa1333.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b8aad885.css",
-    "static/js/main.534c5965.js"
+    "static/js/main.06aa1333.js"
   ]
 }
