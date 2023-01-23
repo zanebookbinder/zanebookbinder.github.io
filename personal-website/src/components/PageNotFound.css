@@ -1,0 +1,31 @@
+.page-not-found {
+	margin-left: 5rem;
+	margin-top: 4rem;
+}
+
+.page-not-found-title {
+	margin-bottom: 30px;
+	font-size: 28px;
+}
+
+.return-home-button {
+	border-radius: 30px;
+	margin-top: 40px;
+	border: 1px solid var(--primary-text);
+	padding: 10px 15px;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 650px) {
+	.page-not-found {
+		margin-left: 2rem;
+		margin-top: 3rem;
+	}
+	.page-not-found-title {
+		font-size: 20px;
+	}
+
+	.return-home-button {
+		font-size: 16px;
+	}
+}
