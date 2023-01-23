@@ -159,8 +159,6 @@
 	.navbar-content {
 		gap: 75px;
 		margin-inline: auto;
-		/* margin-left: 20px;
-		justify-content: space-between; */
 	}
 
 	.navbar-link {

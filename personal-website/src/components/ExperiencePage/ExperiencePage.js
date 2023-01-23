@@ -74,6 +74,8 @@ function ExperiencePage() {
 							position="Learning Assistant and Grader"
 							programmingLanguages={["Python", "C", "Algorithms", "Data Structures"]}
 							details={[
+								"Two semesters as an Algorithms LA and grader",
+								"One semester as a Computer Systems LA",
 								"Run weekly study groups, answering questions and helping students work through problems",
 								"Grade assignments and quizzes and write solutions to in-class lab problems",
 							]}

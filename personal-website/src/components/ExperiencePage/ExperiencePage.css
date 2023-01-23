@@ -98,19 +98,7 @@
 		align-items: flex-end;
 	}
 
-	/* .left-title {
-		white-space: ;
-	} */
-
 	.experience-title .company-link {
 		padding-right: 0px;
 	}
-
-	/* .content {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		margin-right: 1rem;
-		margin-bottom: 1rem;
-	} */
 }

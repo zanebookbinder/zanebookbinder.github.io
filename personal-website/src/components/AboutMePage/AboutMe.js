@@ -194,9 +194,9 @@ function AboutMe() {
 					My current endeavor outside of school is creating a
 					<span> course review website </span>
 					for Bowdoin along with my girlfriend 
-					<a href="https://owirsching.github.io/" style={{padding: '5px', marginInline: '3px'}} target="_blank" rel="noreferrer">Olivia</a>
+					<a href="https://owirsching.github.io/" style={{padding: '5px', paddingInline: '3px', marginLeft: '3px'}} target="_blank" rel="noreferrer">Olivia</a>
 					! 
-					We always hear friends and classmates asking around about 
+					We always hear friends and classmates asking about 
 					certain professors and courses. So, we decided to give students 
 					a way to shout out their favorite professors at Bowdoin or warn 
 					others about tough courses they took. I had never tried my 
@@ -206,7 +206,7 @@ function AboutMe() {
 					January 2023 we had a MySQL back-end hosted on AWS, a Flask API
 					with 40 endpoints, and a beautiful and nearly-complete React 
 					front-end. Now, we're making some final touches and working 
-					with the Bowdoin IT Department and Student Government to get it online!
+					with the Bowdoin IT Department and Student Government to get it online.
 				</p>
 			</div>
 			<img className="zane-second-image" alt="Zane" src={ZaneImage} />
@@ -265,7 +265,7 @@ function AboutMe() {
 						<li><span>Fluent English</span></li>
 						<li><span>Conversational Spanish</span></li>
 						<ul>
-							<li>10 years of spanish classes</li>
+							<li>10 years of Spanish classes</li>
 							<li>Lived in Madrid with a Spanish family in June 2018</li>
 							<li>Studying abroad in Madrid in Spring 2023</li>
 						</ul>
