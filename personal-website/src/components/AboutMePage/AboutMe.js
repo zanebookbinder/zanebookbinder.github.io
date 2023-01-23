@@ -74,7 +74,7 @@ function AboutMe() {
 		<div className="bio-and-image">
 			<div className="bio">
 				<p className="small-text about-me-text">
-					Hi! I'm proud be to a JOB (Just Outside of Boston) from Newton, MA.
+					Hi! I'm proud to be a JOB (Just Outside of Boston) from Newton, MA.
 					I go to school at Bowdoin College in Maine, where I work as a Learning 
 					Assistant and Grader for a few Computer Science classes and write sports 
 					opinion articles for the Bowdoin Review.
