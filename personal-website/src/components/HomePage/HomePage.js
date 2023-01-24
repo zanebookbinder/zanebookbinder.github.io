@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import ZaneImage from "../../images/Zane.jpg";
+import ZaneImage from "../../images/Zane-3.jpg";
 import { Link } from "react-router-dom";
 
 function HomePage({workingOnNow, technicalSkills, mostRecentInternship, favoriteProject}) {
