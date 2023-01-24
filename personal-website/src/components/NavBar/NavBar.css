@@ -124,7 +124,6 @@
 	.navbar .top {
 		display: flex;
 		justify-content: space-between;
-		margin-inline: 2rem;
 	}
 
 	.name {
@@ -150,10 +149,13 @@
 	}
 
 	.navbar {
+		margin-inline: 2rem;
 		flex-direction: column;
 		margin-top: 1rem;
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
+		padding-bottom: 1rem;
 		height: auto;
+		border-bottom: 1px solid var(--primary-text);
 	}
 
 	.navbar-content {
@@ -170,13 +172,12 @@
 }
 
 @media screen and (max-width: 600px) {
-	.navbar .top {
+	.navbar {
 		margin-inline: 1rem;
 	}
 
 	.navbar-content {
 		gap: unset;
-		margin-inline: 1rem;
 		justify-content: space-between;
 	}
 }
