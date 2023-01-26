@@ -140,12 +140,6 @@ function AboutMe() {
 										<li><a target="_blank" rel="noreferrer" href="https://www.milton.edu/academics/academic-departments/computer-science-courses/">Advanced Computer Programming: Applied Math & AI (Python, 2019-2020)</a></li>
 									</ul>
 								</div>
-								<div>
-									<p className="section-title">Spring 2023:</p>
-									<ul>
-										<li><a target="_blank" rel="noreferrer" href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=218&anio=2022&plan=489&asig=18179&idioma=2">CSCI 18179: Software Development at University Carlos III (Madrid, Spain)</a></li>
-									</ul>
-								</div>
 							</div>
 							
 						</AccordionDetails>
@@ -266,7 +260,6 @@ function AboutMe() {
 				<div className="section">
 					<h1>Languages</h1>
 					<ul>
-						<li><span>Fluent English</span></li>
 						<li><span>Conversational Spanish</span></li>
 						<ul>
 							<li>10 years of Spanish classes</li>
