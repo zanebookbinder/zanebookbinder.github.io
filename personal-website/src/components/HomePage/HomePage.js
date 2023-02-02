@@ -1,6 +1,7 @@
 import "./HomePage.css";
 import ZaneImage from "../../images/Zane-3.jpg";
 import { Link } from "react-router-dom";
+import Typed from "react-typed";
 
 function HomePage({workingOnNow, technicalSkills, mostRecentInternship, favoriteProject}) {
   return (
@@ -9,7 +10,19 @@ function HomePage({workingOnNow, technicalSkills, mostRecentInternship, favorite
 			<div className="homePage">
 				<div className="text-and-image">
 					<div className="left">
-						<h1 className="title">Hi, I'm Zane!</h1>
+						<Typed
+							strings={["Hi, I'm Zane! ^1500 Nice to meet you!", "Hi, I'm Zane! ^500 I hope you enjoy my website!", "Hi, I'm Zane!"]}
+							element="h1"
+							className="title"
+							typeSpeed={80}
+							backSpeed={60}
+							backDelay={2000}
+							onComplete={(instance) => {
+								setTimeout(() => {
+									instance.cursor.remove();
+								}, 1000);
+							}}
+						/>
 						<p className="small-text homePageText">I'm a junior at Bowdoin College majoring in Computer Science and 
 							minoring in Economics. I'm really passionate about software, 
 							data, and AI. This summer, I'll be working as a Software Engineering 
