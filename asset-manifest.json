@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe087dc6.css",
-    "main.js": "/static/js/main.eb99452a.js",
+    "main.css": "/static/css/main.a63efddc.css",
+    "main.js": "/static/js/main.3e84d9cb.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.44e79e117ab358c3d27a.jpg",
     "static/media/Zane2.jpeg": "/static/media/Zane2.eb68d0adeb4cef5ce535.jpeg",
     "static/media/bowdoin-logo.png": "/static/media/bowdoin-logo.c60526a65bd945ee5b83.png",
+    "static/media/beamlab-logo.png": "/static/media/beamlab-logo.901ab667f2c8bf26f18f.png",
+    "static/media/brainpower-logo.png": "/static/media/brainpower-logo.7d28ba65b3f03d8cf4db.png",
+    "static/media/datto-logo.png": "/static/media/datto-logo.368dbbe5ba60522ea472.png",
     "index.html": "/index.html",
-    "main.fe087dc6.css.map": "/static/css/main.fe087dc6.css.map",
-    "main.eb99452a.js.map": "/static/js/main.eb99452a.js.map",
+    "main.a63efddc.css.map": "/static/css/main.a63efddc.css.map",
+    "main.3e84d9cb.js.map": "/static/js/main.3e84d9cb.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe087dc6.css",
-    "static/js/main.eb99452a.js"
+    "static/css/main.a63efddc.css",
+    "static/js/main.3e84d9cb.js"
   ]
 }
