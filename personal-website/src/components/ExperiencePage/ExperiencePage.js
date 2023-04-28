@@ -3,6 +3,12 @@ import ProjectBlock from "./ProjectBlock";
 import WorkExperience from "./WorkExperience";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import AmazonLogo from "../../images/amazon-logo.png";
+import DattoLogo from "../../images/datto-logo.png";
+import JPMorganLogo from "../../images/jpmorgan-logo.png";
+import BowdoinLogo from "../../images/bowdoin-logo.png";
+import BeamlabLogo from "../../images/beamlab-logo.png";
+import BrainPowerLogo from "../../images/brainpower-logo.png";
 
 function ExperiencePage() {
 	const location = useLocation();
@@ -39,6 +45,7 @@ function ExperiencePage() {
 							]}
 							link="https://aws.amazon.com/"
 							startOpen={openItem === "amazon"}
+							companyImage={AmazonLogo}
 						/>
 					</div>
 					<div id="datto">
@@ -54,6 +61,7 @@ function ExperiencePage() {
 							]}
 							link="https://www.datto.com/"
 							startOpen={openItem === "datto"}
+							companyImage={DattoLogo}
 						/>
 					</div>
 					<div id="data-for-good">
@@ -69,6 +77,7 @@ function ExperiencePage() {
 							]}
 							link="https://careers.jpmorgan.com/in/en/students/programs/code-for-good?search=&tags=location__Americas__UnitedStatesofAmerica"
 							startOpen={openItem === "data-for-good"}
+							companyImage={JPMorganLogo}
 						/>
 					</div>
 					<div id="ta-grader">
@@ -85,11 +94,12 @@ function ExperiencePage() {
 							]}
 							link="https://www.bowdoin.edu/computer-science/"
 							startOpen={openItem === "ta-grader"}
+							companyImage={BowdoinLogo}
 						/>
 					</div>
 					<div id="beamlab">
 						<WorkExperience
-							companyTitle="Beamlab, HMS"
+							companyTitle="Beamlab"
 							date="Summer 2021"
 							position="Data Science and ML Intern"
 							programmingLanguages={["Python", "Data Science", "Google Collab", "Neural Networks", "Random Forest", "Logistic Regression"]}
@@ -99,6 +109,7 @@ function ExperiencePage() {
 							]}
 							link="http://beamlab.org/"
 							startOpen={openItem === "beamlab"}
+							companyImage={BeamlabLogo}
 						/>
 					</div>
 					<div id="brain-power">
@@ -113,6 +124,7 @@ function ExperiencePage() {
 							]}
 							link="https://brain-power.com/"
 							startOpen={openItem === "brain-power"}
+							companyImage={BrainPowerLogo}
 						/>
 					</div>
 				</div>

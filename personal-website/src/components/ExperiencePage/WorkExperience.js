@@ -49,7 +49,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 	},
   }));
 
-function WorkExperience({ companyTitle, date, position, details, programmingLanguages, link, startOpen}) {
+function WorkExperience({ companyTitle, date, position, details, programmingLanguages, link, startOpen, companyImage}) {
 	let expandedStart = false;
 	if (startOpen) {
 		expandedStart = true;
@@ -68,9 +68,12 @@ function WorkExperience({ companyTitle, date, position, details, programmingLang
 						<h3 className="position">{position}</h3>
 					</div>
 					<div className="right-title">
-						<a className="company-link" href={link} target="_blank" rel="noreferrer">
-							<p className="company-title">{companyTitle}</p>
-						</a>
+						<div className="company-info" style={{display: "flex", alignItems: "center", gap: "3px"}}>
+							<a className="company-link" href={link} target="_blank" rel="noreferrer">
+								<p className="company-title">{companyTitle}</p>
+							</a>
+							<img className="company-logo" src={companyImage} alt="img not found" />
+						</div>
 						<p className="date">{date}</p>
 					</div>
 				</div>
