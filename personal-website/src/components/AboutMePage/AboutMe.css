@@ -19,7 +19,7 @@
 
 .zane-second-image {
 	margin-inline: auto;
-	max-height: 650px;
+	max-height: 500px;
 }
 
 .accordions {
@@ -89,25 +89,27 @@
 	padding-left: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1050px) {
 	.zane-second-image {
-		max-height: 500px;
+		margin-left: 0px;
+		max-height: 400px;
+		margin-bottom: 27px;
+	}
+
+	.about-me {
+		margin-inline: 2rem;
+		margin-top: 2rem;
 	}
 }
 
-@media screen and (max-width: 1050px) {
-	.about-me {
-		margin-left: 3rem;
-	}
+@media screen and (max-width: 600px) {
 
 	.bio-and-image {
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 
 	.zane-second-image {
-		margin-left: 0px;
-		max-height: 300px;
-		margin-bottom: 27px;
+		max-height: 250;
 	}
 
 	.bio {

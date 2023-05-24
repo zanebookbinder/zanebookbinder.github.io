@@ -72,11 +72,9 @@ function AboutMe() {
 
 	return (
 	  <div className="about-me">
-		<div className="top-line">
-			<h1 className="title">About Me</h1>
-		</div>
 		<div className="bio-and-image">
 			<div className="bio">
+				<h1 className="title desktop-title">About Me</h1>
 				<p className="small-text about-me-text">
 					Hi! I'm proud to be a JOB (Just Outside of Boston) from Newton, MA.
 					I go to school at Bowdoin College in Maine, where I work as a Learning 
@@ -228,6 +226,7 @@ function AboutMe() {
 				<div className="section">
 					<h1>Awards</h1>
 					<ul>
+						<li><p><span><a href="https://www.bowdoin.edu/about/prizes/general-scholarship.html" target="_blank" rel="noreferrer">Dorothy Haythorn Collins Award</a>for "academic and general excellence" in Computer Science</span> (2022-2023)</p></li>
 						<li><p><span><a href="https://www.bowdoin.edu/admissions/book-award/" target="_blank" rel="noreferrer">Bowdoin Book Award</a>for a 4.0 GPA</span> (2021-2022)</p></li>
 						<li><p><span><a href="https://www.bowdoin.edu/events/family-weekend/sarah-and-james-bowdoin-day.html" target="_blank" rel="noreferrer">Sarah and James Bowdoin Scholar</a>— Dean's List</span> (2021-2022)</p></li>
 						<li><p><span><a href="https://www.milton.edu/news/graduation-2020/" target="_blank" rel="noreferrer">Graduated Cum Laude</a></span>from Milton Academy (2020)</p></li>
@@ -260,11 +259,11 @@ function AboutMe() {
 				<div className="section">
 					<h1>Languages</h1>
 					<ul>
-						<li><span>Conversational Spanish</span></li>
+						<li><span>Proficient Spanish</span></li>
 						<ul>
 							<li>10 years of Spanish classes</li>
-							<li>Lived in Madrid with a Spanish family in June 2018</li>
-							<li>Studying abroad in Madrid in Spring 2023</li>
+							<li>Lived in Madrid with a Spanish family (June 2018)</li>
+							<li>Studied abroad in Madrid (Spring 2023)</li>
 						</ul>
 					</ul>
 				</div>

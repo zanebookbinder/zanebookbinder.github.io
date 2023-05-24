@@ -25,8 +25,9 @@
 }
 
 .name:hover {
-	background-color: var(--background-color);
-	color: white;
+	/* background-color: var(--background-color);
+	color: white; */
+	color: var(--primary-text-hover);
 }
 
 .navbar-link {
@@ -44,12 +45,7 @@
 }
 
 .on-page .link-text {
-	padding-bottom: 1px;
-	border-bottom: 2px solid var(--primary-text);
-}
-
-.navbar-link.on-page:hover .link-text {
-    border-bottom: 2px solid var(--background-color);
+	font-weight: 600;
 }
 
 .contactInfo > * {

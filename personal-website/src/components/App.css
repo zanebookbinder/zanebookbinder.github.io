@@ -1,6 +1,6 @@
 :root {
   --primary-text: #a8c2e3;
-  --primary-text-hover: #e6ecf5;
+  --primary-text-hover: #c9dcf4;
   --background-color: #212f4f;
 }
 
@@ -21,8 +21,7 @@ a {
 }
 
 a:hover {
-  background-color: var(--primary-text);
-  color: var(--background-color);
+  color: var(--primary-text-hover);
 }
 
 .title {
