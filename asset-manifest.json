@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9059c8e9.css",
-    "main.js": "/static/js/main.716d77dd.js",
+    "main.css": "/static/css/main.992da24b.css",
+    "main.js": "/static/js/main.d40ba6f6.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.2f0c52bc7a5168734d46.jpg",
     "static/media/Zane2.jpeg": "/static/media/Zane2.eb68d0adeb4cef5ce535.jpeg",
@@ -10,12 +10,12 @@
     "static/media/brainpower-logo.png": "/static/media/brainpower-logo.7d28ba65b3f03d8cf4db.png",
     "static/media/datto-logo.png": "/static/media/datto-logo.368dbbe5ba60522ea472.png",
     "index.html": "/index.html",
-    "main.9059c8e9.css.map": "/static/css/main.9059c8e9.css.map",
-    "main.716d77dd.js.map": "/static/js/main.716d77dd.js.map",
+    "main.992da24b.css.map": "/static/css/main.992da24b.css.map",
+    "main.d40ba6f6.js.map": "/static/js/main.d40ba6f6.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9059c8e9.css",
-    "static/js/main.716d77dd.js"
+    "static/css/main.992da24b.css",
+    "static/js/main.d40ba6f6.js"
   ]
 }
