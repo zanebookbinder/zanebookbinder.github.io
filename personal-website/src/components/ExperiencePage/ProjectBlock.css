@@ -3,7 +3,6 @@
 	align-items: center;
 	justify-content: space-between;
 	gap: 20px;
-	font-size: 20px;
 	width: 100%;
 }
 
@@ -17,11 +16,12 @@
 	margin-bottom: 0px;
 	margin-top: 0px;
 	font-size: 22px;
+	font-weight: 600;
 }
 
 .date {
     font-weight: 345;
-    min-width: 100px;
+    min-width: 90px;
     text-align: right;
 }
 
@@ -53,12 +53,24 @@
 	color: var(--background-color)
 }
 
+.project-expanded .logo {
+	border: 2px solid var(--expanded-background);
+}
+
+.project-expanded .logo:hover {
+	border: 2px solid var(--primary-text);
+}
+
 .project-link {
 	height: fit-content;
 }
 
 .project-link:hover {
 	background-color: var(--background-color);
+}
+
+.project-expanded .project-link {
+	background-color: unset;
 }
 
 .project-details ul {

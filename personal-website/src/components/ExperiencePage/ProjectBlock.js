@@ -1,63 +1,8 @@
 import { FaGithub } from "react-icons/fa";
 import BowdoinLogo from "../../images/bowdoin-logo.png";
 import { useState } from "react";
-import { styled } from '@mui/material/styles';
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
-import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary from '@mui/material/AccordionSummary';
-import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import { Accordion, AccordionSummary, AccordionDetails } from "./WorkExperience";
 import "./ProjectBlock.css";
-
-const Accordion = styled((props) => (
-	<MuiAccordion disableGutters elevation={0} square {...props} />
-  ))(({ theme }) => ({
-	backgroundColor: 'var(--background-color)',
-	'&:not(:last-child)': {
-	  borderBottom: 0,
-	},
-	'&:before': {
-	  display: 'none',
-	},
-}));
-
-const AccordionSummary = styled((props) => (
-	<MuiAccordionSummary
-	  expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
-	  {...props}
-	/>
-  ))(({ theme }) => ({
-	display: 'flex',
-	alignItems: 'center',
-	fontSize: '20px',
-	minHeight: '33.5px',
-	marginBottom: '5px',
-	padding: '0px',
-	height: 'fit-content',
-	backgroundColor:
-		'white',
-	flexDirection: 'row-reverse',
-	'& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-	  transform: 'rotate(90deg)',
-	},
-	'& .MuiAccordionSummary-content': {
-	  marginLeft: theme.spacing(1),
-	  marginTop: '0px',
-	  marginBottom: '0px',
-	},
-	'& .MuiAccordianSummary-root': {
-		width: "100%",
-		paddingLeft: "0px"
-	}
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-	padding: "8px",
-	paddingBottom: '0px',
-	borderTop: '1px solid var(--primary-text)',
-	'& .MuiCollapse-wrapperInner': {
-		marginBottom: '0px',
-	},
-  }));
 
 function ProjectBlock({ title, date, programmingLanguages, details, link, startOpen}) {
 
@@ -72,13 +17,13 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 
 	if (link && link.includes("sbarker")) {
 		linkImage = <img src={BowdoinLogo} alt="Bowdoin Logo" className="logo" />;
-	}
-		
+	}	
 
 	return (
 		<Accordion
 			expanded={expanded} 
 			onChange={() => setExpanded(!expanded)}
+			className={expanded ? "project-expanded" : ""}
 		>
 				<AccordionSummary>
 					<div className="project-title">

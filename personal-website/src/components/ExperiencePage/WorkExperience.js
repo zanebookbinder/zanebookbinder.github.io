@@ -6,7 +6,7 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
-const Accordion = styled((props) => (<MuiAccordion disableGutters elevation={0} square {...props} />))(({ theme }) => ({
+export const Accordion = styled((props) => (<MuiAccordion disableGutters elevation={0} square {...props} />))(({ expanded }) => ({
 	backgroundColor: 'var(--background-color)',
 	'&:not(:last-child)': {
 	  borderBottom: 0,
@@ -14,9 +14,16 @@ const Accordion = styled((props) => (<MuiAccordion disableGutters elevation={0} 
 	'&:before': {
 	  display: 'none',
 	},
+	paddingTop: '10px',
+	paddingBottom: expanded ? "10px" : "0px",
+	paddingInline: '15px',
+	'@media (max-width: 800px)': {
+		paddingInline: '10px',
+	},
+	borderRadius: '15px',
 }));
 
-const AccordionSummary = styled((props) => (
+export const AccordionSummary = styled((props) => (
 	<MuiAccordionSummary
 	  expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
 	  {...props}
@@ -24,7 +31,7 @@ const AccordionSummary = styled((props) => (
   ))(({ theme }) => ({
 	display: 'flex',
 	alignItems: 'center',
-	fontSize: '20px',
+	fontSize: '18px',
 	padding: '0px',
 	height: 'fit-content',
 	minHeight: '33.5px',
@@ -40,7 +47,7 @@ const AccordionSummary = styled((props) => (
 	},
 }));
 
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+export const AccordionDetails = styled(MuiAccordionDetails)(() => ({
 	padding: "8px",
 	paddingBottom: '0px',
 	borderTop: '1px solid var(--primary-text)',
@@ -49,7 +56,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 	},
   }));
 
-function WorkExperience({ companyTitle, date, position, details, programmingLanguages, link, startOpen, companyImage}) {
+function WorkExperience({ companyTitle, date, position, details, programmingLanguages, link, startOpen}) {
 	let expandedStart = false;
 	if (startOpen) {
 		expandedStart = true;
@@ -61,19 +68,15 @@ function WorkExperience({ companyTitle, date, position, details, programmingLang
 		<Accordion
 			expanded={expanded} 
 			onChange={() => setExpanded(!expanded)}
+			className={expanded ? "experience-expanded" : ""}
 		>
 			<AccordionSummary>
 				<div className="experience-title">
-					<div className="left-title">
-						<h3 className="position">{position}</h3>
-					</div>
+					<h3 className="position">{position}</h3>
 					<div className="right-title">
-						<div className="company-info" style={{display: "flex", alignItems: "center", gap: "3px"}}>
-							<a className="company-link" href={link} target="_blank" rel="noreferrer">
-								<p className="company-title">{companyTitle}</p>
-							</a>
-							<img className="company-logo" src={companyImage} alt="img not found" />
-						</div>
+						<a className="company-link" href={link} target="_blank" rel="noreferrer">
+							<p className="company-title">{companyTitle}</p>
+						</a>
 						<p className="date">{date}</p>
 					</div>
 				</div>

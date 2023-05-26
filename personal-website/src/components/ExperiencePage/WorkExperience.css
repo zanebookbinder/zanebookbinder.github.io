@@ -2,7 +2,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-size: 20px;
 	width: 100%;
 }
 
@@ -11,15 +10,26 @@
 	margin-top: 5px;
 }
 
+.company-link {
+	border-radius: 30px;
+	padding: 5px 10px;
+	border: 1.5px solid var(--primary-text);
+}
+
+.company-link:hover {
+	border: 1.5px solid var(--primary-text-hover);
+}
+
 .company-title {
 	font-weight: 400;
+	font-size: 18px;
 	line-height: 1;
 	white-space: nowrap;
 }
 
 .experience-title .date {
-	font-weight: 345;
-	min-width: 125px;
+	font-weight: 250;
+	min-width: 115px;
 	text-align: right;
 	line-height: 1;
 }
@@ -37,11 +47,6 @@
 	line-height: 1.5;
 }
 
-.left-title {
-	display: flex;
-	flex-direction: column;
-}
-
 .bottom {
 	display: flex;
 	align-items: center;
@@ -52,6 +57,7 @@
 	margin-bottom: 0px;
 	margin-top: 0px;
 	font-size: 22px;
+	font-weight: 600;
 }
 
 .right-title {
@@ -64,19 +70,6 @@
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-left: 30px;
-}
-
-.company-link {
-	border-radius: 30px;
-	padding: 5px 5px;
-}
-
-.company-logo {
-	border: none;
-	max-height: 25px;
-	min-height: 25px;
-	width: auto;
-	border-radius: 0px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -95,20 +88,12 @@
 		min-width: unset;
 	}
 
-	.company-link {
-		padding-inline: 5px;
-	}
-
 	.experience-details {
 		font-size: 16px;
 	}
 
 	.detail {
 		margin-top: 5px;
-	}
-
-	.company-logo {
-		max-height: 18px;
 	}
 }
 
@@ -119,7 +104,7 @@
 	}
 
 	.company-link {
-		padding-inline: 5px;
+		padding: 3px 8px;
 	}
 
 	.experience-details {
@@ -129,4 +114,5 @@
 	.detail {
 		margin-top: 5px;
 	}
+
 }

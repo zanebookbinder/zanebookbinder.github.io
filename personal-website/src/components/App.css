@@ -1,7 +1,8 @@
 :root {
-  --primary-text: #a8c2e3;
+  --primary-text: #b9d0ed;
   --primary-text-hover: #cbddf2;
   --background-color: #212f4f;
+  --expanded-background: rgb(55, 70, 104);
 }
 
 body {
@@ -42,21 +43,15 @@ span {
   font-weight: bold;
 }
 
-.MuiAcordion-root {
+.about-me .MuiAcordion-root,
+.about-me .MuiAccordionSummary-root,
+.about-me .MuiAccordionDetails-root {
   background-color: var(--background-color) !important;
-  color: var(--primary-text) !important;
 }
 
-.MuiAccordionSummary-root {
-  background-color: var(--background-color) !important;
-  color: var(--primary-text) !important;
-}
-
-.MuiAccordionDetails-root {
-  background-color: var(--background-color) !important;
-  color: var(--primary-text) !important;
-}
-
+.MuiAcordion-root,
+.MuiAccordionSummary-root,
+.MuiAccordionDetails-root,
 .MuiSvgIcon-root {
   color: var(--primary-text) !important;
 }
