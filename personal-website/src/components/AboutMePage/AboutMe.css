@@ -3,14 +3,19 @@
 	margin-right: 1rem;
 }
 
+.mobile-title {
+	display: none;
+}
+
 .bio-and-image {
 	display: flex;
 	margin-right: 20px;
+	margin-bottom: 2rem;
 }
 
 .bio {
 	margin-right: 20px;
-	max-width: 600px;
+	max-width: 75ch;
 }
 
 .about-me-text {
@@ -19,7 +24,7 @@
 
 .zane-second-image {
 	margin-inline: auto;
-	max-height: 500px;
+	max-height: 425px;
 }
 
 .accordions {
@@ -75,6 +80,9 @@
 
 .column {
 	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 .technicalskill-line {
@@ -102,14 +110,24 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+
+	.desktop-title {
+		display: none;
+	}
+
+	.mobile-title {
+		display: block;
+	}
 
 	.bio-and-image {
-		flex-direction: column;
+		flex-direction: column-reverse;
+		margin-bottom: 1rem;
 	}
 
 	.zane-second-image {
-		max-height: 250;
+		max-height: 200px;
+		margin-block: 1rem;
 	}
 
 	.bio {
@@ -133,6 +151,10 @@
 	.bottom-columns h1 {
 		font-size: 28px;
 	}
+
+	.bcr-screenshot-div {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -148,14 +170,13 @@
 
 	.bottom-columns {
 		flex-direction: column;
-		width: 80%;
 		gap: 0px;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.about-me {
-		margin-left: 1rem;
+		margin-inline: 1rem;
 	}
 
 	.about-me p {

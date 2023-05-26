@@ -1,51 +1,9 @@
 import "./AboutMe.css"
 import ZaneImage from "../../images/Zane2.jpeg";
+import ZaneCroppedImage from "../../images/Zane-cropped.jpeg";
 import { useEffect, useState } from "react";
-import { styled } from '@mui/material/styles';
-import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
-import MuiAccordion from '@mui/material/Accordion';
-import MuiAccordionSummary from '@mui/material/AccordionSummary';
-import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import { Accordion, AccordionSummary, AccordionDetails } from '../CustomAccordion.js';
 import { useLocation, Link } from "react-router-dom";
-
-const Accordion = styled((props) => (
-	<MuiAccordion disableGutters elevation={0} square {...props} />
-  ))(({ theme }) => ({
-	borderBottom: 0,
-	// '&:not(:last-child)': {
-	//   borderBottom: 0,
-	// },
-	'&:before': {
-	  display: 'none',
-	},
-}));
-
-const AccordionSummary = styled((props) => (
-	<MuiAccordionSummary
-	  expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
-	  {...props}
-	/>
-  ))(({ theme }) => ({
-	padding: '0px',
-	fontSize: '1.125rem',
-	flexDirection: 'row-reverse',
-	'& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-	  transform: 'rotate(90deg)',
-	},
-	'& .MuiAccordionSummary-content': {
-	  marginLeft: theme.spacing(1),
-	},
-	'& .MuiAccordianSummary-root': {
-		width: 'fit-content'
-	}
-}));
-
-const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
-	padding: theme.spacing(2),
-	paddingBottom: '5px',
-	borderTop: '1px solid var(--primary-text)',
-	borderBottom: '0px'
-  }));
 
 function AboutMe() {
 	const [expanded1, setExpanded1] = useState(false);
@@ -60,21 +18,47 @@ function AboutMe() {
 		scrollTo = location.state.scrollTo || null;
 	}
 
-	useEffect(() => {
-		if (scrollTo) {
-			document.getElementById(scrollTo).scrollIntoView({behavior: "smooth"});
-		}
-	}, [scrollTo]);
+	let image = ZaneImage;
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
 	useEffect(() => {
 		document.title = "About Me | Zane Bookbinder";
+
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+		};
+	
+		window.onresize = handleResize;
+	
+		return () => {
+			window.onresize = null;
+		};
 	}, []);
+  
+
+	if (windowWidth < 800) {
+		image = ZaneCroppedImage;
+	}
+
+	useEffect(() => {
+		if (scrollTo) {
+			const targetElement = document.getElementById(scrollTo);
+			const offset = 80;
+			const targetPosition = targetElement.offsetTop - offset;
+
+			window.scrollTo({
+				top: targetPosition,
+				behavior: 'smooth',
+			});
+		}
+	}, [scrollTo]);
 
 	return (
 	  <div className="about-me">
+		<h1 className="title desktop-title">About Me</h1>
 		<div className="bio-and-image">
 			<div className="bio">
-				<h1 className="title desktop-title">About Me</h1>
+				<h1 className="title mobile-title">About Me</h1>
 				<p className="small-text about-me-text">
 					Hi! I'm proud to be a JOB (Just Outside of Boston) from Newton, MA.
 					I go to school at Bowdoin College in Maine, where I work as a Learning 
@@ -94,6 +78,7 @@ function AboutMe() {
 						elevation={0} 
 						expanded={expanded1} 
 						onChange={() => setExpanded1(!expanded1)}
+						className={expanded1 ? "accordion-expanded" : ""}
 					>
 						<AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
 						3 internships (with a fourth upcoming this summer at Amazon!)
@@ -112,6 +97,7 @@ function AboutMe() {
 						elevation={0} 
 						expanded={expanded2} 
 						onChange={() => setExpanded2(!expanded2)}
+						className={expanded2 ? "accordion-expanded" : ""}
 					>
 						<AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
 							10 Computer Science classes
@@ -147,6 +133,7 @@ function AboutMe() {
 						elevation={0} 
 						expanded={expanded3} 
 						onChange={() => setExpanded3(!expanded3)}
+						className={expanded3 ? "accordion-expanded" : ""}
 					>
 						<AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
 							30+ projects
@@ -172,6 +159,7 @@ function AboutMe() {
 						elevation={0} 
 						expanded={expanded4} 
 						onChange={() => setExpanded4(!expanded4)}
+						className={expanded4 ? "accordion-expanded" : ""}
 					>
 						<AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
 							3 Semesters as Learning Assistant and Grader
@@ -185,34 +173,8 @@ function AboutMe() {
 						</AccordionDetails>
 					</Accordion>
 				</div>
-				<h1 id="working-on-now">What I'm working on now</h1>
-				<p className="small-text more-text-paragraph">
-					My current endeavor outside of school is creating a
-					<span> course review website </span>
-					for Bowdoin along with my girlfriend 
-					<a href="https://owirsching.github.io/" style={{padding: '5px', paddingInline: '3px', marginLeft: '3px'}} target="_blank" rel="noreferrer">Olivia</a>
-					! 
-					We always hear friends and classmates asking about 
-					certain professors and courses. So, we decided to give students 
-					a way to shout out their favorite professors at Bowdoin or warn 
-					others about tough courses they took. I had never tried my 
-					hand at
-					<span> web development </span>
-					before November 2022, but by early 
-					January 2023 we had a MySQL back-end hosted on AWS, a Flask API
-					with 40 endpoints, and a beautiful and nearly-complete React 
-					front-end. Now, we're making some final touches and working 
-					with the Bowdoin IT Department and Student Government to get it online.
-				</p>
 			</div>
-			<img className="zane-second-image" alt="Zane" src={ZaneImage} />
-		</div>
-		<div className="more-text">
-			<p className="small-text">
-				I'd love to connect if any of that caught your attention! Odds are, 
-				if you email or text me I'll get back to you within a few hours. 
-				Thanks for checking out my website!
-			</p>
+			<img className="zane-second-image" alt="Zane" src={image} />
 		</div>
 		<div className="bottom-columns">
 			<div className="column">

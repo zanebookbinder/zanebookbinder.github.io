@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import BowdoinLogo from "../../images/bowdoin-logo.png";
 import { useState } from "react";
-import { Accordion, AccordionSummary, AccordionDetails } from "./WorkExperience";
+import { Accordion, AccordionSummary, AccordionDetails } from "../CustomAccordion";
 import "./ProjectBlock.css";
 
 function ProjectBlock({ title, date, programmingLanguages, details, link, startOpen}) {

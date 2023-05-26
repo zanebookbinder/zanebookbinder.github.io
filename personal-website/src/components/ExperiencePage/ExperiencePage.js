@@ -20,8 +20,14 @@ function ExperiencePage() {
 
 	useEffect(() => {
 		if (openItem) {
-			const element = document.getElementById(openItem);
-			if (element) element.scrollIntoView({behavior: "smooth"});
+			const targetElement = document.getElementById(openItem);
+			const offset = 80;
+			const targetPosition = targetElement.offsetTop - offset;
+
+			window.scrollTo({
+				top: targetPosition,
+				behavior: 'smooth',
+			});
 		}
 	}, [openItem]);
 
@@ -135,7 +141,7 @@ function ExperiencePage() {
 					<ProjectBlock
 						title="Bowdoin Course Reviews (Coming soon!)"
 						date="2022-2023"
-						programmingLanguages={["Javascript", "Python", "CSS", "React", "Flask", "MySQL", "AWS RDS"]}
+						programmingLanguages={["Javascript", "Python", "CSS", "React", "Flask", "MySQL", "AWS RDS", "AWS App Runner"]}
 						details={[
 							"A website that allows students to review courses at Bowdoin College",
 							"Uses React for the frontend, a Flask API for the backend, and MySQL for the database",

@@ -26,11 +26,6 @@
 	gap: 20px;
 }
 
-.experience-expanded, .project-expanded {
-	z-index: 1;
-	background-color: var(--expanded-background) !important;
-}
-
 @media screen and (max-width: 1100px) {
 	.experience-column-header {
 		font-size: 28px;
@@ -48,7 +43,7 @@
 
 @media screen and (max-width: 900px) {
 	.experience-page {
-		margin-inline: 0.75rem;
+		margin-inline: 2rem;
 	}
 
 	.experience-column-header {
@@ -60,6 +55,10 @@
 
 @media screen and (max-width: 600px) {
 	
+	.experience-page {
+		margin-inline: 0.75rem;
+	}
+
 	.experience-list {
 		gap: 15px;
 	}
