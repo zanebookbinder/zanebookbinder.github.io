@@ -2,133 +2,196 @@ import "./HomePage.css";
 import ZaneImage from "../../images/Zane-3.jpg";
 import { Link } from "react-router-dom";
 import Typed from "react-typed";
-import BcrScreenShot from "../../images/bcr-1.png";
+import BcrCoursePage from "../../images/bcr-coursepage.png";
+import BcrDepartmentPage from "../../images/bcr-department-page.png";
+import BcrMobileHomePage from "../../images/bcr-mobile-homepage.jpeg";
+import BcrCreateReviewPage from "../../images/bcr-createreview.png";
+import BcrMobileStatsPage from "../../images/bcr-mobile-statspage.png";
+import BcrMobileProfilePage from "../../images/bcr-mobile-profilepage.png";
 
 function HomePage() {
-  return (
-	<div className="all-homepage">
-		<div className="non-mobile">
-			<div className="homePage">
-				<div className="text-and-image">
-					<img className="zane-image" src={ZaneImage} alt="Zane" />
-					<div className="homepage-top">
-						<Typed
-							strings={["Hi, I'm Zane! ^1500 Nice to meet you!"]}
-							element="h1"
-							className="header typed-title"
-							typeSpeed={80}
-							onComplete={(instance) => {
-								setTimeout(() => {
-									instance.cursor.remove();
-								}, 1000);
-							}}
-						/>
-						<h1 className="header nontyped-title">Hi, I'm Zane!</h1>
-						<p className="small-text homePageText">I'm a junior at Bowdoin College majoring in Computer Science and 
-							minoring in Economics. I'm really passionate about software, 
-							data, and AI. This summer, I'll be working as a Software Engineering 
-							Intern at Amazon (if you're from Seattle, send me a message!). 
-							Please check out my bio, projects, and resume. I would love to connect!
-							Odds are, if you email or text me I'll get back to you within a few hours. 
-							Thanks for checking out my website!
-						</p>
-						<p className="quicklink-title">Check out my:</p>
-						<div className="quicklinks">
-							<Link to="/experience" state={{scrollTo: "amazon"}} >
-								Current internship
-							</Link>
-							<Link to="/aboutme" state={{scrollTo: "skills"}} >
-								Technical skills
-							</Link>
-							<Link to="/experience" state={{scrollTo: "datto"}} >
-								Most recent internship
-							</Link>
-							<Link to="/experience" state={{scrollTo: "GPS"}} >
-								Favorite past project
-							</Link>
-							
-						</div>
-					</div>
-				</div>
-				<div className='bcr-homepage'>
-					<div className='bcr-aboutme-text'>
-						<h1 id="working-on-now" className="working-on-now-title">What I'm working on now</h1>
-						<p className="small-text homePageText">
-							My current endeavor outside of school is creating a
-							<span> course review website </span>
-							for Bowdoin along with my co-founder
-							<a href="https://owirsching.github.io/" style={{padding: '5px', paddingInline: '3px', marginLeft: '3px'}} target="_blank" rel="noreferrer">Olivia</a>
-							!
-							We always hear friends and classmates asking about
-							certain professors and courses. So, we decided to give students
-							a way to shout out their favorite professors at Bowdoin or warn
-							others about tough courses they took. I had never tried 
-							<span> web development </span>
-							before November 2022, but by early
-							January 2023 we had a MySQL back-end hosted on AWS, a Flask API
-							with 40 endpoints, and a beautiful and nearly-complete React
-							front-end. Now, we're making some final touches and working
-							with the Bowdoin IT Department and Student Government to get it online.
-						</p>
-					</div>
-					<div className='bcr-screenshot-div'><img className="bcr-screenshot" alt="Bowdoin Course Reviews" src={BcrScreenShot} /></div>
-				</div>
-			</div>
-		</div>
-		<div className="mobile">
-			<div className="mobile-top">
-				<h1 className="title">Hi, I'm Zane!</h1>
+    
+	const quickLinks = (
+        <>
+            <p className="small-text homePageText">
+                I'm a junior at Bowdoin College majoring in Computer Science and
+                minoring in Economics. I'm really passionate about software,
+                data, and AI. This summer, I'll be working as a Software
+                Engineering Intern at Amazon (if you're from Seattle, send me a
+                message!). Please check out my bio, projects, and resume. I
+                would love to connect!
+            </p>
+            <p className="quicklink-title">Check out my:</p>
+            <div className="quicklinks">
+                <Link to="/experience" state={{ scrollTo: "amazon" }}>
+                    Current internship
+                </Link>
+                <Link to="/aboutme" state={{ scrollTo: "skills" }}>
+                    Technical skills
+                </Link>
+                <Link to="/experience" state={{ scrollTo: "datto" }}>
+                    Most recent internship
+                </Link>
+                <Link to="/experience" state={{ scrollTo: "GPS" }}>
+                    Favorite past project
+                </Link>
+            </div>
+        </>
+    );
+
+    return (
+        <div className="all-homepage">
+            <div className="desktop-top-section">
+                <div className="homepage-top">
+                    <Typed
+                        strings={["Hi, I'm Zane! ^1500 Nice to meet you!"]}
+                        element="h1"
+                        className="header typed-title"
+                        typeSpeed={80}
+                        onComplete={(instance) => {
+                            setTimeout(() => {
+                                instance.cursor.remove();
+                            }, 1000);
+                        }}
+                    />
+                    <h1 className="header nontyped-title">Hi, I'm Zane!</h1>
+                    {quickLinks}
+                </div>
 				<img className="zane-image" src={ZaneImage} alt="Zane" />
-			</div>
-			<p className="small-text homePageText">
-				I'm a junior at Bowdoin College majoring in Computer Science and 
-				minoring in Economics. I'm really passionate about software, 
-				data, and AI. This summer, I'll be working as a Software Engineering 
-				Intern for Amazon (if you're from Seattle, send me a message!). 
-				Please check out my bio, projects, and resume. I would love to connect!
-			</p>
-			<p className="quicklink-title">Check out my:</p>
-			<div className="quicklinks">
-				<Link to="/experience" state={{scrollTo: "amazon"}} >
-					Current internship
-				</Link>
-				<Link to="/aboutme" state={{scrollTo: "skills"}} >
-					Technical skills
-				</Link>
-				<Link to="/experience" state={{scrollTo: "datto"}} >
-					Most recent internship
-				</Link>
-				<Link to="/experience" state={{scrollTo: "GPS"}} >
-					Favorite past project
-				</Link>
-				
-			</div>
-			<div className='bcr-homepage'>
-				<div className='bcr-aboutme-text'>
-					<h1 id="working-on-now" className="working-on-now-title">What I'm working on now</h1>
-					<p className="small-text homePageText">
-						My current endeavor outside of school is creating a
-						<span> course review website </span>
-						for Bowdoin along with my co-founder
-						<a href="https://owirsching.github.io/" style={{padding: '5px', paddingInline: '3px', marginLeft: '3px'}} target="_blank" rel="noreferrer">Olivia</a>
-						!
-						We always hear friends and classmates asking about
-						certain professors and courses. So, we decided to give students
-						a way to shout out their favorite professors at Bowdoin or warn
-						others about tough courses they took. I had never tried 
-						<span> web development </span>
-						before November 2022, but by early
-						January 2023 we had a MySQL back-end hosted on AWS, a Flask API
-						with 40 endpoints, and a beautiful and nearly-complete React
-						front-end. Now, we're making some final touches and working
-						with the Bowdoin IT Department and Student Government to get it online.
-					</p>
+            </div>
+            <div className="mobile-top-section">
+                <div className="mobile-top">
+                    <div className="mobile-titles">
+                        <h1 className="title">Hi, I'm Zane! </h1>
+                        <h1 className="title">Nice to meet you!</h1>
+                    </div>
+                    <img className="zane-image" src={ZaneImage} alt="Zane" />
+                </div>
+                {quickLinks}
+            </div>
+            <div className="bcr-homepage">
+                <div className="bcr-screenshot-div">
+                    <img
+                        className="bcr-screenshot"
+                        alt="Bowdoin Course Reviews"
+                        src={BcrCoursePage}
+                    />
+                </div>
+				<div className="bcr-aboutme-text">
+                    <h1 id="working-on-now" className="working-on-now-title homepage-title">
+                        Bowdoin Course Reviews
+                    </h1>
+                    <p className="small-text homePageText">
+                        My current endeavor outside of school is creating a
+                        <span> course review website </span>
+                        for Bowdoin along with my co-founder
+                        <a
+                            href="https://owirsching.github.io/"
+                            style={{ paddingLeft: "2px", marginLeft: "3px" }}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Olivia
+                        </a>
+                        ! We always hear friends and classmates asking about
+                        certain professors and courses. So, we decided to give
+                        students a way to shout out their favorite professors at
+                        Bowdoin or warn others about tough courses they took.
+                    </p>
+                </div>
+            </div>
+			<div className="bcr-timeline-div">
+				<div className="bcr-timeline-left">
+					<h1 className="homepage-title">Our Development Timeline</h1>
+					<ul className="bcr-timeline">
+						<li className="bcr-timeline-item">
+							<h3 className="bcr-timeline-title">December 2022</h3>
+							<p className="bcr-timeline-text">
+								Olivia and I began planning out the website's architecture and
+								basic functionality. For the site's tech stack, we chose a MySQL
+								backend, a Flask API, and a React frontend.
+							</p>
+						</li>
+						<li className="bcr-timeline-item left-arrow-icon">
+							<h3 className="bcr-timeline-title">January 2023</h3>
+							<p className="bcr-timeline-text">
+								We migrated the database from the 2012 version of Bowdoin
+								Course Reviews and hosted it on AWS RDS. We then began
+								working on the API and frontend. We created a home page,
+								course pages, professor pages, and department pages.
+							</p>
+						</li>
+						<li className="bcr-timeline-item">
+							<h3 className="bcr-timeline-title">February and March 2023</h3>
+							<p className="bcr-timeline-text">
+								We added a login system, a create review page, and a user profile page.
+								With the help of Professor Stephen Houser, we also moved the API and
+								front end to AWS App Runner.
+							</p>
+						</li>
+						<li className="bcr-timeline-item left-arrow-icon">
+							<h3 className="bcr-timeline-title">April 2023</h3>
+							<p className="bcr-timeline-text">
+								We started adding extra features: a stats page, the ability to
+								sort and filter review data, and smooth loading animations.
+							</p>
+						</li>
+						<li className="bcr-timeline-item">
+							<h3 className="bcr-timeline-title">May 2023</h3>
+							<p className="bcr-timeline-text">
+								We improved the site's UI by making it fully responsive and fixing
+								visual bugs. We asked a small group of family and friends to test
+								the site and give us feedback.
+							</p>
+						</li>
+						<li className="bcr-timeline-item">
+							<h3 className="bcr-timeline-title">What's next</h3>
+							<p className="bcr-timeline-text">
+								The site is nearly done! This summer, we'll work with Bowdoin's
+								IT Department to connect the login system to Okta, which will
+								allow students to log in with their Bowdoin credentials.
+							</p>
+						</li>
+						<li className="bcr-timeline-item">
+							<h3 className="bcr-timeline-title">September 2023</h3>
+							<p className="bcr-timeline-text">
+								We plan to launch the site during the first week of the fall semester.
+							</p>
+						</li>
+					</ul>
 				</div>
-				<div className='bcr-screenshot-div'><img className="bcr-screenshot" alt="Bowdoin Course Reviews" src={BcrScreenShot} /></div>
+				<div className="bcr-timeline-images">
+					<img
+						className="bcr-department-image"
+						alt="Bowdoin Course Reviews Department Page"
+						src={BcrDepartmentPage}
+					/>
+					<img
+						className="bcr-createreview-image"
+						alt="Bowdoin Course Reviews Create Review Page"
+						src={BcrCreateReviewPage}
+					/>
+					<div style={{display: "flex", justifyContent: "space-around"}}>
+						<img
+							className="bcr-mobile-homepage-image"
+							alt="Bowdoin Course Reviews Home Page"
+							src={BcrMobileHomePage}
+						/>
+						<img
+							className="bcr-mobile-stats-image"
+							alt="Bowdoin Course Reviews Stats Page"
+							src={BcrMobileStatsPage}
+						/>
+						<img
+							className="bcr-mobile-profile-image"
+							alt="Bowdoin Course Reviews Profile Page"
+							src={BcrMobileProfilePage}
+						/>
+					</div>
+				</div>
 			</div>
-		</div>
-	</div>
-  );
+        </div>
+    );
 }
 
 export default HomePage;

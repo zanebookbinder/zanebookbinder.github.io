@@ -151,10 +151,6 @@
 	.bottom-columns h1 {
 		font-size: 28px;
 	}
-
-	.bcr-screenshot-div {
-		width: 90%;
-	}
 }
 
 @media screen and (max-width: 1000px) {
