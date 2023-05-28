@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.301731a8.css",
-    "main.js": "/static/js/main.ca1c541e.js",
+    "main.css": "/static/css/main.97d00e43.css",
+    "main.js": "/static/js/main.506ac9d9.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.2f0c52bc7a5168734d46.jpg",
+    "static/media/bcr-mobile-homepage.jpeg": "/static/media/bcr-mobile-homepage.7180e8c724c06b905d04.jpeg",
+    "static/media/bcr-department-page.png": "/static/media/bcr-department-page.c5b92d5e9f3d98a7b906.png",
     "static/media/bcr-1.png": "/static/media/bcr-1.bb5680f3c8fd667ad750.png",
+    "static/media/bcr-createreview.png": "/static/media/bcr-createreview.08b94c363e7495a9f154.png",
     "static/media/Zane2.jpeg": "/static/media/Zane2.eb68d0adeb4cef5ce535.jpeg",
+    "static/media/bcr-mobile-profilepage.png": "/static/media/bcr-mobile-profilepage.98a9d1d265e373173536.png",
+    "static/media/bcr-mobile-statspage.png": "/static/media/bcr-mobile-statspage.1ab0ff7cad64765ea98d.png",
     "static/media/bowdoin-logo.png": "/static/media/bowdoin-logo.c60526a65bd945ee5b83.png",
     "static/media/Zane-cropped.jpeg": "/static/media/Zane-cropped.cbdb54ea0ce672e6235d.jpeg",
-    "static/media/beamlab-logo.png": "/static/media/beamlab-logo.901ab667f2c8bf26f18f.png",
-    "static/media/brainpower-logo.png": "/static/media/brainpower-logo.7d28ba65b3f03d8cf4db.png",
-    "static/media/datto-logo.png": "/static/media/datto-logo.368dbbe5ba60522ea472.png",
     "index.html": "/index.html",
-    "main.301731a8.css.map": "/static/css/main.301731a8.css.map",
-    "main.ca1c541e.js.map": "/static/js/main.ca1c541e.js.map",
+    "main.97d00e43.css.map": "/static/css/main.97d00e43.css.map",
+    "main.506ac9d9.js.map": "/static/js/main.506ac9d9.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.301731a8.css",
-    "static/js/main.ca1c541e.js"
+    "static/css/main.97d00e43.css",
+    "static/js/main.506ac9d9.js"
   ]
 }
