@@ -63,7 +63,8 @@ function AboutMe() {
 					Hi! I'm proud to be a JOB (Just Outside of Boston) from Newton, MA.
 					I go to school at Bowdoin College in Maine, where I work as a Learning 
 					Assistant and Grader for a few Computer Science classes and write sports 
-					opinion articles for the Bowdoin Review.
+					opinion articles for the Bowdoin Review. Next Fall, I'll also be interviewing
+					prospective applicants as a member of the Bowdoin Admissions team.
 				</p>
 				<p className="small-text about-me-text">
 					I was lucky to find my passion for coding in high school, when my Geometry 

@@ -44,7 +44,7 @@
 	height: 25px;
 	border-radius: 25px;
 	vertical-align: top;
-	border: 2px solid var(--background-color);
+	border: 2px solid var(--expanded-background);
 }
 
 .logo:hover {
@@ -53,24 +53,8 @@
 	color: var(--background-color)
 }
 
-.project-expanded .logo {
-	border: 2px solid var(--expanded-background);
-}
-
-.project-expanded .logo:hover {
-	border: 2px solid var(--primary-text);
-}
-
 .project-link {
 	height: fit-content;
-}
-
-.project-link:hover {
-	background-color: var(--background-color);
-}
-
-.project-expanded .project-link {
-	background-color: unset;
 }
 
 .project-details ul {

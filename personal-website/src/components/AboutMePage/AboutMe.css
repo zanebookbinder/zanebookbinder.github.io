@@ -28,7 +28,15 @@
 }
 
 .accordions {
+	margin-top: 1rem;
 	margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.accordions > * {
+	padding-block: 7px !important;
 }
 
 .about-me ul {

@@ -5,18 +5,19 @@ import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 
 export const Accordion = styled((props) => (<MuiAccordion disableGutters elevation={0} square {...props} />))(({ expanded }) => ({
-	backgroundColor: !expanded ? 'var(--background-color)' : 'var(--expanded-background)',
+	// backgroundColor: !expanded ? 'var(--background-color)' : 'var(--expanded-background)',
+	backgroundColor: 'var(--expanded-background)',
 	'&:not(:last-child)': {
 	  borderBottom: 0,
 	},
 	'&:before': {
 	  display: 'none',
 	},
-	paddingTop: '10px',
-	paddingBottom: expanded ? "10px" : "0px",
-	paddingInline: '15px',
+	// paddingBlock: '10px',
+	// paddingInline: '15px',
+	padding: '10px 15px',
 	'@media (max-width: 800px)': {
-		paddingInline: '10px',
+		padding: '5px 10px',
 	},
 	borderRadius: '15px',
 }));
@@ -33,7 +34,7 @@ export const AccordionSummary = styled((props) => (
 	padding: '0px',
 	height: 'fit-content',
 	minHeight: '33.5px',
-	marginBottom: '5px',
+	marginBlock: '5px',
 	flexDirection: 'row-reverse',
 	'& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
 	  transform: 'rotate(90deg)',
