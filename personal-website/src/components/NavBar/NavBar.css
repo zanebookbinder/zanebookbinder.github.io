@@ -2,6 +2,7 @@
 	height: 7rem;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .all .mobile {
@@ -21,11 +22,10 @@
 	margin-left: 4rem;
 	display: flex;
 	align-items: center;
+	height: fit-content;
 }
 
 .name:hover {
-	/* background-color: var(--background-color);
-	color: white; */
 	color: var(--primary-text-hover);
 }
 
@@ -119,6 +119,7 @@
 	.navbar .top {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.name {
@@ -151,6 +152,7 @@
 		padding-bottom: 1rem;
 		height: auto;
 		border-bottom: 1px solid var(--primary-text);
+		align-items: unset;
 	}
 
 	.navbar-content {

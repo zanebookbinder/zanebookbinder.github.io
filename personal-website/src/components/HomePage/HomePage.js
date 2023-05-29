@@ -93,10 +93,14 @@ function HomePage() {
                         >
                             Olivia
                         </a>
-                        ! We always hear friends and classmates asking about
-                        certain professors and courses. So, we decided to give
+                        ! Every registration period, we heard friends and classmates 
+						asking around about certain professors and courses. So, we 
+						decided to give
                         students a way to shout out their favorite professors at
-                        Bowdoin or warn others about tough courses they took.
+                        Bowdoin or warn others about tough courses they took. We plan
+						to launch the site in the fall of 2023, and we hope that it 
+						will help students make well-informed decisions about course
+						registration.
                     </p>
                 </div>
             </div>
