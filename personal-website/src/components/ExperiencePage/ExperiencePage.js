@@ -45,7 +45,7 @@ function ExperiencePage() {
 						link="https://aws.amazon.com/"
 						startOpen={openItem === "amazon"}
 
-						/>
+					/>
 				</div>
 				<div id="datto">
 					<WorkExperience

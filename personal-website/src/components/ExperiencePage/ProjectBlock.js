@@ -24,6 +24,7 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 			expanded={expanded} 
 			onChange={() => setExpanded(!expanded)}
 			className={expanded ? "project-expanded" : ""}
+			style={{minHeight: "45px"}}
 		>
 				<AccordionSummary>
 					<div className="project-title">
