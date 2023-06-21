@@ -39,8 +39,14 @@ function ExperiencePage() {
 						companyTitle="Amazon"
 						date="Summer 2023"
 						position="Software Engineer Intern"
+						programmingLanguages={[
+							"Agile Development", "TypeScript", "Java", "AWS CDK", "AWS Lambda", 
+							"AWS S3", "AWS CloudFront", "AWS API Gateway", "System Design", "Unit Testing", 
+							"Integration Testing"
+						]}
 						details={[
-							"I'm looking forward to starting in June 2023!",
+							"Designed, developed, and tested a full-stack application to help clients onboard to an internal data management service",
+							"Decreased onboarding time and complexity by 75% for the entire organization of Compliance Tech"
 						]}
 						link="https://aws.amazon.com/"
 						startOpen={openItem === "amazon"}
@@ -60,7 +66,6 @@ function ExperiencePage() {
 						]}
 						link="https://www.datto.com/"
 						startOpen={openItem === "datto"}
-
 						/>
 				</div>
 				<div id="data-for-good">
