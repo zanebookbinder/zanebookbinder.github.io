@@ -41,6 +41,7 @@
 	border-radius: 30px;
 	font-weight: 600;
 	text-align: center;
+	transition: ease-in-out 0.3s;
 }
 
 .quicklinks > a:hover {

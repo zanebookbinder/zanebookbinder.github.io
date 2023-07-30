@@ -14,9 +14,9 @@ function HomePage() {
 	const quickLinks = (
         <>
             <p className="small-text homePageText">
-                I'm a junior at Bowdoin College majoring in Computer Science and
+                I'm a rising senior at Bowdoin College majoring in Computer Science and
                 minoring in Economics. I'm really passionate about software,
-                data, and AI. This summer, I'm working as a Software
+                data, and AI. This summer, I worked as a Software
                 Engineering Intern at Amazon (if you're from Seattle, send me a
                 message!). Please check out my bio, projects, and resume. I
                 would love to connect!
@@ -30,7 +30,7 @@ function HomePage() {
                     Technical skills
                 </Link>
                 <Link to="/experience" state={{ scrollTo: "datto" }}>
-                    Most recent internship
+                    Previous internship
                 </Link>
                 <Link to="/experience" state={{ scrollTo: "GPS" }}>
                     Favorite past project
@@ -84,7 +84,7 @@ function HomePage() {
                     <p className="small-text homePageText">
                         My current endeavor outside of school is creating a
                         <span> course review website </span>
-                        for Bowdoin along with my co-founder
+                        for Bowdoin along with my co-creator
                         <a
                             href="https://owirsching.github.io/"
                             style={{ paddingLeft: "2px", marginLeft: "3px" }}
@@ -94,10 +94,11 @@ function HomePage() {
                             Olivia
                         </a>
                         ! Every registration period, we heard friends and classmates 
-						asking around about certain professors and courses. So, we 
-						decided to give
-                        students a way to shout out their favorite professors at
-                        Bowdoin or warn others about tough courses they took. We plan
+						asking “Have you taken this class? How was it?” or “Have you 
+						ever had Professor so and so? I've heard she's pretty tough.” 
+						So, we decided to give students a centralized and reliable place to
+						shout out their favorite professors or warn others about tough 
+						courses they took. We plan
 						to launch the site in the fall of 2023, and we hope that it 
 						will help students make well-informed decisions about course
 						registration.

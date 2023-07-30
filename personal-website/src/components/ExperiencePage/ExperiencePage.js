@@ -40,13 +40,19 @@ function ExperiencePage() {
 						date="Summer 2023"
 						position="Software Engineer Intern"
 						programmingLanguages={[
-							"Agile Development", "TypeScript", "Java", "AWS CDK", "AWS Lambda", 
-							"AWS S3", "AWS CloudFront", "AWS API Gateway", "System Design", "Unit Testing", 
-							"Integration Testing"
+							"TypeScript", "Java", "React", "AWS CDK", "AWS SDK", "Lambda", "S3", "CloudFront",
+							"API Gateway", "Cloud Formation", "Route 53", "IAM", "SNS", "SQS",
+							"System Design", "Unit Testing", "Integration Testing", "Agile Development / Scrum",
+							"Infrastructure as Code"
 						]}
 						details={[
-							"Designed, developed, and tested a full-stack application to help clients onboard to an internal data management service",
-							"Decreased onboarding time and complexity by 75% for the entire organization of Compliance Tech"
+							"Designed, developed, and tested a full-stack app that uses 10 " +
+							"different AWS services to provide self-service onboarding for " +
+							"an internal data management system",
+							"Created a React/Typescript website and multiple Lambdas, AWS " +
+							"CDK stacks, and API Gateway endpoints",
+							"Decreased onboarding time from multiple developer days to ~5 " +
+							"minutes for the 9 teams in the Compliance Tech organization"
 						]}
 						link="https://aws.amazon.com/"
 						startOpen={openItem === "amazon"}

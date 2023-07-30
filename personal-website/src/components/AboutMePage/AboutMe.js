@@ -82,7 +82,7 @@ function AboutMe() {
 						className={expanded1 ? "accordion-expanded" : ""}
 					>
 						<AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-						3 internships (with a fourth upcoming this summer at Amazon!)
+						4 internships
 						</AccordionSummary>
 						<AccordionDetails>
 							<ul>
@@ -110,11 +110,11 @@ function AboutMe() {
 									<ul>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/ds/21fall/">CSCI 2101: Data Structures (Java, 2020)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs231/fall13/">CSCI 2200: Algorithms (2021)</a></li>
-										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/systems/22fall/">CSCI 2330: Foundations of Computer Systems (C, 2021)</a></li>
-										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/distributed/22spring/">CSCI 3325: Distributed Systems (C/Java/Python, 2022)</a></li>
-										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~mirfan/CSCI-2320.html">CSCI 2320: Principles of Programming Languages (Python, 2022)</a></li>
-										<li className="no-link">CSCI 2400: Artificial Intelligence (Python, 2022)</li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~smajerci/teaching/cs2210/2019spring/index.html">CSCI 2210: Theory of Computation (2022)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~mirfan/CSCI-2320.html">CSCI 2320: Principles of Programming Languages (Python, 2022)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/systems/22fall/">CSCI 2330: Foundations of Computer Systems (C, 2021)</a></li>
+										<li className="no-link">CSCI 2400: Artificial Intelligence (Python, 2022)</li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/distributed/22spring/">CSCI 3325: Distributed Systems (C/Java/Python, 2022)</a></li>
 									</ul>
 								</div>
 								<div className="list-section">
@@ -189,9 +189,9 @@ function AboutMe() {
 				<div className="section">
 					<h1>Awards</h1>
 					<ul>
-						<li><p><span><a href="https://www.bowdoin.edu/about/prizes/general-scholarship.html" target="_blank" rel="noreferrer">Dorothy Haythorn Collins Award</a>for "academic and general excellence" in Computer Science</span> (2022-2023)</p></li>
-						<li><p><span><a href="https://www.bowdoin.edu/admissions/book-award/" target="_blank" rel="noreferrer">Bowdoin Book Award</a>for a 4.0 GPA</span> (2021-2022)</p></li>
-						<li><p><span><a href="https://www.bowdoin.edu/events/family-weekend/sarah-and-james-bowdoin-day.html" target="_blank" rel="noreferrer">Sarah and James Bowdoin Scholar</a>— Dean's List</span> (2021-2022)</p></li>
+						<li><p><span><a href="https://www.bowdoin.edu/about/prizes/general-scholarship.html" target="_blank" rel="noreferrer">Dorothy Haythorn Collins Award</a></span>for academic and general excellence in Computer Science (2022-2023)</p></li>
+						<li><p><span><a href="https://www.bowdoin.edu/admissions/book-award/" target="_blank" rel="noreferrer">Bowdoin Book Award</a></span>for a 4.0 GPA (2021-2022)</p></li>
+						<li><p><span><a href="https://www.bowdoin.edu/events/family-weekend/sarah-and-james-bowdoin-day.html" target="_blank" rel="noreferrer">Sarah and James Bowdoin Scholar</a></span>— Dean's List (2021-2022)</p></li>
 						<li><p><span><a href="https://www.milton.edu/news/graduation-2020/" target="_blank" rel="noreferrer">Graduated Cum Laude</a></span>from Milton Academy (2020)</p></li>
 					</ul>
 				</div>
@@ -209,13 +209,20 @@ function AboutMe() {
 					<h1 id="skills">Technical Skills</h1>
 					<ul>
 						<li>
-							<p className="technicalskill-line"><span>Programming Languages:</span> Python, Java, JavaScript, HTML/CSS, C, R, SQL</p>
+							<p className="technicalskill-line"><span>Programming Languages:</span> Python, JavaScript/TypeScript, Java, C, SQL, HTML, CSS</p>
 						</li>
 						<li>
-							<p className="technicalskill-line"><span>Libraries and Tools:</span> React, Flask, MySQL, AWS RDS, Pandas, Hadoop, Git, Snowflake, Airflow, Postman</p>
+							<p className="technicalskill-line"><span>Libraries and Frameworks:</span> Git, React, Flask, Pandas, Material UI, MySQL, Postman, AWS CDK, AWS SDK</p>
 						</li>
 						<li>
-							<p className="technicalskill-line"><span>Concepts:</span> OOP, Agile Development, REST APIs, Algorithms, Data Structures</p>
+							<p className="technicalskill-line"><span>AWS:</span> Lambda, S3, API Gateway, CloudFront, CloudFormation, Route 53, SNS, IAM, ACM, RDS, App Runner</p>
+						</li>
+						<li>
+							<p className="technicalskill-line"><span>Concepts:</span> Algorithms, Data Structures, 
+								Full-Stack Development, Agile Development / Scrum,  
+								REST APIs, Object-Oriented Programming, Relational Databases, Distributed Systems, 
+								Cloud Development, Infrastructure as Code
+							</p>
 						</li>
 					</ul>
 				</div>
