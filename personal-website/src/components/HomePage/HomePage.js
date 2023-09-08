@@ -23,7 +23,7 @@ function HomePage() {
             <p className="quicklink-title">Check out my:</p>
             <div className="quicklinks">
                 <Link to="/experience" state={{ scrollTo: "amazon" }}>
-                    Current internship
+                    Recent internship
                 </Link>
                 <Link to="/aboutme" state={{ scrollTo: "skills" }}>
                     Technical skills
