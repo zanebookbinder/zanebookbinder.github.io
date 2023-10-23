@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ef814c61.css",
-    "main.js": "/static/js/main.61311de9.js",
+    "main.js": "/static/js/main.8867c684.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.2f0c52bc7a5168734d46.jpg",
     "static/media/bcr-department-page.png": "/static/media/bcr-department-page.97a23ea790e40bce7891.png",
@@ -15,11 +15,11 @@
     "static/media/bcr-mobile-homepage.jpeg": "/static/media/bcr-mobile-homepage.37aec539b4f4a209af1f.jpeg",
     "index.html": "/index.html",
     "main.ef814c61.css.map": "/static/css/main.ef814c61.css.map",
-    "main.61311de9.js.map": "/static/js/main.61311de9.js.map",
+    "main.8867c684.js.map": "/static/js/main.8867c684.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef814c61.css",
-    "static/js/main.61311de9.js"
+    "static/js/main.8867c684.js"
   ]
 }
