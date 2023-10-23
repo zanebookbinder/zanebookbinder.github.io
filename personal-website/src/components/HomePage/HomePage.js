@@ -21,8 +21,7 @@ function HomePage() {
                 would love to connect!
             </p>
             <p className="quicklink-title">Check out my:</p>
-            <div className="quick
-            links">
+            <div className="quicklinks">
                 <Link to="/experience" state={{ scrollTo: "amazon" }}>
                     Recent internship
                 </Link>
