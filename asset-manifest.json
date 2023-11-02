@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.ef814c61.css",
-    "main.js": "/static/js/main.cc3a1a3e.js",
+    "main.js": "/static/js/main.c3db613a.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.2f0c52bc7a5168734d46.jpg",
-    "static/media/bcr-department-page.png": "/static/media/bcr-department-page.97a23ea790e40bce7891.png",
-    "static/media/bcr-coursepage.png": "/static/media/bcr-coursepage.4b69773823808f8af0fa.png",
     "static/media/bcr-createreview.png": "/static/media/bcr-createreview.08b94c363e7495a9f154.png",
+    "static/media/bcr-coursepage.png": "/static/media/bcr-coursepage.b129edbc7590a90157b7.png",
+    "static/media/bcr-department-page.png": "/static/media/bcr-department-page.a0f01467695012de657b.png",
     "static/media/Zane2.jpeg": "/static/media/Zane2.eb68d0adeb4cef5ce535.jpeg",
     "static/media/bowdoin-logo.png": "/static/media/bowdoin-logo.c60526a65bd945ee5b83.png",
-    "static/media/bcr-mobile-profilepage.png": "/static/media/bcr-mobile-profilepage.3182700230226841a68e.png",
-    "static/media/bcr-mobile-statspage.png": "/static/media/bcr-mobile-statspage.1b3d75f8790ca795029d.png",
+    "static/media/bcr-mobile-profilepage.png": "/static/media/bcr-mobile-profilepage.7eac1eefce320a42fbee.png",
+    "static/media/bcr-mobile-statspage.png": "/static/media/bcr-mobile-statspage.19246b82461363ed98da.png",
     "static/media/Zane-cropped.jpeg": "/static/media/Zane-cropped.cbdb54ea0ce672e6235d.jpeg",
-    "static/media/bcr-mobile-homepage.jpeg": "/static/media/bcr-mobile-homepage.37aec539b4f4a209af1f.jpeg",
+    "static/media/bcr-mobile-homepage.png": "/static/media/bcr-mobile-homepage.d2baa521f7f704343b78.png",
     "index.html": "/index.html",
     "main.ef814c61.css.map": "/static/css/main.ef814c61.css.map",
-    "main.cc3a1a3e.js.map": "/static/js/main.cc3a1a3e.js.map",
+    "main.c3db613a.js.map": "/static/js/main.c3db613a.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ef814c61.css",
-    "static/js/main.cc3a1a3e.js"
+    "static/js/main.c3db613a.js"
   ]
 }
