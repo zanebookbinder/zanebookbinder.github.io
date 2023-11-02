@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Typed from "react-typed";
 import BcrCoursePage from "../../images/bcr-coursepage.png";
 import BcrDepartmentPage from "../../images/bcr-department-page.png";
-import BcrMobileHomePage from "../../images/bcr-mobile-homepage.jpeg";
+import BcrMobileHomePage from "../../images/bcr-mobile-homepage.png";
 import BcrCreateReviewPage from "../../images/bcr-createreview.png";
 import BcrMobileStatsPage from "../../images/bcr-mobile-statspage.png";
 import BcrMobileProfilePage from "../../images/bcr-mobile-profilepage.png";
@@ -13,7 +13,7 @@ function HomePage() {
     const quickLinks = (
         <>
             <p className="small-text homePageText">
-                I'm a rising senior at Bowdoin College majoring in Computer
+                I'm a senior at Bowdoin College majoring in Computer
                 Science and minoring in Economics. I'm really passionate about
                 software, data, and AI. This summer, I worked as a Software
                 Engineering Intern at Amazon (if you're from Seattle, send me a
@@ -88,7 +88,7 @@ function HomePage() {
                         <span> course review website </span>
                         for Bowdoin along with my co-creator
                         <a
-                            href="https://owirsching.github.io/"
+                            href="https://www.oliviawirsching.com/"
                             style={{ paddingLeft: "2px", marginLeft: "3px" }}
                             target="_blank"
                             rel="noreferrer"
@@ -101,8 +101,8 @@ function HomePage() {
                         heard she's pretty tough.” So, we decided to give
                         students a centralized and reliable place to shout out
                         their favorite professors or warn others about tough
-                        courses they took. We plan to launch the site in the
-                        fall of 2023, and we hope that it will help students
+                        courses they took. We plan to launch the site in November
+                        2023, and we hope that it will help students
                         make well-informed decisions about course registration.
                     </p>
                 </div>
@@ -161,21 +161,31 @@ function HomePage() {
                             </p>
                         </li>
                         <li className="bcr-timeline-item">
-                            <h3 className="bcr-timeline-title">What's next</h3>
+                            <h3 className="bcr-timeline-title">
+                                Summer 2023
+                            </h3>
                             <p className="bcr-timeline-text">
-                                The site is nearly done! This summer, we'll work
-                                with Bowdoin's IT Department to connect the
-                                login system to Okta, which will allow students
-                                to log in with their Bowdoin credentials.
+                                We made small bug fixes, iterated on our UI, and
+                                began working on a login system.
                             </p>
                         </li>
                         <li className="bcr-timeline-item">
                             <h3 className="bcr-timeline-title">
-                                September 2023
+                                September and October 2023
                             </h3>
                             <p className="bcr-timeline-text">
-                                We plan to launch the site during the middle of
-                                the fall semester.
+                                We integrated our site with Okta for login and 
+                                session management!
+                            </p>
+                        </li>
+                        <li className="bcr-timeline-item">
+                            <h3 className="bcr-timeline-title">What's next</h3>
+                            <p className="bcr-timeline-text">
+                                The site is nearly done! All that remains is 
+                                working with Bowdoin's App Integration team to
+                                move our login system to the school's Okta account
+                                (which will allow students to login with their 
+                                Bowdoin credentials).
                             </p>
                         </li>
                     </ul>

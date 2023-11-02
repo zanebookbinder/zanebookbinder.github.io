@@ -143,6 +143,7 @@ function AboutMe() {
 							<p className="section-title">Here are some of my favorites:</p>
 							<ul>
 								<li><Link to="/experience" state={{scrollTo: "bcr"}}>Bowdoin Course Reviews (React/Flask/MySQL, 2022-2023)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "poker-goat"}}>Deep Reinforcement Learning for Texas Hold'em (Python/Keras, 2023)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "GPS"}}>Global PassStore (Python/Bash, 2022)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "beamlab"}}>BPD Models (Python/SQL, 2022)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "nile"}}>Online Bookstore - Nile (Java/Python, 2022)</Link></li>

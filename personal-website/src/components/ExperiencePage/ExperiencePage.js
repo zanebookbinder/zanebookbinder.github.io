@@ -140,14 +140,30 @@ function ExperiencePage() {
 			<div className="projects-list">
 				<div id="bcr">
 					<ProjectBlock
-						title="Bowdoin Course Reviews (Coming soon!)"
+						title="Bowdoin Course Reviews"
 						date="2022-2023"
-						programmingLanguages={["Javascript", "Python", "CSS", "React", "Flask", "MySQL", "AWS RDS", "AWS App Runner"]}
+						programmingLanguages={["Javascript", "Python", "CSS", "React", "Flask", "MySQL", "AWS RDS", "AWS App Runner", "AWS Secrets Manager"]}
 						details={[
-							"A website that allows students to review courses at Bowdoin College",
-							"Uses React for the frontend, a Flask API for the backend, and MySQL for the database",
+							"A website that allows students to review courses and professors at Bowdoin College",
+							"Uses React for the frontend, a Flask API for the backend, and a MySQL database",
+							"Implements login with Okta, displays Overall Stats, and allows users to star courses",
+							"Database currently contains 603 professors, 2,207 courses, and 1,924 reviews"
 						]}
 						startOpen={openItem === "bcr"}
+					/>
+				</div>
+				<div id="poker-goat">
+					<ProjectBlock
+						title="Deep RL for Texas Hold'em"
+						date="Fall 2023"
+						programmingLanguages={["Python", "Keras", "Tensorflow", "Reinforcement Learning"]}
+						details={[
+							"An independent study in Artifical Intelligence with Professor David Byrd (https://www.bowdoin.edu/profiles/faculty/d.byrd/index.html)",
+							"Contains a full Texas Hold'em implementation",
+							"Uses a Deep Reinforcement Learning model to develop an optimal Poker strategy",
+							"Next steps: use a generative algorithm to create more efficient models, then connect the models' strategies to Game Theory concepts"
+						]}
+						startOpen={openItem === "poker-goat"}
 					/>
 				</div>
 				<div id="GPS">
