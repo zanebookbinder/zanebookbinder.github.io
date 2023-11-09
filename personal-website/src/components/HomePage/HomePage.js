@@ -13,11 +13,13 @@ function HomePage() {
     const quickLinks = (
         <>
             <p className="small-text homePageText">
-                I'm a senior at Bowdoin College majoring in Computer
-                Science and minoring in Economics. I'm really passionate about
-                software, data, and AI. This summer, I worked as a Software
+                I'm a senior at Bowdoin College majoring in <strong>Computer
+                Science</strong> and minoring in Economics. I'm really passionate about 
+                <strong> software</strong>, data, and AI. This summer, I worked as a Software
                 Engineering Intern at Amazon (if you're from Seattle, send me a
-                message!). Please check out my bio, projects, and resume. I
+                message!). I also launched my website, <strong>Bowdoin Course Reviews</strong>,
+                in early November. I've put screenshots and more information below,
+                so feel free to check those out! Please check out my bio, projects, and resume. I
                 would love to connect!
             </p>
             <p className="quicklink-title">Check out my:</p>
@@ -101,9 +103,18 @@ function HomePage() {
                         heard she's pretty tough.” So, we decided to give
                         students a centralized and reliable place to shout out
                         their favorite professors or warn others about tough
-                        courses they took. We plan to launch the site in November
-                        2023, and we hope that it will help students
-                        make well-informed decisions about course registration.
+                        courses they took. We launched the site in early November 2023,
+                         and we've already heard that it is helping students
+                        make well-informed decisions about course registration. If you're a 
+                        current Bowdoin student, click 
+                        <a
+                            href="https://course-reviews.students.bowdoin.edu/"
+                            style={{ paddingLeft: "2px", marginLeft: "3px", textDecoration: "underline" }}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            here 
+                        </a> to access the site!
                     </p>
                 </div>
             </div>
@@ -175,17 +186,30 @@ function HomePage() {
                             </h3>
                             <p className="bcr-timeline-text">
                                 We integrated our site with Okta for login and 
-                                session management!
+                                session management! Bowdoin students can now login
+                                to the website with their school account.
                             </p>
                         </li>
                         <li className="bcr-timeline-item">
-                            <h3 className="bcr-timeline-title">What's next</h3>
+                            <h3 className="bcr-timeline-title">November 6, 2023</h3>
                             <p className="bcr-timeline-text">
-                                The site is nearly done! All that remains is 
-                                working with Bowdoin's App Integration team to
-                                move our login system to the school's Okta account
-                                (which will allow students to login with their 
-                                Bowdoin credentials).
+                                We launched the site to Bowdoin's 1,900 students and
+                                received a ton of positive feedback, including that 
+                                the site "looks like a spaceship" and that using it 
+                                is a "very smooth software experience." In the first three 
+                                days after launch, we received 500 unique site visitors, 
+                                nearly 400 new reviews for courses, and over 1,600 home page 
+                                hits.
+                            </p>
+                        </li>
+                        <li className="bcr-timeline-item">
+                            <h3 className="bcr-timeline-title">What's next?</h3>
+                            <p className="bcr-timeline-text">
+                                We will fix any bugs that arise on the site and 
+                                continue to add features. One idea we want to implement is
+                                a 'Next Semester' page where people can plan their schedule 
+                                for the next semester by looking at class times and availability,
+                                all in one place.
                             </p>
                         </li>
                     </ul>

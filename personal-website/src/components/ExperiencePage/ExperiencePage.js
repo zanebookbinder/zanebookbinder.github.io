@@ -147,8 +147,10 @@ function ExperiencePage() {
 							"A website that allows students to review courses and professors at Bowdoin College",
 							"Uses React for the frontend, a Flask API for the backend, and a MySQL database",
 							"Implements login with Okta, displays Overall Stats, and allows users to star courses",
-							"Database currently contains 603 professors, 2,207 courses, and 1,924 reviews"
+							"Launched on November 6th and received 500 unique visitors and nearly 400 reviews in the first 3 days",
+							"Database currently contains 603 professors, 2,207 courses, and 2,300 reviews"
 						]}
+						link="https://course-reviews.students.bowdoin.edu/"
 						startOpen={openItem === "bcr"}
 					/>
 				</div>
@@ -161,7 +163,7 @@ function ExperiencePage() {
 							"An independent study in Artifical Intelligence with Professor David Byrd (https://www.bowdoin.edu/profiles/faculty/d.byrd/index.html)",
 							"Contains a full Texas Hold'em implementation",
 							"Uses a Deep Reinforcement Learning model to develop an optimal Poker strategy",
-							"Next steps: use a generative algorithm to create more efficient models, then connect the models' strategies to Game Theory concepts"
+							"Next steps: use a genetic algorithm to create more efficient models, then connect the models' strategies to Game Theory concepts"
 						]}
 						startOpen={openItem === "poker-goat"}
 					/>

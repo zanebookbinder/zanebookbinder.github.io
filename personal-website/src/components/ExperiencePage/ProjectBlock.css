@@ -47,6 +47,11 @@
 	border: 2px solid var(--expanded-background);
 }
 
+.bcr-logo {
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
 .logo:hover {
 	background-color: var(--primary-text);
 	border: 2px solid var(--primary-text);
@@ -77,6 +82,11 @@
 		width: 23px;
 		height: 23px;
 		border-radius: 23px;
+	}
+
+	.bcr-logo {
+		border-radius: 5px;
+		border: 2px solid black;
 	}
 
 	.project-title .date {

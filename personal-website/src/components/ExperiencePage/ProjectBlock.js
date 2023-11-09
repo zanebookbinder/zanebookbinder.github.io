@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import BowdoinLogo from "../../images/bowdoin-logo.png";
+import BCRLogo from "../../images/logo192.png"
 import { useState } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "../CustomAccordion";
 import "./ProjectBlock.css";
@@ -17,7 +18,9 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 
 	if (link && link.includes("sbarker")) {
 		linkImage = <img src={BowdoinLogo} alt="Bowdoin Logo" className="logo" />;
-	}	
+	} else if (link && link.includes('course-reviews')) {
+		linkImage = <img src={BCRLogo} alt="Bowdoin Course Reviews Logo" className="logo bcr-logo" />;
+	}
 
 	return (
 		<Accordion
