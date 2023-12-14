@@ -19,7 +19,7 @@ function HomePage() {
                 Engineering Intern at Amazon (if you're from Seattle, send me a
                 message!). I also launched my website, <strong>Bowdoin Course Reviews</strong>,
                 in early November. I've put screenshots and more information below,
-                so feel free to check those out! Please check out my bio, projects, and resume. I
+                so feel free to take a look! Please check out my bio, projects, and resume. I
                 would love to connect!
             </p>
             <p className="quicklink-title">Check out my:</p>

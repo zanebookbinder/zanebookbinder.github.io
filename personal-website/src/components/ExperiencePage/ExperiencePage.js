@@ -156,15 +156,16 @@ function ExperiencePage() {
 				</div>
 				<div id="poker-goat">
 					<ProjectBlock
-						title="Deep RL for Texas Hold'em"
+						title="Deep Q Learning for Texas Hold'em"
 						date="Fall 2023"
-						programmingLanguages={["Python", "Keras", "Tensorflow", "Reinforcement Learning"]}
+						programmingLanguages={["Python", "Keras", "Tensorflow", "Neural Networks", "Deep Q Learning", "Reinforcement Learning"]}
 						details={[
-							"An independent study in Artifical Intelligence with Professor David Byrd (https://www.bowdoin.edu/profiles/faculty/d.byrd/index.html)",
-							"Contains a full Texas Hold'em implementation",
-							"Uses a Deep Reinforcement Learning model to develop an optimal Poker strategy",
-							"Next steps: use a genetic algorithm to create more efficient models, then connect the models' strategies to Game Theory concepts"
+							"An independent study in Artifical Intelligence with Professor David Byrd of Bowdoin College",
+							"Deep Q Learning model attempts to understand its cards, the game situation, etc. and then make an optimal decision about what action to take",
+							"Contains a full Texas Hold'em game which produces (s,a,s',r) experiences during game play",
+							"Model uses the Bellman equation to calculate loss in Q values, with rewards corresponding to chip win/loss amounts"
 						]}
+						link="https://github.com/zanebookbinder/poker-goat"
 						startOpen={openItem === "poker-goat"}
 					/>
 				</div>
