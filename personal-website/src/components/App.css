@@ -1,8 +1,10 @@
 :root {
-  --primary-text: #b9d0ed;
-  --primary-text-hover: #d4e3f5;
+  --primary-text: rgb(193, 219, 255);
+  --primary-text-faint: rgb(193, 219, 255, 0.8);
+  --primary-text-hover: #dce7f3;
   --background-color: #212f4f;
   --expanded-background: rgb(50, 65, 99);
+  --expanded-background: #1e273c;
 }
 
 body {
@@ -36,7 +38,7 @@ a:hover {
 }
 
 img {
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 span {

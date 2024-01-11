@@ -18,10 +18,19 @@
 	max-width: 60%;
 }
 
+.homepage-title {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
 .homePageText {
 	line-height: 1.75;
 	margin-bottom: 40px;
 	margin-top: 1rem;
+}
+
+.no-margin-bottom-text {
+	margin-bottom: 0px;
 }
 
 .zane-image {
@@ -62,7 +71,7 @@
 .bcr-homepage {
 	display: flex;
 	gap: 3rem;
-	margin-top: 3rem;
+	margin-top: 2.5rem;
 	align-items: center;
 }
 
@@ -83,7 +92,7 @@
 	display: flex;
 	gap: 1rem;
 	justify-content: space-around;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 .bcr-timeline-left {
@@ -109,13 +118,18 @@
 .bcr-mobile-stats-image,
 .bcr-mobile-profile-image {
 	max-width: 30%;
-	border-radius: 15px;
+	border-radius: 10px;
 }
 
 .bcr-timeline-item {
 	position: relative;
 	padding: 0 0 15px 20px;
 	border-left: 5px solid var(--primary-text);
+}
+
+.horizontal-bcr-images {
+	display: flex;
+	justify-content: space-around;
 }
 
 /* Bullet points */
@@ -162,7 +176,7 @@
 	}
 
 	.bcr-screenshot-div {
-		width: 40%;
+		width: 50%;
 	}
 
 	.working-on-now-title {
@@ -175,6 +189,12 @@
 
 	.bcr-timeline-images {
 		width: 60%;
+	}
+
+	.bcr-department-image,
+	.bcr-createreview-image {
+		height: auto;
+		max-height: 300px;
 	}
 }
 

@@ -62,14 +62,13 @@ function AboutMe() {
 				<p className="small-text about-me-text">
 					Hi! I'm proud to be a JOB (Just Outside of Boston) from Newton, MA.
 					I go to school at Bowdoin College in Maine, where I've worked as a Learning 
-					Assistant and Grader for a few Computer Science classes and write sports 
-					opinion articles for the Bowdoin Review. This Fall, I'm also interviewing
+					Assistant and Grader for two Computer Science classes. Last Fall, I also interviewed
 					prospective applicants as a member of the Bowdoin Admissions team.
 				</p>
 				<p className="small-text about-me-text">
 					I was lucky to find my passion for coding in high school, when my Geometry 
 					class spent a week writing Java code to draw a picture of a house. When my 
-					teacher saw that my drawing had detailed trees, a car in the driveway, and 
+					teacher saw that my drawing included detailed trees, a car in the driveway, and 
 					lots of other details, she suggested I take CS 101 the following year. I 
 					haven't looked back since! I've completed:
 				</p>
@@ -109,12 +108,13 @@ function AboutMe() {
 									<p className="section-title">Bowdoin College (Brunswick, Maine)</p>
 									<ul>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/ds/21fall/">CSCI 2101: Data Structures (Java, 2020)</a></li>
-										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs231/fall13/">CSCI 2200: Algorithms (2021)</a></li>
+										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs231/fall13/">CSCI 2200: Algorithms (Python, 2021)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~smajerci/teaching/cs2210/2019spring/index.html">CSCI 2210: Theory of Computation (2022)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~mirfan/CSCI-2320.html">CSCI 2320: Principles of Programming Languages (Python, 2022)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/systems/22fall/">CSCI 2330: Foundations of Computer Systems (C, 2021)</a></li>
 										<li className="no-link">CSCI 2400: Artificial Intelligence (Python, 2022)</li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/distributed/22spring/">CSCI 3325: Distributed Systems (C/Java/Python, 2022)</a></li>
+										<li className="no-link">CSCI 3725: Computational Creativity (Python/Ruby/JS/Processing, 2023)</li>
 									</ul>
 								</div>
 								<div className="list-section">
@@ -144,6 +144,8 @@ function AboutMe() {
 							<ul>
 								<li><Link to="/experience" state={{scrollTo: "bcr"}}>Bowdoin Course Reviews (React/Flask/MySQL, 2022-2023)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "poker-goat"}}>Deep Reinforcement Learning for Texas Hold'em (Python/Keras, 2023)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "starry-night"}}>Starry Night Sky Creator (Processing, 2023)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "markov-golf-art"}}>Markov Golf Art (Python, 2023)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "GPS"}}>Global PassStore (Python/Bash, 2022)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "beamlab"}}>BPD Models (Python/SQL, 2022)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "nile"}}>Online Bookstore - Nile (Java/Python, 2022)</Link></li>
@@ -232,7 +234,7 @@ function AboutMe() {
 					<ul>
 						<li><span>Proficient Spanish</span></li>
 						<ul>
-							<li>10 years of Spanish classes</li>
+							<li>11 years of Spanish classes</li>
 							<li>Lived in Madrid with a Spanish family (June 2018)</li>
 							<li>Studied abroad in Madrid (Spring 2023)</li>
 						</ul>

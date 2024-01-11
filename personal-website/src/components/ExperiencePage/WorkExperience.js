@@ -1,6 +1,7 @@
 import "./WorkExperience.css";
 import { useState } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "../CustomAccordion";
+import HighlightBlock from "../HighlightBlock";
 
 function WorkExperience({ companyTitle, date, position, details, programmingLanguages, link, startOpen}) {
 	let expandedStart = false;
@@ -30,7 +31,11 @@ function WorkExperience({ companyTitle, date, position, details, programmingLang
 			<AccordionDetails>
 				<div className="experience-details">
 					{programmingLanguages &&
-						<p className="programming-languages"><span>Tools used:</span> {programmingLanguages.join(", ")}</p>
+						<p className="programming-languages">
+							{programmingLanguages.map((detail) => {
+								return <HighlightBlock text={detail}/>
+							})}
+						</p>
 					}
 					{details &&
 						<div className="description">

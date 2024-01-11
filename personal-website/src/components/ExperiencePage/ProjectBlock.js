@@ -3,6 +3,7 @@ import BowdoinLogo from "../../images/bowdoin-logo.png";
 import BCRLogo from "../../images/logo192.png"
 import { useState } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "../CustomAccordion";
+import HighlightBlock from "../HighlightBlock";
 import "./ProjectBlock.css";
 
 function ProjectBlock({ title, date, programmingLanguages, details, link, startOpen}) {
@@ -42,7 +43,11 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 				</AccordionSummary>
 				<AccordionDetails>
 					<div className="project-details">
-						<p className="programming-languages"><span>Tools used:</span> {programmingLanguages.join(", ")}</p>
+						<p className="programming-languages">
+							{programmingLanguages.map((detail) => {
+								return <HighlightBlock text={detail}/>
+							})}
+													</p>
 						<div className="description">
 							<div className="description-text">
 								<span>Description:</span>

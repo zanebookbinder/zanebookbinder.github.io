@@ -1,0 +1,19 @@
+/*rgb(71 95 128 / 80%) */
+.highlight-block {
+	background-color: #475f805c;
+	color: #cfe3ff;
+	border-radius: 5px;
+	line-height: 1;
+	padding: 5px 10px;
+	font-size: 15px;
+	font-weight: 500;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+	.highlight-block {
+		font-size: 13px;
+		padding: 3px 8px;
+	}
+}

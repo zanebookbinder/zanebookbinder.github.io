@@ -13,11 +13,10 @@ function HomePage() {
     const quickLinks = (
         <>
             <p className="small-text homePageText">
-                I'm a senior at Bowdoin College majoring in <strong>Computer
-                Science</strong> and minoring in Economics. I'm really passionate about 
-                <strong> software</strong>, data, and AI. This summer, I worked as a Software
-                Engineering Intern at Amazon (if you're from Seattle, send me a
-                message!). I also launched my website, <strong>Bowdoin Course Reviews</strong>,
+                I'm a senior at Bowdoin College majoring in Computer
+                Science and minoring in Economics. I'm really passionate about 
+                software, data, and AI. This summer, I worked as a Software
+                Engineering Intern at Amazon. I also launched a website, Bowdoin Course Reviews,
                 in early November. I've put screenshots and more information below,
                 so feel free to take a look! Please check out my bio, projects, and resume. I
                 would love to connect!
@@ -25,7 +24,7 @@ function HomePage() {
             <p className="quicklink-title">Check out my:</p>
             <div className="quicklinks">
                 <Link to="/experience" state={{ scrollTo: "amazon" }}>
-                    Recent internship
+                    2023 internship
                 </Link>
                 <Link to="/aboutme" state={{ scrollTo: "skills" }}>
                     Technical skills
@@ -85,10 +84,10 @@ function HomePage() {
                     >
                         Bowdoin Course Reviews
                     </h1>
-                    <p className="small-text homePageText">
-                        My current endeavor outside of school is creating a
-                        <span> course review website </span>
-                        for Bowdoin along with my co-creator
+                    <p className="small-text homePageText no-margin-bottom-text">
+                        My current endeavor outside of school is managing a
+                        course review website 
+                        that I created with my classmate
                         <a
                             href="https://www.oliviawirsching.com/"
                             style={{ paddingLeft: "2px", marginLeft: "3px" }}
@@ -97,16 +96,17 @@ function HomePage() {
                         >
                             Olivia
                         </a>
-                        ! Every registration period, we heard friends and
-                        classmates asking “Have you taken this class? How was
-                        it?” or “Have you ever had Professor so and so? I've
-                        heard she's pretty tough.” So, we decided to give
+                        {' '}for our college! Every registration period, we heard friends and
+                        classmates asking
+                        <span style={{fontStyle: "italic", fontWeight: 400}}> “Have you taken this class? How was  it?” </span>
+                        So, we decided to give
                         students a centralized and reliable place to shout out
                         their favorite professors or warn others about tough
-                        courses they took. We launched the site in early November 2023,
-                         and we've already heard that it is helping students
-                        make well-informed decisions about course registration. If you're a 
-                        current Bowdoin student, click 
+                        courses they took. <br/> <br/> We launched the site in early November 2023,
+                         and we've already heard that it's helping students
+                        make well-informed decisions about course registration. Almost half of the student
+                        body has used the site and we've receive over 750 reviews in just two months! If you're a 
+                        current Bowdoin student, you can click 
                         <a
                             href="https://course-reviews.students.bowdoin.edu/"
                             style={{ paddingLeft: "2px", marginLeft: "3px", textDecoration: "underline" }}
@@ -114,7 +114,16 @@ function HomePage() {
                             rel="noreferrer"
                         >
                             here 
-                        </a> to access the site!
+                        </a> to access the site. Also, check out the 
+                        <a
+                            href="https://bowdoinorient.com/2023/11/10/wirsching-24-and-bookbinder-24-revamp-outdated-bowdoin-course-review-website/"
+                            style={{ paddingLeft: "2px", marginLeft: "3px", textDecoration: "underline" }}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            article 
+                        </a> published in Bowdoin's student
+                        newspaper to learn more about the project and how it's helping students!
                     </p>
                 </div>
             </div>
@@ -199,14 +208,14 @@ function HomePage() {
                                 is a "very smooth software experience." In the first three 
                                 days after launch, we received 500 unique site visitors, 
                                 nearly 400 new reviews for courses, and over 1,600 home page 
-                                hits.
+                                visits.
                             </p>
                         </li>
                         <li className="bcr-timeline-item">
                             <h3 className="bcr-timeline-title">What's next?</h3>
                             <p className="bcr-timeline-text">
                                 We will fix any bugs that arise on the site and 
-                                continue to add features. One idea we want to implement is
+                                continue to add features. One idea we'd like to implement is
                                 a 'Next Semester' page where people can plan their schedule 
                                 for the next semester by looking at class times and availability,
                                 all in one place.
@@ -226,10 +235,7 @@ function HomePage() {
                         src={BcrCreateReviewPage}
                     />
                     <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "space-around",
-                        }}
+                        className="horizontal-bcr-images"
                     >
                         <img
                             className="bcr-mobile-homepage-image"
