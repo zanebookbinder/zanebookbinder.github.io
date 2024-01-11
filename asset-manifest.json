@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c0d6216.css",
-    "main.js": "/static/js/main.245e3ac4.js",
+    "main.css": "/static/css/main.4913b66a.css",
+    "main.js": "/static/js/main.3831e1a6.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.2f0c52bc7a5168734d46.jpg",
     "static/media/bcr-createreview.png": "/static/media/bcr-createreview.08b94c363e7495a9f154.png",
@@ -14,12 +14,12 @@
     "static/media/Zane-cropped.jpeg": "/static/media/Zane-cropped.cbdb54ea0ce672e6235d.jpeg",
     "static/media/bcr-mobile-homepage.png": "/static/media/bcr-mobile-homepage.d2baa521f7f704343b78.png",
     "index.html": "/index.html",
-    "main.9c0d6216.css.map": "/static/css/main.9c0d6216.css.map",
-    "main.245e3ac4.js.map": "/static/js/main.245e3ac4.js.map",
+    "main.4913b66a.css.map": "/static/css/main.4913b66a.css.map",
+    "main.3831e1a6.js.map": "/static/js/main.3831e1a6.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c0d6216.css",
-    "static/js/main.245e3ac4.js"
+    "static/css/main.4913b66a.css",
+    "static/js/main.3831e1a6.js"
   ]
 }
