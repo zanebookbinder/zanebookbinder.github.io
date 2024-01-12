@@ -2,14 +2,13 @@
   --primary-text: rgb(193, 219, 255);
   --primary-text-faint: rgb(193, 219, 255, 0.8);
   --primary-text-hover: #dce7f3;
-  --background-color: #212f4f;
-  --expanded-background: rgb(50, 65, 99);
+  --background-color: #111e3b;
   --expanded-background: #1e273c;
 }
 
 body {
   background-color: var(--background-color);
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Inter', 'Satoshi', sans-serif;
   color: var(--primary-text);
 }
 
@@ -28,13 +27,14 @@ a:hover {
 }
 
 .header {
-  font-size: 2rem;
+  font-size: 2.75rem;
   margin-block: 1rem;
 }
 
 .small-text {
   font-size: 1.05rem;
   line-height: 1.5;
+  max-width: 80%;
 }
 
 img {

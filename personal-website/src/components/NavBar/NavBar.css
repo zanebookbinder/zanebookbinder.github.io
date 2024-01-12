@@ -1,5 +1,5 @@
 .navbar {
-	height: 7rem;
+	height: 5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -17,12 +17,13 @@
 
 .name {
 	font-weight: 600;
-	font-size: 1.75rem;
+	font-size: 1.25rem;
 	text-decoration: none;
 	margin-left: 4rem;
 	display: flex;
 	align-items: center;
 	height: fit-content;
+	color: var(--primary-text)
 }
 
 .name:hover {
@@ -34,13 +35,17 @@
 	padding-bottom: 7px;
 	border-radius: 40px;
 	margin-right: 65px;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 350;
+	color: var(--primary-text)
 }
 
 .link-text {
 	line-height: 1;
 	padding-bottom: 3px;
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: var(--primary-text)
 }
 
 .on-page .link-text {
@@ -50,6 +55,11 @@
 .contactInfo > * {
 	font-size: 15px;
 	margin: 3px;
+	color: var(--primary-text)
+}
+
+.contactInfo a {
+	color: var(--primary-text)
 }
 
 .icons {
