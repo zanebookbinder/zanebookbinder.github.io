@@ -1,0 +1,296 @@
+@media screen and (max-width: 1200px) {
+	.nontyped-title {
+		display: block;
+		font-size: 2.5rem;
+	}
+
+	.typed-title {
+		display: none;
+	}
+
+	.bcr-image {
+		width: 400px;
+		height: 550px;
+	}
+
+	.bcr-homepage .small-text {
+		max-width: 80%;
+	}
+
+	.bcr-aboutme-text {
+		width: 60%;
+	}
+
+	.bcr-screenshot-div {
+		width: 50%;
+	}
+
+	.working-on-now-title {
+		text-align: left;
+	}
+
+	.bcr-timeline-images {
+		width: 60%;
+	}
+
+	.bcr-department-image,
+	.bcr-createreview-image {
+		height: auto;
+		max-height: 300px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+
+	.desktop-top-section,
+	.bcr-homepage {
+		gap: 1rem;
+	}
+	
+	.desktop-top-section,
+	.bcr-homepage,
+	.bcr-timeline-div {
+		padding-inline: var(--mid-homepage-padding);
+		padding-block: 3rem;
+	}
+
+	.quicklinks {
+		width: 100%;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+
+	.desktop-top-section .quicklinks a {
+		white-space: nowrap;
+	}
+
+	.zane-image {
+		margin-left: 10px;
+		max-height: 300px;
+		margin-bottom: 1.5px;
+	}
+
+	.quicklink-title {
+		margin-bottom: 10px;
+	}
+
+	.homePageText {
+		margin-bottom: 32px;
+	}
+
+	.homepage-title {
+		margin-bottom: 30px;
+	}
+
+	/* .timeline-left {
+		width: 45%;
+	}
+
+	.timeline-right {
+		width: 55%;
+	} */
+}
+
+@media screen and (max-width: 950px) {
+	
+	.title {
+		font-size: 30px;
+	}
+
+	.homePageText {
+		font-size: 0.9rem;
+		margin-top: 10px;
+		margin-bottom: 32px;
+		width: 80%;
+	}
+
+	.bcr-image {
+		width: 80%;
+		max-height: 300px;
+
+	}
+
+	.zane-image {
+		max-height: 275px;
+	}
+
+	.bcr-homepage {
+		flex-direction: column;
+	}
+
+	.bcr-aboutme-text {
+		width: 100%;
+	}
+
+	.bcr-screenshot-div {
+		width: 70%;
+	}
+
+	.bcr-timeline-images {
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.all-homepage .mobile-top-section {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem 0;
+		background-color: var(--primary-text);
+		color: var(--background-color);
+		margin-left: 0;
+		align-items: center;
+	}
+
+	.all-homepage .mobile-top {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.all-homepage .desktop-top-section {
+		display: none;
+	}
+
+	.all-homepage {
+		margin-top: 2rem;
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.mobile-titles {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		min-width: max-content
+	}
+
+	.mobile-titles .title {
+		font-size: 2.5rem;
+		margin: 5px 0;
+	}
+
+	.homePageText {
+		width: auto;
+
+	}
+
+	.zane-image {
+		width: 30%;
+		margin: 0;
+		margin-right: 1rem;
+		margin-bottom: 1.25rem;
+		transform: rotate(-1deg)
+	}
+
+	.bcr-timeline {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.timeline-left .bcr-timeline-item:last-child {
+		padding: 0 0 15px 20px;
+		border-left: 5px solid var(--primary-text);
+	}
+
+	.bcr-timeline-div {
+		flex-direction: column-reverse;
+		margin-top: 0px;
+		align-items: center;
+	}
+
+	.timeline-left,
+	.timeline-right {
+		width: unset;
+	}
+
+	.bcr-timeline-images {
+		width: 80%;
+	}
+
+	.bcr-screenshot-div {
+		width: 100%;
+	}
+
+	.bcr-timeline-div {
+		padding: 3rem var(--mid-homepage-padding);
+	}
+
+	.homepage-title {
+		font-size: 1.5rem;
+	}
+	
+	.quicklinks {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.all-homepage .mobile-top {
+		justify-content: space-between;
+	}
+
+	.desktop-top-section,
+	.bcr-homepage,
+	.bcr-timeline-div {
+		padding-inline: var(--mobile-homepage-padding);
+		padding-block: 2rem;
+	}
+
+	.mobile-titles .title {
+		font-size: 1.5rem;
+	}
+
+	.zane-image {
+		width: 40%;
+	}
+
+	.quicklinks {
+		width: 70%;
+	}
+
+	.button a {
+		font-size: 12px;
+	}
+
+	.bcr-timeline {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	#april {
+		border-left: 5px solid var(--primary-text)
+	}
+
+	.zane-image {
+		display: none;
+	}
+
+	.all-homepage .mobile-top {
+		width: 80%;
+	}
+
+	.mobile-titles .title {
+		font-size: 2rem;
+		margin: 0 0;
+	}
+
+	.mobile-titles {
+		margin-bottom: 20px;
+	}
+
+	.homePageText {
+		margin-bottom: 40px;
+	}
+
+	.bcr-homepage .small-text {
+		max-width: unset;
+	}
+
+	.bcr-timeline-text {
+		font-size: 0.9rem;
+	}
+}

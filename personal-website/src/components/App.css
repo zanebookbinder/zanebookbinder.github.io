@@ -3,7 +3,20 @@
   --primary-text-faint: rgb(193, 219, 255, 0.8);
   --primary-text-hover: #dce7f3;
   --background-color: #111e3b;
-  --expanded-background: #1e273c;
+  /* --expanded-background: #29344e; */
+  --expanded-background: rgba(193, 219, 255, 0.152);
+  --expanded-background-text: rgb(218, 234, 255);
+
+  --light-section-background: rgb(193, 219, 255);
+  --light-section-text: #111e3b;
+  
+  --royal-blue: rgb(0, 89, 214);
+  --quicklinks-text-color: rgb(193, 219, 255);
+  --tag-background: rgba(193, 219, 255, 0.152);
+
+  --desktop-homepage-padding: 6rem;
+  --mid-homepage-padding: 4rem;
+  --mobile-homepage-padding: 2rem;
 }
 
 body {
@@ -48,6 +61,11 @@ span {
 .MuiAcordion-root,
 .MuiAccordionSummary-root,
 .MuiAccordionDetails-root,
-.MuiSvgIcon-root {
-  color: var(--primary-text) !important;
+.MuiSvgIcon-root,
+.list-with-background a {
+  color: var(--expanded-background-text) !important;
+}
+
+.list-with-background a:hover {
+  color: white !important;
 }

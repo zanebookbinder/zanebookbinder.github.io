@@ -1,14 +1,16 @@
 import "./HomePage.css";
+import "./HomePageMobile.css";
 import ZaneImage from "../../images/Zane-3.jpg";
 import BCRImage from "../../images/BCR.png";
 import { Link } from "react-router-dom";
 import Typed from "react-typed";
-import BcrCoursePage from "../../images/bcr-coursepage.png";
+// import BcrCoursePage from "../../images/bcr-coursepage.png";
 import BcrDepartmentPage from "../../images/bcr-department-page.png";
 import BcrMobileHomePage from "../../images/bcr-mobile-homepage.png";
 import BcrCreateReviewPage from "../../images/bcr-createreview.png";
 import BcrMobileStatsPage from "../../images/bcr-mobile-statspage.png";
 import BcrMobileProfilePage from "../../images/bcr-mobile-profilepage.png";
+import Timeline from "./Timeline";
 
 function HomePage() {
     const quickLinks = (
@@ -30,9 +32,6 @@ function HomePage() {
                 <Link to="/aboutme" state={{ scrollTo: "skills" }}>
                     Technical Skills
                 </Link>
-                <Link to="/experience" state={{ scrollTo: "datto" }}>
-                    2022 Internship
-                </Link>
                 <Link to="/experience" state={{ scrollTo: "GPS" }}>
                     Favorite Project
                 </Link>
@@ -43,33 +42,30 @@ function HomePage() {
     return (
         <div className="all-homepage">
             <div className="desktop-top-section">
-                <div className="homepage-div">
-                    <div className="homepage-top">
-                        <Typed
-                            strings={["Hi, I'm Zane! ^1500 Nice to meet you!"]}
-                            element="h1"
-                            className="header typed-title"
-                            typeSpeed={80}
-                            onComplete={(instance) => {
-                                setTimeout(() => {
-                                    instance.cursor.remove();
-                                }, 1000);
-                            }}
-                        />
-                        <h1 className="header nontyped-title">Hi, I'm Zane!</h1>
-                        {quickLinks}
-                    </div>
-                    <img className="zane-image" src={ZaneImage} alt="Zane" />
+                <div className="homepage-top">
+                    <Typed
+                        strings={["Hi, I'm Zane! ^1500 Nice to meet you!"]}
+                        element="h1"
+                        className="header typed-title"
+                        typeSpeed={80}
+                        onComplete={(instance) => {
+                            setTimeout(() => {
+                                instance.cursor.remove();
+                            }, 1000);
+                        }}
+                    />
+                    <h1 className="header nontyped-title">Hi, I'm Zane!</h1>
+                    {quickLinks}
                 </div>
+                <img className="zane-image" src={ZaneImage} alt="Zane" />
             </div>
             <div className="mobile-top-section">
                 <div className="mobile-top">
-                <img className="zane-image" src={ZaneImage} alt="Zane" />
+                    <img className="zane-image" src={ZaneImage} alt="Zane" />
                     <div className="mobile-titles">
                         <h1 className="title">Hi, I'm Zane! </h1>
                         <h1 className="title">Nice to meet you!</h1>
                     </div>
-                    
                 </div>
                 {quickLinks}
             </div>
@@ -125,110 +121,9 @@ function HomePage() {
                         newspaper to learn more about the project and how it's helping students!
                     </p>
                 </div>
-                <img className="bcr-image" src={BCRImage} />
+                <img className="bcr-image" src={BCRImage} alt="Zane"/>
             </div>
-            <div className="bcr-timeline-div">
-                <div className="bcr-timeline-left">
-                    <h1 className="homepage-title">Our Development Timeline</h1>
-                    <ul className="bcr-timeline">
-                        <div class="timeline-left">
-                            <li className="bcr-timeline-item">
-                                <h3 className="bcr-timeline-title">
-                                    December 2022
-                                </h3>
-                                <p className="bcr-timeline-text">
-                                    Olivia and I began planning out the website's
-                                    architecture and basic functionality. For the
-                                    site's tech stack, we chose a MySQL backend, a
-                                    Flask API, and a React frontend.
-                                </p>
-                            </li>
-                            <li className="bcr-timeline-item left-arrow-icon">
-                                <h3 className="bcr-timeline-title">January 2023</h3>
-                                <p className="bcr-timeline-text">
-                                    We migrated the database from the 2012 version
-                                    of Bowdoin Course Reviews and hosted it on AWS
-                                    RDS. We then began working on the API and
-                                    frontend. We created a home page, course pages,
-                                    professor pages, and department pages.
-                                </p>
-                            </li>
-                            <li className="bcr-timeline-item">
-                                <h3 className="bcr-timeline-title">
-                                    February and March 2023
-                                </h3>
-                                <p className="bcr-timeline-text">
-                                    We added a login system, a create review page,
-                                    and a user profile page. With the help of
-                                    Professor Stephen Houser, we also moved the API
-                                    and front end to AWS App Runner.
-                                </p>
-                            </li>
-                            <li className="bcr-timeline-item left-arrow-icon" id="april">
-                                <h3 className="bcr-timeline-title">April 2023</h3>
-                                <p className="bcr-timeline-text">
-                                    We started adding extra features: a stats page,
-                                    the ability to sort and filter review data, and
-                                    smooth loading animations.
-                                </p>
-                            </li>
-                        </div>
-                        <div class="timeline-right">
-                            <li className="bcr-timeline-item">
-                                <h3 className="bcr-timeline-title">May 2023</h3>
-                                <p className="bcr-timeline-text">
-                                    We improved the site's UI by making it fully
-                                    responsive and fixing visual bugs. We asked a
-                                    small group of family and friends to test the
-                                    site and give us feedback.
-                                </p>
-                            </li>
-                            <li className="bcr-timeline-item">
-                                <h3 className="bcr-timeline-title">
-                                    Summer 2023
-                                </h3>
-                                <p className="bcr-timeline-text">
-                                    We made small bug fixes, iterated on our UI, and
-                                    began working on a login system.
-                                </p>
-                            </li>
-                            <li className="bcr-timeline-item">
-                                <h3 className="bcr-timeline-title">
-                                    September and October 2023
-                                </h3>
-                                <p className="bcr-timeline-text">
-                                    We integrated our site with Okta for login and 
-                                    session management! Bowdoin students can now login
-                                    to the website with their school account.
-                                </p>
-                            </li>
-                            <li className="bcr-timeline-item">
-                                <h3 className="bcr-timeline-title">November 6, 2023</h3>
-                                <p className="bcr-timeline-text">
-                                    We launched the site to Bowdoin's 1,900 students and
-                                    received a ton of positive feedback, including that 
-                                    the site "looks like a spaceship" and that using it 
-                                    is a "very smooth software experience." In the first three 
-                                    days after launch, we received 500 unique site visitors, 
-                                    nearly 400 new reviews for courses, and over 1,600 home page 
-                                    visits.
-                                </p>
-                            </li>
-                            <li className="bcr-timeline-item">
-                                <h3 className="bcr-timeline-title">What's next?</h3>
-                                <p className="bcr-timeline-text">
-                                    We will fix any bugs that arise on the site and 
-                                    continue to add features. One idea we'd like to implement is
-                                    a 'Next Semester' page where people can plan their schedule 
-                                    for the next semester by looking at class times and availability,
-                                    all in one place.
-                                </p>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
-                
-            </div>
+            <Timeline/>
             <div className="bcr-timeline-images">
                     <img
                         className="bcr-department-image"

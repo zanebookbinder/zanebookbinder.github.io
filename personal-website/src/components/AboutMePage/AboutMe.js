@@ -62,15 +62,12 @@ function AboutMe() {
 				<p className="small-text about-me-text">
 					Hi! I'm proud to be a JOB (Just Outside of Boston) from Newton, MA.
 					I go to school at Bowdoin College in Maine, where I've worked as a Learning 
-					Assistant and Grader for two Computer Science classes. Last Fall, I also interviewed
-					prospective applicants as a member of the Bowdoin Admissions team.
+					Assistant and Grader for two CS classes and as a Senior Interviewer 
+					for the Bowdoin Admissions team.
 				</p>
 				<p className="small-text about-me-text">
-					I was lucky to find my passion for coding in high school, when my Geometry 
-					class spent a week writing Java code to draw a picture of a house. When my 
-					teacher saw that my drawing included detailed trees, a car in the driveway, and 
-					lots of other details, she suggested I take CS 101 the following year. I 
-					haven't looked back since! I've completed:
+					I'm super passionate about software! In the 7 years 
+					since I took my first Computer Science class, I've completed:
 				</p>
 				<div className="accordions">
 					<Accordion 
@@ -84,7 +81,7 @@ function AboutMe() {
 						4 internships
 						</AccordionSummary>
 						<AccordionDetails>
-							<ul>
+							<ul className="list-with-background">
 								<li><Link to='/experience' state={{scrollTo: 'amazon'}}>Software Engineer Intern at Amazon (Summer 2023)</Link></li>
 								<li><Link to='/experience' state={{scrollTo: 'datto'}}>Data Engineer Intern at Datto (Summer 2022)</Link></li>
 								<li><Link to='/experience' state={{scrollTo: 'beamlab'}}>Machine Learning and AI Intern at Beamlab (Summer 2021)</Link></li>
@@ -106,7 +103,7 @@ function AboutMe() {
 							<div className="multiple-lists">
 								<div className="list-section">
 									<p className="section-title">Bowdoin College (Brunswick, Maine)</p>
-									<ul>
+									<ul className="list-with-background">
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/ds/21fall/">CSCI 2101: Data Structures (Java, 2020)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~ltoma/teaching/cs231/fall13/">CSCI 2200: Algorithms (Python, 2021)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~smajerci/teaching/cs2210/2019spring/index.html">CSCI 2210: Theory of Computation (2022)</a></li>
@@ -119,7 +116,7 @@ function AboutMe() {
 								</div>
 								<div className="list-section">
 									<p className="section-title">Milton Academy (Milton, MA)</p>
-									<ul>
+									<ul className="list-with-background">
 										<li><a target="_blank" rel="noreferrer" href="https://www.milton.edu/academics/academic-departments/computer-science-courses/">Computer Programming 1 (Java, 2017-2018)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://www.milton.edu/academics/academic-departments/computer-science-courses/">Computer Programming 2 (Java, 2018-2019)</a></li>
 										<li><a target="_blank" rel="noreferrer" href="https://www.milton.edu/academics/academic-departments/computer-science-courses/">Advanced Computer Programming: Applied Math & AI (Python, 2019-2020)</a></li>
@@ -141,7 +138,7 @@ function AboutMe() {
 						</AccordionSummary>
 						<AccordionDetails>
 							<p className="section-title">Here are some of my favorites:</p>
-							<ul>
+							<ul className="list-with-background">
 								<li><Link to="/experience" state={{scrollTo: "bcr"}}>Bowdoin Course Reviews (React/Flask/MySQL, 2022-2023)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "poker-goat"}}>Deep Reinforcement Learning for Texas Hold'em (Python/Keras, 2023)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "starry-night"}}>Starry Night Sky Creator (Processing, 2023)</Link></li>
@@ -169,7 +166,7 @@ function AboutMe() {
 							3 Semesters as Learning Assistant and Grader
 						</AccordionSummary>
 						<AccordionDetails>
-							<ul>
+							<ul className="list-with-background">
 								<li>Fall 2021: Algorithms Learning Assistant and Grader</li>
 								<li>Spring 2022: Algorithms Learning Assistant and Grader</li>
 								<li>Fall 2022: Foundations of Computer Systems Learning Assistant</li>

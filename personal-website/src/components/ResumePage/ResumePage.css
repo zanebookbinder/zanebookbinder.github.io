@@ -3,7 +3,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-top: 2rem;
+	margin-block: 3rem;
 }
 
 .resume-embed {
@@ -17,7 +17,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: right;
-	margin-bottom: 20px;
+	margin-bottom: 2rem;
 	gap: 5px;
 	height: 35px;
 }
