@@ -129,7 +129,7 @@
 	.navbar .top {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		margin-top: 0.75rem;
 	}
 
 	.name {
@@ -160,31 +160,30 @@
 		margin-top: 1rem;
 		margin-bottom: 0.5rem;
 		padding-bottom: 1rem;
-		height: auto;
-		border-bottom: 1px solid var(--primary-text);
+		height: 3rem;
 		align-items: unset;
 	}
 
 	.navbar-content {
-		gap: 75px;
-		margin-inline: auto;
+		gap: 30px;
+		position: relative;
+		top: -25px;
 	}
 
 	.navbar-link {
-		padding-left: 10px;
-		padding-right: 10px;
-		padding-top: 5px;
-		padding-bottom: 2px;
+		padding: 0 0;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.navbar {
 		margin-inline: 1rem;
+		height: 5rem;
 	}
 
 	.navbar-content {
 		gap: unset;
 		justify-content: space-between;
+		top: 10px;
 	}
 }

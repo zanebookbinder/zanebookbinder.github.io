@@ -23,7 +23,7 @@ function HomePage() {
                 would love to connect!
             </p>
             <p className="quicklink-title">CHECK OUT MY</p>
-            <div className="quicklinks">
+            <div className="quicklinks button">
                 <Link to="/experience" state={{ scrollTo: "amazon" }}>
                     2023 Internship
                 </Link>
@@ -43,30 +43,33 @@ function HomePage() {
     return (
         <div className="all-homepage">
             <div className="desktop-top-section">
-                <div className="homepage-top">
-                    <Typed
-                        strings={["Hi, I'm Zane! ^1500 Nice to meet you!"]}
-                        element="h1"
-                        className="header typed-title"
-                        typeSpeed={80}
-                        onComplete={(instance) => {
-                            setTimeout(() => {
-                                instance.cursor.remove();
-                            }, 1000);
-                        }}
-                    />
-                    <h1 className="header nontyped-title">Hi, I'm Zane!</h1>
-                    {quickLinks}
+                <div className="homepage-div">
+                    <div className="homepage-top">
+                        <Typed
+                            strings={["Hi, I'm Zane! ^1500 Nice to meet you!"]}
+                            element="h1"
+                            className="header typed-title"
+                            typeSpeed={80}
+                            onComplete={(instance) => {
+                                setTimeout(() => {
+                                    instance.cursor.remove();
+                                }, 1000);
+                            }}
+                        />
+                        <h1 className="header nontyped-title">Hi, I'm Zane!</h1>
+                        {quickLinks}
+                    </div>
+                    <img className="zane-image" src={ZaneImage} alt="Zane" />
                 </div>
-                <img className="zane-image" src={ZaneImage} alt="Zane" />
             </div>
             <div className="mobile-top-section">
                 <div className="mobile-top">
+                <img className="zane-image" src={ZaneImage} alt="Zane" />
                     <div className="mobile-titles">
                         <h1 className="title">Hi, I'm Zane! </h1>
                         <h1 className="title">Nice to meet you!</h1>
                     </div>
-                    <img className="zane-image" src={ZaneImage} alt="Zane" />
+                    
                 </div>
                 {quickLinks}
             </div>
@@ -161,7 +164,7 @@ function HomePage() {
                                     and front end to AWS App Runner.
                                 </p>
                             </li>
-                            <li className="bcr-timeline-item left-arrow-icon">
+                            <li className="bcr-timeline-item left-arrow-icon" id="april">
                                 <h3 className="bcr-timeline-title">April 2023</h3>
                                 <p className="bcr-timeline-text">
                                     We started adding extra features: a stats page,

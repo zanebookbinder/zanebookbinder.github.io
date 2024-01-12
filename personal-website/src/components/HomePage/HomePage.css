@@ -12,25 +12,34 @@
 }
 
 .desktop-top-section {
-	display: flex;
-	gap: 3rem;
 	background-color: rgb(193, 219, 255);
-	color: #111e3b;
 	height: 34rem;
 	width: 100%;
-	align-items: center;
-	margin: 0 3rem;
+	color: #111e3b;
+	display: flex;
+	justify-content: center;
 }
 
-.desktop-top-section .quicklinks a {
+.homepage-div {
+	display: flex;
+	gap: 3rem;
+	color: #111e3b;
+	height: 34rem;
+	width: 87%;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.button a {
 	color: rgb(193, 219, 255);
 	background-color: rgb(0, 89, 214);
 	border: 2px solid rgb(0, 89, 214);
 	min-width: max-content;
 	padding: 12px 18px;
-	font-size: 14px;
+	
 	font-weight: 700;
 }
+
 
 .desktop-top-section .quicklinks a:hover {
 	color: rgb(0, 89, 214);
@@ -41,7 +50,6 @@
 
 .desktop-top-section .homepage-top {
 	max-width: 60%;
-	margin-left: 6rem;
 }
 
 .homepage-title {
@@ -60,7 +68,8 @@
 }
 
 .zane-image {
-	width: 20%;
+	width: 26%;
+	max-height: 400px;
 	transform: rotate(2deg);
 	object-fit: cover;
 }
@@ -238,6 +247,17 @@
 		gap: 1rem;
 	}
 
+	.bcr-image {
+		width: 400px;
+		height: 550px;
+	}
+
+
+.bcr-homepage .small-text {
+	max-width: 80%;
+}
+
+
 	.bcr-aboutme-text {
 		width: 60%;
 	}
@@ -264,20 +284,18 @@
 @media screen and (max-width: 1100px) {
 
 	.desktop-top-section {
-		gap: 4rem;
+		gap: 1rem;
+		height: 34rem;
 	}
 
 	.quicklinks {
 		width: 100%;
-		margin-right: 2rem;
-		font-size: 18px;
 		flex-wrap: wrap;
 		gap: 10px;
 	}
 
-	.quicklinks a {
+	.desktop-top-section .quicklinks a {
 		white-space: nowrap;
-		padding: 5px 10px;
 	}
 
 	.zane-image {
@@ -289,6 +307,10 @@
 	.quicklink-title {
 		margin-bottom: 10px;
 	}
+
+	.homePageText {
+		margin-bottom: 32px;
+	}
 }
 
 @media screen and (max-width: 950px) {
@@ -298,9 +320,16 @@
 	}
 
 	.homePageText {
-		font-size: 1.1rem;
+		font-size: 0.9rem;
 		margin-top: 10px;
 		margin-bottom: 32px;
+		width: 80%;
+	}
+
+	.bcr-image {
+		width: 80%;
+		max-height: 300px;
+
 	}
 
 	.zane-image {
@@ -322,19 +351,26 @@
 
 @media screen and (max-width: 800px) {
 
+	.homepage-title {
+		margin-bottom: 30px;
+	}
+
 	.all-homepage .mobile-top-section {
 		display: flex;
 		flex-direction: column;
-		margin-left: 1rem;
-		margin-bottom: 2rem;
+		padding: 2rem 0;
+		background-color: var(--primary-text);
+		color: #111e3b;
+		margin-left: 0;
+		align-items: center;
 	}
 
 	.all-homepage .mobile-top {
 		display: flex;
 		gap: 20px;
 		align-items: center;
-		justify-content: space-around;
 		margin-top: 20px;
+		width: 70%;
 	}
 
 	.all-homepage .desktop-top-section {
@@ -342,18 +378,22 @@
 	}
 
 	.all-homepage {
-		margin-inline: 1.5rem;
 		margin-top: 2rem;
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.mobile-titles {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		min-width: max-content
 	}
 
 	.mobile-titles .title {
-		margin-block: 10px;
+		font-size: 2.5rem;
+		margin: 5px 0;
 	}
 
 	.desktop-top-section {
@@ -362,34 +402,44 @@
 
 	.homePageText {
 		width: auto;
-		margin-right: 1rem;
-		margin-bottom: 1rem;
+
 	}
 
 	.zane-image {
-		max-height: 250px;
+		width: 30%;
 		margin: 0;
 		margin-right: 1rem;
 		margin-bottom: 1.25rem;
+		transform: rotate(-1deg)
 	}
 
 	.bcr-timeline-div {
 		flex-direction: column-reverse;
 		margin-top: 0px;
+		width: 100%;
+		align-items: center;
 	}
 
 	.bcr-timeline-images,
 	.bcr-timeline-left {
-		width: 100%;
-		margin-top: 0px;
+		width: 80%;
+		padding: 2rem 0;
 	}
 
 	.bcr-screenshot-div {
 		width: 100%;
 	}
 
+	.bcr-timeline-div {
+		padding: 3rem 0;
+	}
+
 	.homepage-title {
 		font-size: 1.5rem;
+	}
+	
+	.quicklinks {
+		justify-content: center;
 	}
 }
 
@@ -402,7 +452,53 @@
 		font-size: 1.5rem;
 	}
 
-	.all-homepage {
-		margin-inline: 0.75rem;
+	.zane-image {
+		width: 40%;
+	}
+
+	.quicklinks {
+		width: 70%;
+	}
+
+	.button a {
+		font-size: 12px;
+	}
+
+	.bcr-timeline {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	#april {
+		border-left: 5px solid var(--primary-text)
+	}
+
+	.zane-image {
+		display: none;
+	}
+
+	.all-homepage .mobile-top {
+		width: 80%;
+	}
+
+	.mobile-titles .title {
+		font-size: 2rem;
+		margin: 0 0;
+	}
+
+	.mobile-titles {
+		margin-bottom: 20px;
+	}
+
+	.homePageText {
+		margin-bottom: 40px;
+	}
+
+	.bcr-homepage .small-text {
+		max-width: 90%;
+	}
+
+	.bcr-timeline-text {
+		font-size: 0.9rem;
 	}
 }
