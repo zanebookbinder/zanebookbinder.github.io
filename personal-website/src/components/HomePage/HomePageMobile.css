@@ -246,11 +246,12 @@
 	}
 
 	.quicklinks {
-		width: 70%;
+		gap: 5px;
 	}
 
 	.button a {
 		font-size: 12px;
+		padding: 6px 12px;
 	}
 
 	.bcr-timeline {

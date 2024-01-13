@@ -17,12 +17,11 @@ function HomePage() {
     const quickLinks = (
         <>
             <p className="small-text homePageText">
-                I'm a senior at Bowdoin College majoring in Computer
-                Science and minoring in Economics. I'm really passionate about 
-                software, data, and AI. This summer, I worked as a Software
-                Engineering Intern at Amazon. I also launched a website, Bowdoin Course Reviews,
-                in early November. I've put screenshots and more information below,
-                so feel free to take a look! Please check out my bio, projects, and resume. I
+                I'm a senior at Bowdoin College majoring in CS and minoring in Econ.
+                I'm passionate about software and have completed 4 internships in tech,
+                including a SWE internship
+                at Amazon last summer. I also launched a website, Bowdoin Course Reviews,
+                last fall (more info below!) Please check out my bio, projects, and resume. I
                 would love to connect!
             </p>
             <p className="quicklink-title">CHECK OUT MY</p>
