@@ -158,6 +158,12 @@
 	flex-direction: column;
 }
 
+.bcr-images-left > *,
+.bcr-images-right > * {
+	width: 100%;
+	height: auto;
+}
+
 .bcr-images-left {
 	width: 65%;
 	gap: 3rem;
