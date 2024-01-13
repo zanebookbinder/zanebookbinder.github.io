@@ -5,7 +5,8 @@
   --background-color: #111e3b;
   /* --expanded-background: #29344e; */
   --expanded-background: rgba(193, 219, 255, 0.152);
-  --expanded-background-text: rgb(218, 234, 255);
+  --expanded-background-text: #e6f1ff;
+  --expanded-background-text-hover: rgb(193, 219, 255, 0.8);
 
   --light-section-background: rgb(193, 219, 255);
   --light-section-text: #111e3b;
@@ -17,6 +18,8 @@
   --desktop-homepage-padding: 6rem;
   --mid-homepage-padding: 4rem;
   --mobile-homepage-padding: 2rem;
+
+  --highlight-block-background: #6680a35c;
 }
 
 body {

@@ -10,6 +10,7 @@ import BcrMobileHomePage from "../../images/bcr-mobile-homepage.png";
 import BcrCreateReviewPage from "../../images/bcr-createreview.png";
 import BcrMobileStatsPage from "../../images/bcr-mobile-statspage.png";
 import BcrMobileProfilePage from "../../images/bcr-mobile-profilepage.png";
+import BcrLoginPage from "../../images/bcr-login.png";
 import Timeline from "./Timeline";
 
 function HomePage() {
@@ -125,6 +126,7 @@ function HomePage() {
             </div>
             <Timeline/>
             <div className="bcr-timeline-images">
+                <div className="bcr-images-left">
                     <img
                         className="bcr-department-image"
                         alt="Bowdoin Course Reviews Department Page"
@@ -135,26 +137,30 @@ function HomePage() {
                         alt="Bowdoin Course Reviews Create Review Page"
                         src={BcrCreateReviewPage}
                     />
-                    <div
-                        className="horizontal-bcr-images"
-                    >
-                        <img
-                            className="bcr-mobile-homepage-image"
-                            alt="Bowdoin Course Reviews Home Page"
-                            src={BcrMobileHomePage}
-                        />
-                        <img
-                            className="bcr-mobile-stats-image"
-                            alt="Bowdoin Course Reviews Stats Page"
-                            src={BcrMobileStatsPage}
-                        />
-                        <img
-                            className="bcr-mobile-profile-image"
-                            alt="Bowdoin Course Reviews Profile Page"
-                            src={BcrMobileProfilePage}
-                        />
-                    </div>
+                    <img
+                        className="bcr-login-image"
+                        alt="Bowdoin Course Reviews Login Page"
+                        src={BcrLoginPage}
+                    />
                 </div>
+                <div className="bcr-images-right">
+                    <img
+                        className="bcr-mobile-homepage-image"
+                        alt="Bowdoin Course Reviews Home Page"
+                        src={BcrMobileHomePage}
+                    />
+                    <img
+                        className="bcr-mobile-stats-image"
+                        alt="Bowdoin Course Reviews Stats Page"
+                        src={BcrMobileStatsPage}
+                    />
+                    <img
+                        className="bcr-mobile-profile-image"
+                        alt="Bowdoin Course Reviews Profile Page"
+                        src={BcrMobileProfilePage}
+                    />
+                </div>
+            </div>
         </div>
     );
 }

@@ -49,9 +49,6 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 							})}
 													</p>
 						<div className="description">
-							<div className="description-text">
-								<span>Description:</span>
-							</div>
 							<ul>
 								{details.map((detail, index) => {
 									return <li className="detail" key={index}>{detail}</li>

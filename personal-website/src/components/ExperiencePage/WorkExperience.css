@@ -13,11 +13,14 @@
 .company-link {
 	border-radius: 30px;
 	padding: 6px 12px;
-	border: 1.5px solid var(--primary-text);
+    transition: ease-in-out 0.3s;
+	color: var(--expanded-background-text);
+    border: 1.5px solid var(--expanded-background-text);
 }
 
 .company-link:hover {
-	border: 1.5px solid var(--primary-text-hover);
+    border: 1.5px solid var(--royal-blue);
+    background-color: var(--royal-blue);
 }
 
 .company-title {
@@ -69,7 +72,7 @@
 .experience-details ul {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 30px;
+	padding-left: 20px;
 }
 
 @media screen and (max-width: 1100px) {

@@ -39,9 +39,6 @@ function WorkExperience({ companyTitle, date, position, details, programmingLang
 					}
 					{details &&
 						<div className="description">
-							<div className="description-text">
-								<span>Description:</span>
-							</div>
 							<ul>
 								{details.map((detail, index) => {
 									return <li className="detail" key={index}>{detail}</li>

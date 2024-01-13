@@ -1,6 +1,6 @@
 /*rgb(71 95 128 / 80%) */
 .highlight-block {
-	background-color: #475f805c;
+	background-color: var(--highlight-block-background);
 	color: var(--expanded-background-text);
 	border-radius: 5px;
 	line-height: 1;

@@ -11,7 +11,7 @@ function Navbar() {
     <div className="all">
       <div className='non-mobile'>
         <NavBarElement className="navbar" bg="dark" variant="dark">
-              <NavBarElement.Brand className="name" href="/">Zane Bookbinder</NavBarElement.Brand>
+              <NavBarElement.Brand className={"name " + (location.pathname === '/' ? "on-home-page" : "")} href="/">Zane Bookbinder</NavBarElement.Brand>
               <div className="navbar-content">
                 <Link className={"navbar-link " + (location.pathname === '/experience' ? "on-page" : "")} to="/experience"><p className="link-text">Experience</p></Link>
                 <Link className={"navbar-link " + (location.pathname === '/aboutme' ? "on-page" : "")} to="/aboutme"><p className='link-text'>About Me</p></Link>
