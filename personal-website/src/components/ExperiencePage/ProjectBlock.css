@@ -21,8 +21,10 @@
 
 .date {
     font-weight: 345;
+	font-size: 16px;
     min-width: 90px;
     text-align: right;
+	opacity: 0.7;
 }
 
 .project-details {

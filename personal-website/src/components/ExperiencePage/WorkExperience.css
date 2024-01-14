@@ -15,12 +15,14 @@
 	padding: 6px 12px;
     transition: ease-in-out 0.3s;
 	color: var(--expanded-background-text);
-    border: 1.5px solid var(--expanded-background-text);
+	border: 1.5px solid var(--royal-blue);
+    background-color: var(--royal-blue);
 }
 
 .company-link:hover {
-    border: 1.5px solid var(--royal-blue);
-    background-color: var(--royal-blue);
+	color: var(--royal-blue);
+	border: 1.5px solid var(--royal-blue);
+	background-color: unset;
 }
 
 .company-title {

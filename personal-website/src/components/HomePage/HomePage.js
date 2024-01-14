@@ -21,7 +21,7 @@ function HomePage() {
                 I'm passionate about software and have completed 4 internships in tech,
                 including a SWE internship
                 at Amazon last summer. I also launched a website, Bowdoin Course Reviews,
-                last fall (more info below!) Please check out my bio, projects, and resume. I
+                last fall (more info below!). Please check out my bio, projects, and resume. I
                 would love to connect!
             </p>
             <p className="quicklink-title">CHECK OUT MY</p>
@@ -109,7 +109,7 @@ function HomePage() {
                             rel="noreferrer"
                         >
                             here 
-                        </a> to access the site. Also, check out the 
+                        </a> to access the site. Also, check out this 
                         <a
                             href="https://bowdoinorient.com/2023/11/10/wirsching-24-and-bookbinder-24-revamp-outdated-bowdoin-course-review-website/"
                             style={{ paddingLeft: "2px", marginLeft: "3px", textDecoration: "underline" }}

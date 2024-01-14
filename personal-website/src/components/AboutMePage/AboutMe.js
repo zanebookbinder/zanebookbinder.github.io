@@ -4,8 +4,20 @@ import ZaneCroppedImage from "../../images/Zane-cropped.jpeg";
 import { useEffect, useState } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from '../CustomAccordion.js';
 import { useLocation, Link } from "react-router-dom";
+import HighlightBlock from "../HighlightBlock.js";
 
 function AboutMe() {
+	const programmingLanauges = ["Python", "Javascript/TypeScript", "Java", 
+		"C", "SQL", "HTML", "CSS"];
+	const libraries = ["Git", "React", "Flask", "Pandas", "Material UI", 
+		"MySQL", "Postman", "AWS CDK", "AWS SDK"];
+	const aws = ["Lambda", "S3", "API Gateway", "CloudFront", "CloudFormation",
+		"Route 53", "SNS", "IAM", "ACM", "RDS", "App Runner"];
+	const concepts = ["Algorithms", "Data Structures", "Full-Stack Development",
+	 	"Agile Development / Scrum", "REST APIs", "Object-Oriented Programming",
+	  	"Relational Databases", "Distributed Systems", "Cloud Development",
+	   	"Infrastructure as Code"];
+	
 	const [expanded1, setExpanded1] = useState(false);
 	const [expanded2, setExpanded2] = useState(false);
 	const [expanded3, setExpanded3] = useState(false);
@@ -196,37 +208,6 @@ function AboutMe() {
 					</ul>
 				</div>
 				<div className="section">
-					<h1 id="interests">Interests</h1>
-					<ul>
-						<li>
-							<p>AI/ML, Professional sports (particularly Boston teams), Golf, Skiing</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div className="column">
-				<div className="section">
-					<h1 id="skills">Technical Skills</h1>
-					<ul>
-						<li>
-							<p className="technicalskill-line"><span>Programming Languages:</span> Python, JavaScript/TypeScript, Java, C, SQL, HTML, CSS</p>
-						</li>
-						<li>
-							<p className="technicalskill-line"><span>Libraries and Frameworks:</span> Git, React, Flask, Pandas, Material UI, MySQL, Postman, AWS CDK, AWS SDK</p>
-						</li>
-						<li>
-							<p className="technicalskill-line"><span>AWS:</span> Lambda, S3, API Gateway, CloudFront, CloudFormation, Route 53, SNS, IAM, ACM, RDS, App Runner</p>
-						</li>
-						<li>
-							<p className="technicalskill-line"><span>Concepts:</span> Algorithms, Data Structures, 
-								Full-Stack Development, Agile Development / Scrum,  
-								REST APIs, Object-Oriented Programming, Relational Databases, Distributed Systems, 
-								Cloud Development, Infrastructure as Code
-							</p>
-						</li>
-					</ul>
-				</div>
-				<div className="section">
 					<h1>Languages</h1>
 					<ul>
 						<li><span>Proficient Spanish</span></li>
@@ -238,7 +219,53 @@ function AboutMe() {
 					</ul>
 				</div>
 			</div>
-			
+			<div className="column">
+				<div className="section">
+					<h1 id="skills">Technical Skills</h1>
+					<ul>
+						<li>
+							<span>Programming Languages</span>
+							<div className='skill-list'>
+								{programmingLanauges.map((language, index) => {
+									return <HighlightBlock key={index} text={language} />
+								})}
+							</div>
+						</li>
+						<li>
+							<span>Libraries and Frameworks</span>
+							<div className='skill-list'>
+								{libraries.map((library, index) => {
+									return <HighlightBlock key={index} text={library} />
+								})}
+							</div>
+						</li>
+						<li>
+							<span>AWS Services</span>
+							<div className='skill-list'>
+								{aws.map((service, index) => {
+									return <HighlightBlock key={index} text={service} />
+								})}
+							</div>
+						</li>
+						<li>
+							<span>Concepts</span>
+							<div className='skill-list'>
+								{concepts.map((concept, index) => {
+									return <HighlightBlock key={index} text={concept} />
+								})}
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div className="section">
+					<h1 id="interests">Interests</h1>
+					<ul>
+						<li>
+							<p>AI/ML, Professional sports (particularly Boston teams), Golf, Skiing</p>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	  </div>
 	);
