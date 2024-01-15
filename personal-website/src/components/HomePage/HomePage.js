@@ -21,7 +21,7 @@ function HomePage() {
                 I'm passionate about software and have completed 4 internships in tech,
                 including a SWE internship
                 at Amazon last summer. I also launched a website, Bowdoin Course Reviews,
-                last fall (more info below!). Please check out my bio, projects, and resume. I
+                last fall (more info below)! Please check out my bio, projects, and resume. I
                 would love to connect!
             </p>
             <p className="quicklink-title">CHECK OUT MY</p>
@@ -44,17 +44,18 @@ function HomePage() {
             <div className="desktop-top-section">
                 <div className="homepage-top">
                     <Typed
-                        strings={["Hi, I'm Zane! ^1500 Nice to meet you!"]}
+                        strings={["Hi, I'm Zane! ^750 Nice to meet you!^1000", "Hi, I'm Zane!"]}
                         element="h1"
-                        className="header typed-title"
-                        typeSpeed={80}
+                        className="header typed-title hi-im-zane"
+                        typeSpeed={60}
+                        backSpeed={50}
                         onComplete={(instance) => {
                             setTimeout(() => {
                                 instance.cursor.remove();
                             }, 1000);
                         }}
                     />
-                    <h1 className="header nontyped-title">Hi, I'm Zane!</h1>
+                    <h1 className="header nontyped-title hi-im-zane">Hi, I'm Zane!</h1>
                     {quickLinks}
                 </div>
                 <img className="zane-image" src={ZaneImage} alt="Zane" />
@@ -63,8 +64,7 @@ function HomePage() {
                 <div className="mobile-top">
                     <img className="zane-image" src={ZaneImage} alt="Zane" />
                     <div className="mobile-titles">
-                        <h1 className="title">Hi, I'm Zane! </h1>
-                        <h1 className="title">Nice to meet you!</h1>
+                        <h1 className="title hi-im-zane">Hi, I'm Zane! </h1>
                     </div>
                 </div>
                 {quickLinks}
