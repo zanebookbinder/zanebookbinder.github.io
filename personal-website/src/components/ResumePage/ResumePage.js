@@ -21,7 +21,8 @@ function ResumePage() {
 					<div className="download">
 						<a 
 							className="here-link"
-							href="https://drive.google.com/file/d/1afjcvkb4Eor-6aoja-2DBxZ8n-or2cUx/view" 
+							href="https://drive.google.com/file/d/1dOaSdJIIo3veSH1SMReiO7x7Xp20WTcQ/view" 
+							
 							target="_blank"
 							rel="noreferrer"
 							>Download a copy</a>
@@ -31,7 +32,7 @@ function ResumePage() {
 					className="resume-embed"
 					onLoad={handleLoad}
 					title="my-resume"
-					src="https://drive.google.com/file/d/1afjcvkb4Eor-6aoja-2DBxZ8n-or2cUx/preview"
+					src="https://drive.google.com/file/d/1dOaSdJIIo3veSH1SMReiO7x7Xp20WTcQ/preview"
 					allow="autoplay"
 				></iframe>
 			</div>		
