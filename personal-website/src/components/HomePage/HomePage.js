@@ -99,8 +99,8 @@ function HomePage() {
                         their favorite professors or warn others about tough
                         courses they took. <br/> <br/> We launched the site in early November 2023,
                          and we've already heard that it's helping students
-                        make well-informed decisions about course registration. Almost half of the student
-                        body has used the site and we've receive over 750 reviews in just two months! If you're a 
+                        make well-informed decisions about course registration. More than half of the student
+                        body has used the site and we've receive over 800 reviews in just four months! If you're a 
                         current Bowdoin student, you can click 
                         <a
                             href="https://course-reviews.students.bowdoin.edu/"

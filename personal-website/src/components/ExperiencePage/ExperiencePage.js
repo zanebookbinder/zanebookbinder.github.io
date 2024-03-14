@@ -203,7 +203,7 @@ function ExperiencePage() {
                                 "Uses React for the frontend, a Flask API for the backend, and a MySQL database",
                                 "Implements login with Okta, displays Overall Stats, and allows users to star courses",
                                 "Launched on November 6th and received 500 unique visitors and nearly 400 reviews in the first 3 days",
-                                "Database currently contains 603 professors, 2,095 courses, and 2,672 reviews",
+                                "Database currently contains 603 professors, 2,095 courses, and 2,713 reviews",
                             ]}
                             link="https://course-reviews.students.bowdoin.edu/"
                             startOpen={openItem === "bcr" || openItem === null}
