@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b8a0ee5.css",
+    "main.css": "/static/css/main.5f66c4ab.css",
     "main.js": "/static/js/main.841c9e58.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/BCR.png": "/static/media/BCR.25b35cc03fd5f237a246.png",
@@ -15,12 +15,12 @@
     "static/media/Zane-cropped.jpeg": "/static/media/Zane-cropped.cbdb54ea0ce672e6235d.jpeg",
     "static/media/bcr-mobile-homepage.png": "/static/media/bcr-mobile-homepage.d2baa521f7f704343b78.png",
     "index.html": "/index.html",
-    "main.7b8a0ee5.css.map": "/static/css/main.7b8a0ee5.css.map",
+    "main.5f66c4ab.css.map": "/static/css/main.5f66c4ab.css.map",
     "main.841c9e58.js.map": "/static/js/main.841c9e58.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b8a0ee5.css",
+    "static/css/main.5f66c4ab.css",
     "static/js/main.841c9e58.js"
   ]
 }
