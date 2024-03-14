@@ -52,6 +52,10 @@
 	border-radius: 40px;
 }
 
+.bottom-columns a {
+	margin-right: 4px;
+}
+
 .section-title {
 	margin-bottom: 5px;
 	font-weight: 400;
@@ -151,12 +155,16 @@
 
 	.bio {
 		max-width: unset;
-		width: 80%;
+		width: auto;
 	}
 
-	.more-text .small-text {
-		width: 80%;
+	.about-me-text {
+		max-width: unset;
 	}
+
+	/* .more-text .small-text {
+		width: 80%;
+	} */
 
 	.top-line .title {
 		margin-top: 15px;
@@ -193,6 +201,10 @@
 
 	.about-me .MuiAccordionSummary-content {
 		font-size: 18px;
+	}
+
+	.bio-and-image, .bio {
+		margin-right: 0px;
 	}
 
 	.bio-and-image h1 {
