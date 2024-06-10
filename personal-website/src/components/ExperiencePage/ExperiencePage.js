@@ -209,6 +209,47 @@ function ExperiencePage() {
                             startOpen={openItem === "bcr" || openItem === null}
                         />
                     </div>
+                    <div id="ungated">
+                        <ProjectBlock
+                            title="Ungated Research"
+                            date="Spring 2024"
+                            programmingLanguages={[
+                                "Python",
+                                "JavaScript",
+                                "SQL",
+                                "Flask",
+                                "React",
+                                "S3",
+                                "Google Gemini API",
+                            ]}
+                            details={[
+                                "Worked with Prof. Martin Abel of Bowdoin College to address equity issues in Economic research by developing a website that provides AI-generated summaries and links to working papers for 2400+ published articles",
+                                "Built a SQL database, a Flask API, and React frontend (hosted on AWS RDS and AWS AppRunner)"
+                            ]}
+                            link="https://ungatedresearch.org/"
+                            startOpen={openItem === "ungated"}
+                        />
+                    </div>
+                    <div id="fml-final-project">
+                        <ProjectBlock
+                            title="Beating the Bookies"
+                            date="Spring 2024"
+                            programmingLanguages={[
+                                "Python", "Pandas", "Numpy", "PyTorch", "MatPlotLib", "Web Scraping"
+                            ]}
+                            details={[
+                                "A final project that aimed to combine historical NBA statistical data with sportsbook line/odd data in order to build a profitable betting strategy",
+                                "Combined three datasets and added unique input features (such as travel distance)",
+                                "Built 5 ML models: Linear Regressor (baseline), Neural Network, XGBoost Regressor, Bootstrapped PERT Decision Trees, and CART Decision Trees",
+                                "Implemented multiple popular betting systems including Fade Favorites After Blowout and the Tunnel System",
+                                "Performed profitability experiments by varying model type, odds type (best/worst/average across all sportsbooks), betting threshold (minimum difference between line and prediction to trigger a bet), and bet amounts (static vs. Kelly Criterion)",
+                                "Found that in certain sets of games, even a linear regressor can be profitable if it has access to all sportsbook odds",
+                                "See project poster in Github repository README for more details"
+                            ]}
+                            link="https://github.com/zanebookbinder/fml-nba-betting"
+                            startOpen={openItem === "fml-final-project"}
+                        />
+                    </div>
                     <div id="poker-goat">
                         <ProjectBlock
                             title="Deep Q Learning for Texas Hold'em"

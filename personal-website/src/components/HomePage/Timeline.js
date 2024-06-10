@@ -3,7 +3,7 @@ function Timeline() {
         <div className="bcr-timeline-div">
             <h1 className="homepage-title">Our Development Timeline</h1>
             <ul className="bcr-timeline">
-                <div class="timeline-left">
+                <div className="timeline-left">
                     <li className="bcr-timeline-item">
                         <h3 className="bcr-timeline-title">December 2022</h3>
                         <p className="bcr-timeline-text">
@@ -43,7 +43,7 @@ function Timeline() {
                         </p>
                     </li>
                 </div>
-                <div class="timeline-right">
+                <div className="timeline-right">
                     <li className="bcr-timeline-item">
                         <h3 className="bcr-timeline-title">Summer 2023</h3>
                         <p className="bcr-timeline-text">

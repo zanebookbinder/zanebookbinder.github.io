@@ -9,7 +9,7 @@ import HighlightBlock from "../HighlightBlock.js";
 function AboutMe() {
 	const programmingLanauges = ["Python", "Javascript/TypeScript", "Java", 
 		"C", "SQL", "HTML", "CSS"];
-	const libraries = ["Git", "React", "Flask", "Pandas", "Material UI", 
+	const libraries = ["Git", "React", "Flask", "Pandas", "Numpy", "PyTorch", "Material UI", 
 		"MySQL", "Postman", "AWS CDK", "AWS SDK"];
 	const aws = ["Lambda", "S3", "API Gateway", "CloudFront", "CloudFormation",
 		"Route 53", "SNS", "IAM", "ACM", "RDS", "App Runner"];
@@ -73,9 +73,11 @@ function AboutMe() {
 				<h1 className="title mobile-title">About Me</h1>
 				<p className="small-text about-me-text">
 					Hi! I'm proud to be a JOB (Just Outside of Boston) from Newton, MA.
-					I go to school at Bowdoin College in Maine, where I've worked as a Learning 
+					I recently graduated from Bowdoin College, where I worked as a Learning 
 					Assistant and Grader for two CS classes and as a Senior Interviewer 
-					for the Bowdoin Admissions team.
+					for the Bowdoin Admissions team. I also built a Course Review website
+					for students and created another website that provides easy access
+					to economic journal articles.
 				</p>
 				<p className="small-text about-me-text">
 					I'm super passionate about software! In the 7 years 
@@ -109,7 +111,7 @@ function AboutMe() {
 						className={expanded2 ? "accordion-expanded" : ""}
 					>
 						<AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-							10 Computer Science classes
+							12 Computer Science classes
 						</AccordionSummary>
 						<AccordionDetails>
 							<div className="multiple-lists">
@@ -124,6 +126,8 @@ function AboutMe() {
 										<li className="no-link">CSCI 2400: Artificial Intelligence (Python, 2022)</li>
 										<li><a target="_blank" rel="noreferrer" href="https://tildesites.bowdoin.edu/~sbarker/teaching/courses/distributed/22spring/">CSCI 3325: Distributed Systems (C/Java/Python, 2022)</a></li>
 										<li className="no-link">CSCI 3725: Computational Creativity (Python/Ruby/JS/Processing, 2023)</li>
+										<li className="no-link">CSCI 3465: Financial Machine Learning (Python, 2024)</li>
+
 									</ul>
 								</div>
 								<div className="list-section">
@@ -152,6 +156,8 @@ function AboutMe() {
 							<p className="section-title">Here are some of my favorites:</p>
 							<ul className="list-with-background">
 								<li><Link to="/experience" state={{scrollTo: "bcr"}}>Bowdoin Course Reviews (React/Flask/MySQL, 2022-2023)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "ungated"}}>Ungated Research (React/Flask/MySQL, 2024)</Link></li>
+								<li><Link to="/experience" state={{scrollTo: "fml-final-project"}}>Beating the Bookies (Python, 2024)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "poker-goat"}}>Deep Reinforcement Learning for Texas Hold'em (Python/Keras, 2023)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "starry-night"}}>Starry Night Sky Creator (Processing, 2023)</Link></li>
 								<li><Link to="/experience" state={{scrollTo: "markov-golf-art"}}>Markov Golf Art (Python, 2023)</Link></li>
@@ -201,6 +207,7 @@ function AboutMe() {
 				<div className="section">
 					<h1>Awards</h1>
 					<ul>
+						<li><p><span><a href="https://www.bowdoin.edu/registrar/students/completing-degree/latin-honors-recipients.html" target="_blank" rel="noreferrer">Graduated Cum Laude</a></span>from Bowdoin College (2024)</p></li>
 						<li><p><span><a href="https://www.bowdoin.edu/about/prizes/general-scholarship.html" target="_blank" rel="noreferrer">Dorothy Haythorn Collins Award</a></span>for academic and general excellence in Computer Science (2022-2023)</p></li>
 						<li><p><span><a href="https://www.bowdoin.edu/admissions/book-award/" target="_blank" rel="noreferrer">Bowdoin Book Award</a></span>for a 4.0 GPA (2021-2022)</p></li>
 						<li><p><span><a href="https://www.bowdoin.edu/events/family-weekend/sarah-and-james-bowdoin-day.html" target="_blank" rel="noreferrer">Sarah and James Bowdoin Scholar</a></span>— Dean's List (2021-2022)</p></li>

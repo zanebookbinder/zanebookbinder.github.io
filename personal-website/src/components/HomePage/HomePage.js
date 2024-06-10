@@ -17,12 +17,11 @@ function HomePage() {
     const quickLinks = (
         <>
             <p className="small-text homePageText">
-                I'm a senior at Bowdoin College majoring in CS and minoring in Econ.
-                I'm passionate about software and have completed 4 internships in tech,
-                including a SWE internship
-                at Amazon last summer. I also launched a website, Bowdoin Course Reviews,
-                last fall (more info below)! Please check out my bio, projects, and resume. I
-                would love to connect!
+                I'm a recent graduate of Bowdoin College, where I majored in CS and minored in Economics.
+                I'm passionate about software and will be starting a fulltime job as a Software Engineer
+                at Bridgewater Associates in September! I have experience in many areas including Web Development, 
+                Data Science, and Machine Learning.
+                Please check out my bio, projects, and resume. I would love to connect!
             </p>
             <p className="quicklink-title">CHECK OUT MY</p>
             <div className="quicklinks button">
@@ -32,8 +31,8 @@ function HomePage() {
                 <Link to="/aboutme" state={{ scrollTo: "skills" }}>
                     Technical Skills
                 </Link>
-                <Link to="/experience" state={{ scrollTo: "GPS" }}>
-                    Favorite Project
+                <Link to="/experience" state={{ scrollTo: "ungated" }}>
+                    Recent Project
                 </Link>
             </div>
         </>
@@ -94,7 +93,7 @@ function HomePage() {
                         {' '}for our college! Every registration period, we heard friends and
                         classmates asking
                         <span style={{fontStyle: "italic", fontWeight: 400}}> “Have you taken this class? How was  it?” </span>
-                        So, we decided to give
+                        We wanted to give
                         students a centralized and reliable place to shout out
                         their favorite professors or warn others about tough
                         courses they took. <br/> <br/> We launched the site in early November 2023,

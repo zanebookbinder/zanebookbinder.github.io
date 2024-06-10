@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import BowdoinLogo from "../../images/bowdoin-logo.png";
-import BCRLogo from "../../images/logo192.png"
+import BCRLogo from "../../images/logo192.png";
+import UngatedLogo from "../../images/ungated-logo.png";
 import { useState } from "react";
 import { Accordion, AccordionSummary, AccordionDetails } from "../CustomAccordion";
 import HighlightBlock from "../HighlightBlock";
@@ -21,6 +22,8 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 		linkImage = <img src={BowdoinLogo} alt="Bowdoin Logo" className="logo" />;
 	} else if (link && link.includes('course-reviews')) {
 		linkImage = <img src={BCRLogo} alt="Bowdoin Course Reviews Logo" className="logo bcr-logo" />;
+	} else if (link && link.includes('ungated')) {
+		linkImage = <img src={UngatedLogo} alt="Ungated Research Logo" className="logo ungated-logo" />;
 	}
 
 	return (
@@ -43,11 +46,11 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 				</AccordionSummary>
 				<AccordionDetails>
 					<div className="project-details">
-						<p className="programming-languages">
-							{programmingLanguages.map((detail) => {
-								return <HighlightBlock text={detail}/>
+						<div className="programming-languages">
+							{programmingLanguages.map((detail, index) => {
+								return <HighlightBlock key={index} text={detail}/>
 							})}
-													</p>
+													</div>
 						<div className="description">
 							<ul>
 								{details.map((detail, index) => {

@@ -31,11 +31,11 @@ function WorkExperience({ companyTitle, date, position, details, programmingLang
 			<AccordionDetails>
 				<div className="experience-details">
 					{programmingLanguages &&
-						<p className="programming-languages">
-							{programmingLanguages.map((detail) => {
-								return <HighlightBlock text={detail}/>
+						<div className="programming-languages">
+							{programmingLanguages.map((detail, index) => {
+								return <HighlightBlock key={index} text={detail}/>
 							})}
-						</p>
+						</div>
 					}
 					{details &&
 						<div className="description">

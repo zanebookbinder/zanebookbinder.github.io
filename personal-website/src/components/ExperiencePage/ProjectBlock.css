@@ -51,8 +51,8 @@
 	border: 2px solid var(--expanded-background);
 }
 
-.bcr-logo {
-	border-radius: 5px;
+.bcr-logo, .ungated-logo {
+	border-radius: 5px !important;
 	border: 2px solid black;
 }
 
@@ -88,13 +88,13 @@
 		border-radius: 23px;
 	}
 
-	.bcr-logo {
+	/* .bcr-logo {
 		border-radius: 5px;
 		border: 2px solid black;
-	}
+	} */
 
 	.project-title .date {
-		min-width: 85px;
+		min-width: 100px;
 	}
 
 	.project-details {

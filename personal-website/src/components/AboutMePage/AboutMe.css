@@ -110,10 +110,6 @@
 	font-size: 22px;
 }
 
-.no-link {
-	padding-left: 5px;
-}
-
 @media screen and (max-width: 1050px) {
 	.zane-second-image {
 		margin-left: 0px;
