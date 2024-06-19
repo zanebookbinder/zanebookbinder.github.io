@@ -50,7 +50,7 @@ function ProjectBlock({ title, date, programmingLanguages, details, link, startO
 							{programmingLanguages.map((detail, index) => {
 								return <HighlightBlock key={index} text={detail}/>
 							})}
-													</div>
+						</div>
 						<div className="description">
 							<ul>
 								{details.map((detail, index) => {

@@ -7,39 +7,15 @@
 	.typed-title {
 		display: none;
 	}
-
-	.bcr-image {
-		width: 400px;
-		height: 550px;
-	}
-
-	.bcr-homepage .small-text {
-		max-width: 80%;
-	}
-
-	.bcr-aboutme-text {
-		width: 60%;
-	}
-
-	.bcr-screenshot-div {
-		width: 50%;
-	}
-
-	.working-on-now-title {
-		text-align: left;
-	}
 }
 
 @media screen and (max-width: 1100px) {
 
-	.desktop-top-section,
-	.bcr-homepage {
+	.desktop-top-section {
 		gap: 1rem;
 	}
 	
-	.desktop-top-section,
-	.bcr-homepage,
-	.bcr-timeline-div {
+	.desktop-top-section {
 		padding-inline: var(--mid-homepage-padding);
 		padding-block: 3rem;
 	}
@@ -71,22 +47,6 @@
 	.homepage-title {
 		margin-bottom: 30px;
 	}
-
-	.bcr-timeline-images {
-		padding-inline: var(--mid-homepage-padding);
-		width: calc(100% - (2 * var(--mid-homepage-padding)));
-		gap: 1rem;
-	}
-
-	.bcr-images-left {
-		width: 78%;
-		gap: 2rem;
-	}
-
-	.bcr-images-right {
-		width: 20%;
-		gap: 1rem;
-	}
 }
 
 @media screen and (max-width: 950px) {
@@ -102,31 +62,10 @@
 		width: 80%;
 	}
 
-	.bcr-image {
-		width: 80%;
-		max-height: 300px;
-
-	}
-
 	.zane-image {
 		max-height: 275px;
 	}
 
-	.bcr-homepage {
-		flex-direction: column;
-	}
-
-	.bcr-aboutme-text {
-		width: 100%;
-	}
-
-	.bcr-screenshot-div {
-		width: 70%;
-	}
-
-	.bcr-timeline-images {
-		margin-top: 2rem;
-	}
 }
 
 @media screen and (max-width: 800px) {
@@ -184,35 +123,6 @@
 		transform: rotate(-1deg)
 	}
 
-	.bcr-timeline {
-		flex-direction: column;
-		gap: 0;
-	}
-
-	.timeline-left .bcr-timeline-item:last-child {
-		padding: 0 0 15px 20px;
-		border-left: 5px solid var(--primary-text);
-	}
-
-	.bcr-timeline-div {
-		flex-direction: column-reverse;
-		margin-top: 0px;
-		align-items: center;
-	}
-
-	.timeline-left,
-	.timeline-right {
-		width: unset;
-	}
-
-	.bcr-screenshot-div {
-		width: 100%;
-	}
-
-	.bcr-timeline-div {
-		padding: 3rem var(--mid-homepage-padding);
-	}
-
 	.homepage-title {
 		font-size: 1.5rem;
 	}
@@ -227,10 +137,7 @@
 		justify-content: space-between;
 	}
 
-	.desktop-top-section,
-	.bcr-homepage,
-	.bcr-timeline-div,
-	.bcr-timeline-images {
+	.desktop-top-section {
 		padding-inline: var(--mobile-homepage-padding);
 		width: calc(100% - (2 * var(--mobile-homepage-padding)));
 		padding-block: 1.5rem;
@@ -254,15 +161,6 @@
 		padding: 6px 12px;
 	}
 
-	.bcr-timeline {
-		flex-direction: column;
-		gap: 0;
-	}
-
-	#april {
-		border-left: 5px solid var(--primary-text)
-	}
-
 	.zane-image {
 		display: none;
 	}
@@ -284,21 +182,4 @@
 		margin-bottom: 40px;
 	}
 
-	.bcr-homepage .small-text {
-		max-width: unset;
-	}
-
-	.bcr-timeline-text {
-		font-size: 0.9rem;
-	}
-
-	.bcr-images-left {
-		width: 80%;
-		gap: 1rem;
-	}
-	
-	.bcr-images-right {
-		width: 20%;
-		gap: 0.5rem;
-	}
 }

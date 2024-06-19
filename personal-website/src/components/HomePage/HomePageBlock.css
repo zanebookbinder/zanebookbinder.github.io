@@ -1,0 +1,92 @@
+.home-page-block {
+	padding: 1rem 2rem;
+	margin: 1rem;
+	background-color: var(--royal-blue);
+	border-radius: 15px;
+	color: var(--quicklinks-text-color);
+	max-width: 350px;
+}
+
+.home-page-block:hover {
+	color: white;
+	background-color: rgb(0, 70, 214);
+}
+
+.block-image-div {
+	height: 150px;
+}
+
+.image {
+	max-width: 200px;
+	height: auto;
+	object-fit: cover;
+}
+
+.image-border {
+	border: 2rem solid white;
+}
+
+.block-title {
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 800px) {
+	.home-page-block {
+		max-width: 250px;
+		padding: 0.5rem 1.5rem;
+		padding-bottom: 1rem;
+	}
+
+	.block-image-div {
+		height: 125px;
+	}
+
+	.image {
+		max-width: 150px;
+	}
+
+	.image-border {
+		border: 1rem solid white;
+	}
+
+	.block-title {
+		font-size: 18px;
+	}
+
+	.block-position {
+		font-size: 20px;
+	}
+
+	.block-description {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.home-page-block {
+		max-width: 150px;
+		margin-inline: 0.25rem;
+		padding-inline: 1rem;
+		padding-top: 0rem;
+	}
+
+	.block-image-div {
+		height: 100px;
+	}
+
+	.image {
+		max-width: 125px;
+	}
+
+	.block-title {
+		font-size: 14px;
+	}
+
+	.block-position {
+		font-size: 16px;
+	}
+
+	.block-description {
+		font-size: 12px;
+	}
+}

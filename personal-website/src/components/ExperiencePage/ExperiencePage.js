@@ -3,6 +3,7 @@ import ProjectBlock from "./ProjectBlock";
 import WorkExperience from "./WorkExperience";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function ExperiencePage() {
     const location = useLocation();
@@ -204,6 +205,13 @@ function ExperiencePage() {
                                 "Implements login with Okta, displays Overall Stats, and allows users to star courses",
                                 "Launched on November 6th and received 500 unique visitors and nearly 400 reviews in the first 3 days",
                                 "Database currently contains 603 professors, 2,095 courses, and 2,713 reviews",
+                                <p>For more information including screenshots of the website and our development timeline, click 
+                                <Link
+                                    to="/bcr"
+                                    style={{ paddingLeft: "2px", marginLeft: "3px", textDecoration: "underline" }}
+                                >
+                                    here 
+                                </Link></p>
                             ]}
                             link="https://course-reviews.students.bowdoin.edu/"
                             startOpen={openItem === "bcr" || openItem === null}
