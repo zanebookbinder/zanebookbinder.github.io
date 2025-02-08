@@ -14,11 +14,12 @@ function HomePage() {
     const quickLinks = (
         <>
             <p className="small-text homePageText">
-                I'm a recent graduate of Bowdoin College, where I majored in CS and minored in Economics.
-                I'm passionate about software and will be starting a fulltime job as a Software Engineer
-                at Bridgewater Associates in September! I have experience in many areas including Web Development, 
-                Data Science, and Machine Learning.
-                Please check out my bio, projects, and resume. I would love to connect!
+                I'm a Software Engineer in NYC working at Bridgewater
+                Associates. I recently graduated from Bowdoin College, where I
+                majored in Computer Science and minored in Economics. I have
+                experience in many areas including Web Development, Data
+                Science, and Machine Learning. Please check out my bio,
+                projects, and resume. I would love to connect!
             </p>
             <p className="quicklink-title">CHECK OUT MY</p>
             <div className="quicklinks button">
@@ -40,7 +41,10 @@ function HomePage() {
             <div className="desktop-top-section">
                 <div className="homepage-top">
                     <Typed
-                        strings={["Hi, I'm Zane! ^750 Nice to meet you!^1000", "Hi, I'm Zane!"]}
+                        strings={[
+                            "Hi, I'm Zane! ^750 Nice to meet you!^1000",
+                            "Hi, I'm Zane!",
+                        ]}
                         element="h1"
                         className="header typed-title hi-im-zane"
                         typeSpeed={60}
@@ -51,7 +55,9 @@ function HomePage() {
                             }, 1000);
                         }}
                     />
-                    <h1 className="header nontyped-title hi-im-zane">Hi, I'm Zane!</h1>
+                    <h1 className="header nontyped-title hi-im-zane">
+                        Hi, I'm Zane!
+                    </h1>
                     {quickLinks}
                 </div>
                 <img className="zane-image" src={ZaneImage} alt="Zane" />
@@ -64,7 +70,7 @@ function HomePage() {
                     </div>
                 </div>
                 {quickLinks}
-            </div> 
+            </div>
 
             <div className="home-page-blocks">
                 <HomePageBlock
@@ -105,8 +111,6 @@ function HomePage() {
                     link="fml-final-project"
                 />
             </div>
-
-            
         </div>
     );
 }

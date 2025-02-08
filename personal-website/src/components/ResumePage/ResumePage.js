@@ -21,7 +21,7 @@ function ResumePage() {
 					<div className="download">
 						<a 
 							className="here-link"
-							href="https://drive.google.com/file/d/1dOaSdJIIo3veSH1SMReiO7x7Xp20WTcQ/view" 
+							href="https://drive.google.com/file/d/1KURXFVMHgnceYh2FhnUgWPfSh89tWe-h/view" 
 							
 							target="_blank"
 							rel="noreferrer"

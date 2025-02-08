@@ -35,6 +35,31 @@ function ExperiencePage() {
             <div className="work-experience">
                 <h1 className="experience-column-header">Work Experience</h1>
                 <div className="experience-list">
+                    <div id="bridgewater">
+                        <WorkExperience
+                            companyTitle="Bridgewater Associates"
+                            date="2024-Present"
+                            position="Software Engineer"
+                            programmingLanguages={[
+                                "C#",
+                                "XAML",
+                                "Azure Dev Ops",
+                                "Git",
+                                "NUnit",
+                                "Agile Development",
+                                "Infrastructure as Code",
+                                "Distributed Systems",
+                            ]}
+                            details={[
+                                "Adding new features, implementing performance improvements, " +
+                                    "and fixing critical bugs across Bridgewater’s systemized Trading ecosystem",
+                            ]}
+                            link="https://www.bridgewater.com/working-at-bridgewater/technology"
+                            startOpen={
+                                openItem === "bridgewater" || openItem === null
+                            }
+                        />
+                    </div>
                     <div id="amazon">
                         <WorkExperience
                             companyTitle="Amazon"
@@ -69,7 +94,7 @@ function ExperiencePage() {
                                     "minutes for the 9 teams in the Compliance Tech organization",
                             ]}
                             link="https://aws.amazon.com/"
-                            startOpen={openItem === "amazon" || openItem === null}
+                            startOpen={openItem === "amazon"}
                         />
                     </div>
                     <div id="datto">
@@ -118,7 +143,7 @@ function ExperiencePage() {
                     <div id="ta-grader">
                         <WorkExperience
                             companyTitle="Bowdoin CS"
-                            date="2021-Present"
+                            date="2021-2023"
                             position="Learning Assistant and Grader"
                             programmingLanguages={[
                                 "Python",
@@ -205,13 +230,21 @@ function ExperiencePage() {
                                 "Implements login with Okta, displays Overall Stats, and allows users to star courses",
                                 "Launched on November 6th and received 500 unique visitors and nearly 400 reviews in the first 3 days",
                                 "Database currently contains 603 professors, 2,095 courses, and 2,713 reviews",
-                                <p>For more information including screenshots of the website and our development timeline, click 
-                                <Link
-                                    to="/bcr"
-                                    style={{ paddingLeft: "2px", marginLeft: "3px", textDecoration: "underline" }}
-                                >
-                                    here 
-                                </Link></p>
+                                <p>
+                                    For more information including screenshots
+                                    of the website and our development timeline,
+                                    click
+                                    <Link
+                                        to="/bcr"
+                                        style={{
+                                            paddingLeft: "2px",
+                                            marginLeft: "3px",
+                                            textDecoration: "underline",
+                                        }}
+                                    >
+                                        here
+                                    </Link>
+                                </p>,
                             ]}
                             link="https://course-reviews.students.bowdoin.edu/"
                             startOpen={openItem === "bcr" || openItem === null}
@@ -232,7 +265,7 @@ function ExperiencePage() {
                             ]}
                             details={[
                                 "Worked with Prof. Martin Abel of Bowdoin College to address equity issues in Economic research by developing a website that provides AI-generated summaries and links to working papers for 2400+ published articles",
-                                "Built a SQL database, a Flask API, and React frontend (hosted on AWS RDS and AWS AppRunner)"
+                                "Built a SQL database, a Flask API, and React frontend (hosted on AWS RDS and AWS AppRunner)",
                             ]}
                             link="https://ungatedresearch.org/"
                             startOpen={openItem === "ungated"}
@@ -243,7 +276,12 @@ function ExperiencePage() {
                             title="Beating the Bookies"
                             date="Spring 2024"
                             programmingLanguages={[
-                                "Python", "Pandas", "Numpy", "PyTorch", "MatPlotLib", "Web Scraping"
+                                "Python",
+                                "Pandas",
+                                "Numpy",
+                                "PyTorch",
+                                "MatPlotLib",
+                                "Web Scraping",
                             ]}
                             details={[
                                 "A final project that aimed to combine historical NBA statistical data with sportsbook line/odd data in order to build a profitable betting strategy",
@@ -252,7 +290,7 @@ function ExperiencePage() {
                                 "Implemented multiple popular betting systems including Fade Favorites After Blowout and the Tunnel System",
                                 "Performed profitability experiments by varying model type, odds type (best/worst/average across all sportsbooks), betting threshold (minimum difference between line and prediction to trigger a bet), and bet amounts (static vs. Kelly Criterion)",
                                 "Found that in certain sets of games, even a linear regressor can be profitable if it has access to all sportsbook odds",
-                                "See project poster in Github repository README for more details"
+                                "See project poster in Github repository README for more details",
                             ]}
                             link="https://github.com/zanebookbinder/fml-nba-betting"
                             startOpen={openItem === "fml-final-project"}
@@ -293,11 +331,14 @@ function ExperiencePage() {
                             details={[
                                 "A casual creator that allows users to create their own version of the sky in Van Gogh's painting 'The Starring Night'",
                                 "Includes two modes to create swirls and stars, allowing for lots of variation in the artwork",
-                                <a 
-                                    href={"https://openprocessing.org/sketch/2118181"} 
-                                    target="_blank" rel="noreferrer" 
-                                    className="project-link" 
-                                    style={{textDecoration: "underline"}}
+                                <a
+                                    href={
+                                        "https://openprocessing.org/sketch/2118181"
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="project-link"
+                                    style={{ textDecoration: "underline" }}
                                 >
                                     Try it for yourself!
                                 </a>,
@@ -325,9 +366,7 @@ function ExperiencePage() {
                         <ProjectBlock
                             title="Markov Golf Art"
                             date="2023"
-                            programmingLanguages={[
-                                "Python", "Markov Chains"
-                            ]}
+                            programmingLanguages={["Python", "Markov Chains"]}
                             details={[
                                 "A program that uses Markov Chains to build unique and exciting golf holes and courses",
                                 "Check out the example holes and courses in the Github repo linked above!",
