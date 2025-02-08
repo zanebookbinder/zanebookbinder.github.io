@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e87ba500.css",
-    "main.js": "/static/js/main.adbf9077.js",
+    "main.js": "/static/js/main.0fc9e4d5.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/BCR.png": "/static/media/BCR.25b35cc03fd5f237a246.png",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.847ce19342c249de37aa.jpg",
@@ -20,11 +20,11 @@
     "static/media/datto-logo.png": "/static/media/datto-logo.409942b1a2bf96f9b305.png",
     "index.html": "/index.html",
     "main.e87ba500.css.map": "/static/css/main.e87ba500.css.map",
-    "main.adbf9077.js.map": "/static/js/main.adbf9077.js.map",
+    "main.0fc9e4d5.js.map": "/static/js/main.0fc9e4d5.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e87ba500.css",
-    "static/js/main.adbf9077.js"
+    "static/js/main.0fc9e4d5.js"
   ]
 }
