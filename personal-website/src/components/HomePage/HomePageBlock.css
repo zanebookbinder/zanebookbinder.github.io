@@ -1,15 +1,17 @@
 .home-page-block {
 	padding: 1rem 2rem;
 	margin: 1rem;
-	background-color: var(--royal-blue);
+	background-color: var(--homepage-block-background);
 	border-radius: 15px;
+	border: 2px solid var(--background-color);
 	color: var(--quicklinks-text-color);
 	max-width: 350px;
 }
 
 .home-page-block:hover {
-	color: white;
-	background-color: rgb(0, 70, 214);
+	border: 2px solid var(--quicklinks-text-color);
+	transition: ease-in-out 0.3s;
+	color: var(--quicklinks-text-color);
 }
 
 .block-image-div {
@@ -17,17 +19,17 @@
 }
 
 .image {
-	max-width: 200px;
+	width: 225px;
 	height: auto;
-	object-fit: cover;
-}
-
-.image-border {
-	border: 2rem solid white;
+	/* object-fit: cover; */
 }
 
 .block-title {
-	opacity: 0.8;
+	font-size: 25px;
+}
+
+.block-position {
+	font-size: 16px;
 }
 
 @media screen and (max-width: 800px) {
@@ -42,11 +44,7 @@
 	}
 
 	.image {
-		max-width: 150px;
-	}
-
-	.image-border {
-		border: 1rem solid white;
+		max-width: 200px;
 	}
 
 	.block-title {

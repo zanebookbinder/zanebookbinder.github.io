@@ -25,8 +25,7 @@ Robotic: Play, Exo 2, Merriweather, PT sans
 .desktop-top-section {
 	display: flex;
 	gap: 5rem;
-	background-color: var(--light-section-background);
-	color: var(--light-section-text);
+	color: var(--quicklinks-text-color);
 	align-items: center;
 	padding: 4rem var(--desktop-homepage-padding);
 	padding-right: 8rem;

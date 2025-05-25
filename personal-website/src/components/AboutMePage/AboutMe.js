@@ -13,12 +13,13 @@ import HighlightBlock from "../HighlightBlock.js";
 function AboutMe() {
     const programmingLanguages = [
         "Python",
-        "Javascript/TypeScript",
-        "Java",
         "C#",
+        "Javascript/TypeScript",
         "SQL",
         "HTML",
         "CSS",
+        "Powershell",
+        "Java",
     ];
     const libraries = [
         "Git",
@@ -51,6 +52,8 @@ function AboutMe() {
         "Algorithms",
         "Data Structures",
         "Full-Stack Development",
+        "Unit + Component Testing",
+        "Integration + Performance Testing",
         "Agile Development / Scrum",
         "REST APIs",
         "Object-Oriented Programming",
@@ -58,7 +61,11 @@ function AboutMe() {
         "Distributed Systems",
         "Cloud Development",
         "Infrastructure as Code",
+        "Message Brokers",
+        "Dependency Injection",
     ];
+
+    let yearsSince2017 = new Date().getFullYear() - 2017;
 
     const [expanded1, setExpanded1] = useState(false);
     const [expanded2, setExpanded2] = useState(false);
@@ -114,17 +121,23 @@ function AboutMe() {
                     <h1 className="title mobile-title">About Me</h1>
                     <p className="small-text about-me-text">
                         Hi! I'm proud to be a JOB (Just Outside of Boston) from
-                        Newton, MA. I recently graduated from Bowdoin College,
-                        where I worked as a Learning Assistant and Grader for
-                        two CS classes and as a Senior Interviewer for the
-                        Bowdoin Admissions team. I also built a Course Review
-                        website for students and created another website that
-                        provides easy access to economic journal articles.
+                        Newton, MA and a recent grad of Bowdoin College. Now, I
+                        work in the Trading Technology org at Bridgewater
+                        Associates. My team is responsible for a collection of
+                        services that allow Bridgewater to systematically trade
+                        billions of dollars in assets annually across dozens of
+                        markets and asset classes, while limiting trading costs
+                        and risk.
                     </p>
                     <p className="small-text about-me-text">
-                        I'm super passionate about software! In the 7 years
-                        since I took my first Computer Science class, I've
-                        completed:
+                        While at Bowdoin, I worked as a TA, interviewed
+                        applicants with the Admissions team, and build some cool
+                        websites.
+                    </p>
+                    <p className="small-text about-me-text">
+                        I'm super passionate about software! In the{" "}
+                        {yearsSince2017} years since I took my first Computer
+                        Science class, I've completed:
                     </p>
                     <div className="accordions">
                         <Accordion
@@ -144,8 +157,7 @@ function AboutMe() {
                                 <ul className="list-with-background">
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "amazon" }}
+                                            to="/experience#amazon"
                                         >
                                             Software Engineer Intern at Amazon
                                             (Summer 2023)
@@ -153,8 +165,7 @@ function AboutMe() {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "datto" }}
+                                            to="/experience#datto"
                                         >
                                             Data Engineer Intern at Datto
                                             (Summer 2022)
@@ -162,8 +173,7 @@ function AboutMe() {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "beamlab" }}
+                                            to="/experience#beamlab"
                                         >
                                             Machine Learning and AI Intern at
                                             Beamlab (Summer 2021)
@@ -171,8 +181,7 @@ function AboutMe() {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "brain-power" }}
+                                            to="/experience#brain-power"
                                         >
                                             Software Engineer Intern at
                                             Brainpower (Summer 2019)
@@ -340,8 +349,7 @@ function AboutMe() {
                                 <ul className="list-with-background">
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "bcr" }}
+                                            to="/experience#bcr"
                                         >
                                             Bowdoin Course Reviews
                                             (React/Flask/MySQL, 2022-2023)
@@ -349,8 +357,7 @@ function AboutMe() {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "ungated" }}
+                                            to="/experience#ungated"
                                         >
                                             Ungated Research (React/Flask/MySQL,
                                             2024)
@@ -358,18 +365,14 @@ function AboutMe() {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{
-                                                scrollTo: "fml-final-project",
-                                            }}
+                                            to="/experience#fml-final-project"
                                         >
                                             Beating the Bookies (Python, 2024)
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "poker-goat" }}
+                                            to="/experience#poker-goat"
                                         >
                                             Deep Reinforcement Learning for
                                             Texas Hold'em (Python/Keras, 2023)
@@ -377,105 +380,16 @@ function AboutMe() {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "starry-night" }}
-                                        >
-                                            Starry Night Sky Creator
-                                            (Processing, 2023)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{
-                                                scrollTo: "markov-golf-art",
-                                            }}
+                                            to="/experience#markov-golf-art"
                                         >
                                             Markov Golf Art (Python, 2023)
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "GPS" }}
+                                            to="/experience#GPS"
                                         >
                                             Global PassStore (Python/Bash, 2022)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "beamlab" }}
-                                        >
-                                            BPD Models (Python/SQL, 2022)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "nile" }}
-                                        >
-                                            Online Bookstore - Nile
-                                            (Java/Python, 2022)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "web-server" }}
-                                        >
-                                            Web Server (C, 2021)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{
-                                                scrollTo: "cache-simulator",
-                                            }}
-                                        >
-                                            Cache Simulator (C, 2021)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{
-                                                scrollTo: "polar-bear-places",
-                                            }}
-                                        >
-                                            Polar Bear Places (Ruby on Rails,
-                                            2022)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{ scrollTo: "jeopardy" }}
-                                        >
-                                            Jeopardy Natural Language Processing
-                                            (Python, 2020)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{
-                                                scrollTo: "nba-spread-model",
-                                            }}
-                                        >
-                                            NBA Spread Model (Python, 2020)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience"
-                                            state={{
-                                                scrollTo:
-                                                    "homework-planner-app",
-                                            }}
-                                        >
-                                            Homework Planner App (Swift, 2020)
                                         </Link>
                                     </li>
                                 </ul>
@@ -710,7 +624,8 @@ function AboutMe() {
                             <li>
                                 <p>
                                     AI/ML, Professional sports (particularly
-                                    Boston teams), Golf, Skiing
+                                    Boston teams), Golf, Skiing, Reading (mostly
+                                    non-fiction)
                                 </p>
                             </li>
                         </ul>

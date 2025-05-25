@@ -5,7 +5,7 @@ function ResumePage() {
     const [resumeLoaded, setResumeLoaded] = useState(false);
 
     const googleDriveResumeLink =
-        "https://drive.google.com/file/d/1KURXFVMHgnceYh2FhnUgWPfSh89tWe-h/";
+        "https://drive.google.com/file/d/1ZzodqD9unpZcbOqB6CtIl22C3BW_cdIb/";
 
     const handleLoad = () => {
         setResumeLoaded(true);

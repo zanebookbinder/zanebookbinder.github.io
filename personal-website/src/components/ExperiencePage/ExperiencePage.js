@@ -11,6 +11,8 @@ function ExperiencePage() {
     let openItem = null;
     if (location.state) {
         openItem = location.state.scrollTo || null;
+    } else if (location.hash) {
+        openItem = location.hash.replace('#', '');
     }
 
     useEffect(() => {
@@ -42,17 +44,23 @@ function ExperiencePage() {
                             position="Software Engineer"
                             programmingLanguages={[
                                 "C#",
-                                "XAML",
+                                "Powershell",
                                 "Azure Dev Ops",
                                 "Git",
+                                "Multiple LLM tools",
                                 "NUnit",
                                 "Agile Development",
                                 "Infrastructure as Code",
                                 "Distributed Systems",
+                                "Message Brokers",
+                                "System Design"
                             ]}
                             details={[
-                                "Adding new features, implementing performance improvements, " +
-                                    "and fixing critical bugs across Bridgewater’s systemized Trading ecosystem",
+                                "Worked with business users to prioritize, build, and test" +
+                                    " new features for a front-end app used by Traders (only developer on the project)",
+                                "Helped migrate the Trading Tech stack to a new message broker system used by all components",
+                                "Added functionality, implemented performance improvements, " +
+                                    "and fixed critical bugs across Bridgewater’s systemized Trading ecosystem",
                             ]}
                             link="https://www.bridgewater.com/working-at-bridgewater/technology"
                             startOpen={
@@ -225,15 +233,14 @@ function ExperiencePage() {
                                 "AWS Secrets Manager",
                             ]}
                             details={[
-                                "A website that allows students to review courses and professors at Bowdoin College",
-                                "Uses React for the frontend, a Flask API for the backend, and a MySQL database",
-                                "Implements login with Okta, displays Overall Stats, and allows users to star courses",
-                                "Launched on November 6th and received 500 unique visitors and nearly 400 reviews in the first 3 days",
-                                "Database currently contains 603 professors, 2,095 courses, and 2,713 reviews",
+                                "A platform for Bowdoin College students to review courses and professors",
+                                "As of May 2025, has been used by 1,788 students who have added 1,733 reviews (Bowdoin has 1,850 students overall)",
+                                "Uses a React frontend, a Python Flask API backend, and a MySQL database",
+                                "Implements SSO with Okta, displays overall review statistics (leaderboard for top departments, professors, and courses), and allows users to star courses",
+                                "Launched on November 6th, 2023 and received 500 unique visitors and nearly 400 reviews in the first 3 days",
+                                "Passed control of the site to younger students for course/professor updates, maintenance, and continued development",
                                 <p>
-                                    For more information including screenshots
-                                    of the website and our development timeline,
-                                    click
+                                    Find more info
                                     <Link
                                         to="/bcr"
                                         style={{
@@ -244,6 +251,7 @@ function ExperiencePage() {
                                     >
                                         here
                                     </Link>
+                                    !
                                 </p>,
                             ]}
                             link="https://course-reviews.students.bowdoin.edu/"

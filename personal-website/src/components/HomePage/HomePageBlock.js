@@ -1,17 +1,15 @@
 import "./HomePageBlock.css";
 import { Link } from "react-router-dom";
 
-function HomePageBlock({title, image, position, description, imageBorder, link}) {
+function HomePageBlock({title, image, position, description, link}) {
 
-	let imageClass = imageBorder ? "image image-border" : "image";
-
-	let page = link === 'bcr' ? '/bcr' : '/experience';
+	let page = link === 'bcr' ? '/bcr' : '/experience#' + link;
 
 	return (
-		<Link className="home-page-block" to={page} state={{ scrollTo: link }}>
-			<h3 className="block-title">{title}</h3>
-			<div className="block-image-div"><img className={imageClass} src={image} alt={title}/></div>
-			<h2 className="block-position">{position}</h2>
+		<Link className="home-page-block" to={page}>
+			<h3 className="block-position">{position}</h3>
+			<div className="block-image-div"><img className="image" src={image} alt={title}/></div>
+			<h2 className="block-title">{title}</h2>
 			<p className="block-description">{description}</p>
 		</Link>
 	)
