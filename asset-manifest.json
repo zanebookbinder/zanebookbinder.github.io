@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dff7bbe7.css",
-    "main.js": "/static/js/main.6093247d.js",
+    "main.js": "/static/js/main.2902a676.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/BCR.png": "/static/media/BCR.25b35cc03fd5f237a246.png",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.847ce19342c249de37aa.jpg",
@@ -11,7 +11,9 @@
     "static/media/bcr-department-page.png": "/static/media/bcr-department-page.a0f01467695012de657b.png",
     "static/media/Zane2.jpeg": "/static/media/Zane2.eb68d0adeb4cef5ce535.jpeg",
     "static/media/bcr-demo.jpg": "/static/media/bcr-demo.35a8cb59e1bd0882d374.jpg",
+    "static/media/linkedin-games-solver.jpg": "/static/media/linkedin-games-solver.daa905917672c80f2217.jpg",
     "static/media/bowdoin-logo.png": "/static/media/bowdoin-logo.c60526a65bd945ee5b83.png",
+    "static/media/bethpage-black-bot.jpg": "/static/media/bethpage-black-bot.ff1999c77618dd8c498a.jpg",
     "static/media/bcr-mobile-profilepage.png": "/static/media/bcr-mobile-profilepage.7eac1eefce320a42fbee.png",
     "static/media/bcr-mobile-statspage.png": "/static/media/bcr-mobile-statspage.19246b82461363ed98da.png",
     "static/media/Zane-cropped.jpeg": "/static/media/Zane-cropped.cbdb54ea0ce672e6235d.jpeg",
@@ -21,11 +23,11 @@
     "static/media/bcr-mobile-homepage.png": "/static/media/bcr-mobile-homepage.d2baa521f7f704343b78.png",
     "index.html": "/index.html",
     "main.dff7bbe7.css.map": "/static/css/main.dff7bbe7.css.map",
-    "main.6093247d.js.map": "/static/js/main.6093247d.js.map",
+    "main.2902a676.js.map": "/static/js/main.2902a676.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dff7bbe7.css",
-    "static/js/main.6093247d.js"
+    "static/js/main.2902a676.js"
   ]
 }
