@@ -279,6 +279,46 @@ function ExperiencePage() {
                             startOpen={openItem === "ungated"}
                         />
                     </div>
+                    <div id="linkedin-games-solver">
+                        <ProjectBlock
+                            title="Linkedin Games Solver"
+                            date="Spring 2025"
+                            programmingLanguages={[
+                                "Python",
+                                "Selenium",
+                            ]}
+                            details={[
+                                "A Pip package that automatically solves the LinkedIn games Zip, Tango, and Queens",
+                                "Efficient algorithms complete all games in under 1 second",
+                                "Uses Selenium to navigate to game, scrape information from game board, and fill in solution",
+                                "Includes a CLI interface with a navigatable list structure and repeatable solving"
+                            ]}
+                            link="https://github.com/zanebookbinder/LinkedIn-Games-Solver"
+                            startOpen={openItem === "linkedin-games-solver"}
+                        />
+                    </div>
+                    <div id="bethpage-black-bot">
+                        <ProjectBlock
+                            title="Bethpage Black Bot"
+                            date="Spring 2025"
+                            programmingLanguages={[
+                                "Python",
+                                "JavaScript",
+                                "HTML/CSS",
+                                "Shell",
+                                "AWS (various services)"
+                            ]}
+                            details={[
+                                "WORK IN PROGRESS",
+                                "An application built on AWS that notifies registered users of open tee times at Bethpage Black golf course on Long Island",
+                                "Allows users to configure notification requirements such as days of the week, times of day, and minimum number of players",
+                                "Uses AWS Lambda, DynamoDB, Amplify, Cognito, EMS, and Secrets Manager",
+                                "Was used to secure a 1:30pm tee time on a Saturday in June 2025 (nearly impossible to get even a weekday evening tee time normally, but especially with the Ryder Cup coming up!)"                                
+                            ]}
+                            link="https://github.com/zanebookbinder/Bethpage-Black-Bot"
+                            startOpen={openItem === "bethpage-black-bot"}
+                        />
+                    </div>
                     <div id="fml-final-project">
                         <ProjectBlock
                             title="Beating the Bookies"

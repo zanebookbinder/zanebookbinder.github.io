@@ -9,6 +9,8 @@ import AmazonImage from "../../images/amazon-intern.jpg";
 import UngatedImage from "../../images/ungated.jpg";
 import DattoImage from "../../images/bridgewater.jpg";
 import BTBImage from "../../images/beating-the-bookies.jpg";
+import LinkedInGamesSolver from "../../images/linkedin-games-solver.jpg";
+import BethpageBlackBot from "../../images/bethpage-black-bot.jpg";
 
 function HomePage() {
     const quickLinks = (
@@ -107,6 +109,20 @@ function HomePage() {
                     position="Class Project (Financial Machine Learning)"
                     description="Combining NBA stat data with sportsbook data to build a profitable betting strategy"
                     link="fml-final-project"
+                />
+                <HomePageBlock
+                    title="LinkedIn Games Solver"
+                    image={LinkedInGamesSolver}
+                    position="Independent Project"
+                    description="Solving LinkedIn games in under 1 second with web scraping and efficient algorithms"
+                    link="linkedin-games-solver"
+                />
+                <HomePageBlock
+                    title="Bethpage Black Bot"
+                    image={BethpageBlackBot}
+                    position="Independent Project"
+                    description="Securing tee times at Bethpage Black through an AWS-based automated web scraping and notification service"
+                    link="bethpage-black-bot"
                 />
             </div>
         </div>
