@@ -66,6 +66,7 @@ function AboutMe() {
     ];
 
     let yearsSince2017 = new Date().getFullYear() - 2017;
+    let yearsSince2024 = new Date().getFullYear() - 2024;
 
     const [expanded1, setExpanded1] = useState(false);
     const [expanded2, setExpanded2] = useState(false);
@@ -77,6 +78,8 @@ function AboutMe() {
 
     if (location.state) {
         scrollTo = location.state.scrollTo || null;
+    } else if (location.hash) {
+        scrollTo = location.hash.replace("#", "");
     }
 
     let image = ZaneImage;
@@ -123,11 +126,11 @@ function AboutMe() {
                         Hi! I'm proud to be a JOB (Just Outside of Boston) from
                         Newton, MA and a recent grad of Bowdoin College. Now, I
                         work in the Trading Technology org at Bridgewater
-                        Associates. My team is responsible for a collection of
-                        services that allow Bridgewater to systematically trade
-                        billions of dollars in assets annually across dozens of
-                        markets and asset classes, while limiting trading costs
-                        and risk.
+                        Associates. My team is responsible for implementing the 
+                        asset-class agnostic trading logic 
+                        that allows Bridgewater to systematically trade
+                        billions of dollars monthly across thousands of markets,
+                        while limiting trading costs and risk.
                     </p>
                     <p className="small-text about-me-text">
                         While at Bowdoin, I worked as a TA, interviewed
@@ -140,6 +143,32 @@ function AboutMe() {
                         Science class, I've completed:
                     </p>
                     <div className="accordions">
+                        <Accordion
+                            disableGutters
+                            elevation={0}
+                            expanded={expanded1}
+                            onChange={() => setExpanded1(!expanded1)}
+                            className={expanded1 ? "accordion-expanded" : ""}
+                        >
+                            <AccordionSummary
+                                aria-controls="panel1d-content"
+                                id="panel1d-header"
+                            >
+                                {yearsSince2024} {yearsSince2024 > 1 ? "years" : "year"} of full-time SWE work
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <ul className="list-with-background">
+                                    <li>
+                                        <Link
+                                            to="/experience#bridgewater"
+                                        >
+                                            Software Engineer at Bridgewater Associates
+                                            (2024-)
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </AccordionDetails>
+                        </Accordion>
                         <Accordion
                             disableGutters
                             elevation={0}

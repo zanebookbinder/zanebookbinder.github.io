@@ -30,12 +30,38 @@
 .project-details {
 	font-size: 18px;
 	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: flex-start;
 }
 
 .programming-languages {
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 10px;
+}
+
+.project-image-wrapper {
+	width: 50%;
+	min-width: 100px; /* enforce minimum */
+	align-self: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-image {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	object-fit: contain;
+	border-radius: 6px;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.project-text {
+	flex: 1 1 50%;
 }
 
 .detail {

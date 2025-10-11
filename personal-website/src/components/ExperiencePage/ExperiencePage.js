@@ -4,6 +4,11 @@ import WorkExperience from "./WorkExperience";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import BCR from "../../images/project-images/bcr.jpg";
+import BeatingTheBookies from "../../images/project-images/beating-the-bookies.jpg";
+import LinkedinGamesSolver from "../../images/project-images/linkedin-games-solver.jpg";
+import BethpageBlackBot from "../../images/project-images/bethpage-black-bot-site.png";
+import Ungated from "../../images/project-images/ungated.png";
 
 function ExperiencePage() {
     const location = useLocation();
@@ -12,7 +17,7 @@ function ExperiencePage() {
     if (location.state) {
         openItem = location.state.scrollTo || null;
     } else if (location.hash) {
-        openItem = location.hash.replace('#', '');
+        openItem = location.hash.replace("#", "");
     }
 
     useEffect(() => {
@@ -44,23 +49,22 @@ function ExperiencePage() {
                             position="Software Engineer"
                             programmingLanguages={[
                                 "C#",
+                                "Multiple AI tools",
                                 "Powershell",
                                 "Azure Dev Ops",
                                 "Git",
-                                "Multiple LLM tools",
                                 "NUnit",
                                 "Agile Development",
                                 "Infrastructure as Code",
                                 "Distributed Systems",
                                 "Message Brokers",
-                                "System Design"
+                                "System Design",
                             ]}
                             details={[
-                                "Worked with business users to prioritize, build, and test" +
-                                    " new features for a front-end app used by Traders (only developer on the project)",
-                                "Helped migrate the Trading Tech stack to a new message broker system used by all components",
-                                "Added functionality, implemented performance improvements, " +
-                                    "and fixed critical bugs across Bridgewater’s systemized Trading ecosystem",
+                                "Implemented Trading logic across asset classes in Bridgewater's internal systemized trading platform. Examples include logic around dealer selection, parameterized data validation, and holiday math calculation.",
+                                "Helped migrate the Trading Tech stack to a new message broker (middleware) system used by all components",
+                                "Sole developer on a project to work with Traders to prioritize, build, and test" +
+                                    " new features for a front-end app used for parameterization of systemized trading strategies",
                             ]}
                             link="https://www.bridgewater.com/working-at-bridgewater/technology"
                             startOpen={
@@ -221,6 +225,7 @@ function ExperiencePage() {
                         <ProjectBlock
                             title="Bowdoin Course Reviews"
                             date="2022-2023"
+                            image={BCR}
                             programmingLanguages={[
                                 "Javascript",
                                 "Python",
@@ -262,6 +267,7 @@ function ExperiencePage() {
                         <ProjectBlock
                             title="Ungated Research"
                             date="Spring 2024"
+                            image={Ungated}
                             programmingLanguages={[
                                 "Python",
                                 "JavaScript",
@@ -283,15 +289,13 @@ function ExperiencePage() {
                         <ProjectBlock
                             title="Linkedin Games Solver"
                             date="Spring 2025"
-                            programmingLanguages={[
-                                "Python",
-                                "Selenium",
-                            ]}
+                            image={LinkedinGamesSolver}
+                            programmingLanguages={["Python", "Selenium"]}
                             details={[
                                 "A Pip package that automatically solves the LinkedIn games Zip, Tango, and Queens",
                                 "Efficient algorithms complete all games in under 1 second",
                                 "Uses Selenium to navigate to game, scrape information from game board, and fill in solution",
-                                "Includes a CLI interface with a navigatable list structure and repeatable solving"
+                                "Includes a CLI interface with a navigatable list structure and repeatable solving",
                             ]}
                             link="https://github.com/zanebookbinder/LinkedIn-Games-Solver"
                             startOpen={openItem === "linkedin-games-solver"}
@@ -301,19 +305,21 @@ function ExperiencePage() {
                         <ProjectBlock
                             title="Bethpage Black Bot"
                             date="Spring 2025"
+                            image={BethpageBlackBot}
                             programmingLanguages={[
                                 "Python",
-                                "JavaScript",
+                                "React/JS",
                                 "HTML/CSS",
-                                "Shell",
-                                "AWS (various services)"
+                                "Bash",
+                                "AWS (various services)",
                             ]}
                             details={[
-                                "WORK IN PROGRESS",
                                 "An application built on AWS that notifies registered users of open tee times at Bethpage Black golf course on Long Island",
                                 "Allows users to configure notification requirements such as days of the week, times of day, and minimum number of players",
-                                "Uses AWS Lambda, DynamoDB, Amplify, Cognito, EMS, and Secrets Manager",
-                                "Was used to secure a 1:30pm tee time on a Saturday in June 2025 (nearly impossible to get even a weekday evening tee time normally, but especially with the Ryder Cup coming up!)"                                
+                                "App includes a Python Lambda backend, AWS API Gateway endpoints, and a React frontend",
+                                "Uses AWS Lambda, DynamoDB, API Gateway Amplify, Cognito, SES, EventBridge, and Secrets Manager",
+                                "Was used to secure a 1:30pm tee time on a Saturday in June 2025 (nearly impossible to get even a weekday evening tee time normally, but especially with the Ryder Cup coming up!)",
+                                "Also added a second Lambda for the unrelated purpose of being notified when new NYC late night show tickets are released on 1iota.com",
                             ]}
                             link="https://github.com/zanebookbinder/Bethpage-Black-Bot"
                             startOpen={openItem === "bethpage-black-bot"}
@@ -323,6 +329,7 @@ function ExperiencePage() {
                         <ProjectBlock
                             title="Beating the Bookies"
                             date="Spring 2024"
+                            image={BeatingTheBookies}
                             programmingLanguages={[
                                 "Python",
                                 "Pandas",
