@@ -72,6 +72,7 @@ function AboutMe() {
     const [expanded2, setExpanded2] = useState(false);
     const [expanded3, setExpanded3] = useState(false);
     const [expanded4, setExpanded4] = useState(false);
+    const [expanded5, setExpanded5] = useState(false);
 
     const location = useLocation();
     let scrollTo = null;
@@ -172,9 +173,9 @@ function AboutMe() {
                         <Accordion
                             disableGutters
                             elevation={0}
-                            expanded={expanded1}
-                            onChange={() => setExpanded1(!expanded1)}
-                            className={expanded1 ? "accordion-expanded" : ""}
+                            expanded={expanded5}
+                            onChange={() => setExpanded5(!expanded5)}
+                            className={expanded5 ? "accordion-expanded" : ""}
                         >
                             <AccordionSummary
                                 aria-controls="panel1d-content"
