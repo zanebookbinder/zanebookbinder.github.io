@@ -134,7 +134,7 @@ function AboutMe() {
                         while limiting trading costs and risk.
                     </p>
                     <p className="small-text about-me-text">
-                        While at Bowdoin, I worked as a TA, interviewed
+                        At Bowdoin, I worked as a TA, interviewed
                         applicants with the Admissions team, and build some cool
                         websites.
                     </p>

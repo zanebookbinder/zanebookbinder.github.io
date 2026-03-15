@@ -61,10 +61,9 @@ function ExperiencePage() {
                                 "System Design",
                             ]}
                             details={[
-                                "Implemented Trading logic across asset classes in Bridgewater's internal systemized trading platform. Examples include logic around dealer selection, parameterized data validation, and holiday math calculation.",
-                                "Helped migrate the Trading Tech stack to a new message broker (middleware) system used by all components",
-                                "Sole developer on a project to work with Traders to prioritize, build, and test" +
-                                    " new features for a front-end app used for parameterization of systemized trading strategies",
+                                "Contributed key features to the migration of Foreign Exchange trading logic to a unified rule-based platform, implementing exchange rate processing, limit price calculation, and performance testing capabilities",
+                                "Delivered a solo project for the Fixed Income trading desk valued at >$1M/year (per desk estimates). Introduced a dozen new features and workflow improvements, resulting in expanded liquidity access, improved interactions with counterparties, more efficient counterparty selection, and a cleaner operational experience for the traders",
+                                "Led development for a trader-facing WPF/.NET app that allows for logic parameterization, collaborating with users to prioritize, build, and test specific workflows and make the app performant and intuitive",
                             ]}
                             link="https://www.bridgewater.com/working-at-bridgewater/technology"
                             startOpen={

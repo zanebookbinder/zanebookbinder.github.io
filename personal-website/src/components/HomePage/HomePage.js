@@ -18,9 +18,10 @@ function HomePage() {
             <p className="small-text homePageText">
                 I'm a Software Engineer in NYC working at Bridgewater
                 Associates. I recently graduated from Bowdoin College, where I
-                majored in Computer Science and minored in Economics. I've worked
-                on projects in many areas including Backend Services, Web Developement, 
-                and Machine Learning. Feel free to check out my bio,
+                majored in Computer Science and minored in Economics and Spanish. I've worked
+                on Software projects in many areas including Backend Services, 
+                Web Developement, and Machine Learning. 
+                Please check out my bio,
                 projects, and resume. I would love to connect!
             </p>
             <p className="quicklink-title">CHECK OUT MY</p>
@@ -32,7 +33,7 @@ function HomePage() {
                     Technical Skills
                 </Link>
                 <Link to="/experience#bcr">
-                    Recent Project
+                    Favorite Project
                 </Link>
             </div>
         </>
@@ -79,7 +80,7 @@ function HomePage() {
                     title="Bridgewater Associates"
                     image={DattoImage}
                     position="Software Engineer"
-                    description="Designing and building applications to support systemized trading strategies"
+                    description="Designing and building applications to support systemized trading logic"
                     link="datto"
                 />
                 <HomePageBlock
@@ -121,7 +122,7 @@ function HomePage() {
                     title="Bethpage Black Bot"
                     image={BethpageBlackBot}
                     position="Independent Project"
-                    description="Securing tee times at Bethpage Black through an AWS-based automated web scraping and notification service"
+                    description="Securing tee times at Bethpage Black Golf Course through a cloud-based automated web scraping and notification service"
                     link="bethpage-black-bot"
                 />
             </div>
