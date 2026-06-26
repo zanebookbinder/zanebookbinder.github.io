@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App from './components/App';
 
-test('renders learn react link', () => {
+test('renders the experience nav link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const experienceLinks = screen.getAllByRole('link', { name: /experience/i });
+  expect(experienceLinks.length).toBeGreaterThan(0);
+});
+
+test('renders the name somewhere on the home page', () => {
+  render(<App />);
+  expect(screen.getAllByText(/zane/i).length).toBeGreaterThan(0);
 });

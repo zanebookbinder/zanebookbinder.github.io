@@ -27,7 +27,7 @@ function AboutMe() {
         ".NET",
         "Flask",
         "Pandas",
-        "Numpy",
+        "NumPy",
         "PyTorch",
         "Material UI",
         "MySQL",
@@ -38,31 +38,31 @@ function AboutMe() {
     const aws = [
         "Lambda",
         "S3",
+        "DynamoDB",
+        "Amplify",
         "API Gateway",
         "CloudFront",
         "CloudFormation",
         "Route 53",
-        "SNS",
         "IAM",
         "ACM",
         "RDS",
-        "App Runner",
     ];
     const concepts = [
-        "Algorithms",
-        "Data Structures",
+        "System Design",
+        "Cloud Architecture (AWS)",
+        "Distributed Systems",
         "Full-Stack Development",
+        "REST APIs",
+        "Infrastructure as Code",
+        "CI/CD",
+        "Message Brokers",
+        "Relational Databases",
+        "Object-Oriented Programming",
         "Unit + Component Testing",
         "Integration + Performance Testing",
         "Agile Development / Scrum",
-        "REST APIs",
-        "Object-Oriented Programming",
-        "Relational Databases",
-        "Distributed Systems",
-        "Cloud Development",
-        "Infrastructure as Code",
-        "Message Brokers",
-        "Dependency Injection",
+        "Data Structures & Algorithms",
     ];
 
     let yearsSince2017 = new Date().getFullYear() - 2017;
@@ -134,8 +134,8 @@ function AboutMe() {
                         while limiting trading costs and risk.
                     </p>
                     <p className="small-text about-me-text">
-                        At Bowdoin, I worked as a TA, interviewed
-                        applicants with the Admissions team, and build some cool
+                        At Bowdoin, I worked as a Teaching Assistant, interviewed
+                        applicants with the Admissions team, and built some cool
                         websites.
                     </p>
                     <p className="small-text about-me-text">
@@ -608,7 +608,7 @@ function AboutMe() {
                                 </div>
                             </li>
                             <li>
-                                <span>Libraries and Frameworks</span>
+                                <span>Libraries, Frameworks, and Tools</span>
                                 <div className="skill-list">
                                     {libraries.map((library, index) => {
                                         return (
