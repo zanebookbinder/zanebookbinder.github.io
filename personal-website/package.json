@@ -18,7 +18,7 @@
     "react-dom": "^18.2.0",
     "react-frame-component": "^5.2.6",
     "react-icons": "^4.7.1",
-    "react-router-dom": "^6.7.0",
+    "react-router-dom": "^6.30.4",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -49,6 +49,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^6.3.0"
+  },
+  "overrides": {
+    "nth-check": "^2.1.1",
+    "serialize-javascript": "^6.0.2",
+    "postcss": "^8.4.31"
   }
 }
