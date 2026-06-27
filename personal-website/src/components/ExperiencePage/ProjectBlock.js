@@ -15,6 +15,7 @@ function ProjectBlock({
     title,
     date,
     image,
+    images,
     programmingLanguages,
     details,
     link,
@@ -78,23 +79,35 @@ function ProjectBlock({
             </AccordionSummary>
             <AccordionDetails>
                 <div className="project-details">
-                    {image && (
+                    {(image || images) && (
                         <div className="project-image-wrapper">
-                            {link ? (
-                                <a href={link} target="_blank" rel="noreferrer">
+                            {(() => {
+                                const content = images ? (
+                                    <div className="project-screenshots-row">
+                                        {images.map((src, i) => (
+                                            <img
+                                                key={i}
+                                                src={src}
+                                                alt={`${title} screenshot ${i + 1}`}
+                                                className="project-image vertical-project-screenshot"
+                                            />
+                                        ))}
+                                    </div>
+                                ) : (
                                     <img
                                         src={image}
                                         alt={`${title} screenshot`}
                                         className="project-image"
                                     />
-                                </a>
-                            ) : (
-                                <img
-                                    src={image}
-                                    alt={`${title} screenshot`}
-                                    className="project-image"
-                                />
-                            )}
+                                );
+                                return link ? (
+                                    <a href={link} target="_blank" rel="noreferrer">
+                                        {content}
+                                    </a>
+                                ) : (
+                                    content
+                                );
+                            })()}
                         </div>
                     )}
                     <div className="project-text">

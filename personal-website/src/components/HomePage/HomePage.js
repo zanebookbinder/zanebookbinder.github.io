@@ -11,6 +11,9 @@ import DattoImage from "../../images/bridgewater.jpg";
 import BTBImage from "../../images/beating-the-bookies.jpg";
 import LinkedInGamesSolver from "../../images/linkedin-games-solver.jpg";
 import BethpageBlackBot from "../../images/bethpage-black-bot.jpg";
+import ShelfAwareScan from "../../images/project-images/shelfaware-scan.jpg";
+import ShelfAwareCollections from "../../images/project-images/shelfaware-collections.jpg";
+import ShelfAwareLocate from "../../images/project-images/shelfaware-locate.jpg";
 
 function HomePage() {
     const quickLinks = (
@@ -110,6 +113,13 @@ function HomePage() {
                     position="Class Project (Financial Machine Learning)"
                     description="Combining NBA stat data with sportsbook data to build a profitable betting strategy"
                     link="fml-final-project"
+                />
+                <HomePageBlock
+                    title="ShelfAware"
+                    images={[ShelfAwareScan, ShelfAwareCollections, ShelfAwareLocate]}
+                    position="Independent Project"
+                    description="Turning a photo of your bookshelf into a ranked, browsable book catalog with AI vision and on-device OCR"
+                    link="shelf-aware"
                 />
                 <HomePageBlock
                     title="LinkedIn Games Solver"

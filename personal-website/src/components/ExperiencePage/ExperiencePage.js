@@ -7,6 +7,9 @@ import { Link } from "react-router-dom";
 import BCR from "../../images/project-images/bcr.jpg";
 import BeatingTheBookies from "../../images/project-images/beating-the-bookies.jpg";
 import LinkedinGamesSolver from "../../images/project-images/linkedin-games-solver.jpg";
+import ShelfAwareScan from "../../images/project-images/shelfaware-scan.jpg";
+import ShelfAwareCollections from "../../images/project-images/shelfaware-collections.jpg";
+import ShelfAwareLocate from "../../images/project-images/shelfaware-locate.jpg";
 import BethpageBlackBot from "../../images/project-images/bethpage-black-bot-site.png";
 import Ungated from "../../images/project-images/ungated.png";
 
@@ -282,6 +285,34 @@ function ExperiencePage() {
                             ]}
                             link="https://ungatedresearch.org/"
                             startOpen={openItem === "ungated"}
+                        />
+                    </div>
+                    <div id="shelf-aware">
+                        <ProjectBlock
+                            title="ShelfAware"
+                            date="Spring 2026"
+                            images={[
+                                ShelfAwareScan,
+                                ShelfAwareCollections,
+                                ShelfAwareLocate,
+                            ]}
+                            programmingLanguages={[
+                                "Swift",
+                                "SwiftUI",
+                                "AWS",
+                                "Amazon Bedrock",
+                                "DynamoDB",
+                                "TypeScript",
+                            ]}
+                            details={[
+                                "An iOS app that turns a photo of a bookshelf into a ranked, browsable catalog of your books",
+                                "Uses Claude vision via Amazon Bedrock to read each book — spine-out or face-out — returning title, author, and ranked recommendations",
+                                "Enriches every title with ratings, genres, and covers from a Hardcover → Google Books → Open Library source chain, cached in DynamoDB",
+                                "'Locate on Shelf' pinpoints any book's exact spot in the photo using on-device Vision OCR",
+                                "Thin SwiftUI client backed by a serverless AWS stack (Lambda + Bedrock + DynamoDB) deployed with CDK; HMAC-signed requests keep all API keys off the device",
+                            ]}
+                            link="https://github.com/zanebookbinder/Shelf-Aware"
+                            startOpen={openItem === "shelf-aware"}
                         />
                     </div>
                     <div id="linkedin-games-solver">

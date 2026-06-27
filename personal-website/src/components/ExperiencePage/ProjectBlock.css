@@ -60,6 +60,21 @@
 	box-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
+.project-screenshots-row {
+	display: flex;
+	gap: 8px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.vertical-project-screenshot {
+	width: auto;
+	max-width: 32%;
+	height: auto;
+	max-height: 300px;
+}
+
 .project-text {
 	flex: 1 1 50%;
 }

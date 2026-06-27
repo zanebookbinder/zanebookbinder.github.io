@@ -402,17 +402,17 @@ function AboutMe() {
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience#poker-goat"
+                                            to="/experience#shelf-aware"
                                         >
-                                            Deep Reinforcement Learning for
-                                            Texas Hold'em (Python/Keras, 2023)
+                                            ShelfAware (Swift/SwiftUI/AWS, 2026)
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
-                                            to="/experience#markov-golf-art"
+                                            to="/experience#bethpage-black-bot"
                                         >
-                                            Markov Golf Art (Python, 2023)
+                                            Bethpage Black Bot
+                                            (Python/React/AWS, 2025)
                                         </Link>
                                     </li>
                                     <li>
