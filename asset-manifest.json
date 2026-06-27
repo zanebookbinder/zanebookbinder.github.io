@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c31070dc.css",
-    "main.js": "/static/js/main.5ff6d786.js",
+    "main.css": "/static/css/main.2a8e97b2.css",
+    "main.js": "/static/js/main.3a18199b.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/BCR.png": "/static/media/BCR.25b35cc03fd5f237a246.png",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.847ce19342c249de37aa.jpg",
@@ -24,13 +24,16 @@
     "static/media/ungated.jpg": "/static/media/ungated.5e06240337314e1bec7f.jpg",
     "static/media/bridgewater.jpg": "/static/media/bridgewater.8e3bf77a7660e50d458b.jpg",
     "static/media/bcr-mobile-homepage.png": "/static/media/bcr-mobile-homepage.d2baa521f7f704343b78.png",
+    "static/media/shelfaware-collections.jpg": "/static/media/shelfaware-collections.81651dd177e322134dd7.jpg",
+    "static/media/shelfaware-locate.jpg": "/static/media/shelfaware-locate.6ccec5ccc238cac33ddf.jpg",
+    "static/media/shelfaware-scan.jpg": "/static/media/shelfaware-scan.fdad4df9e00df63a26a4.jpg",
     "index.html": "/index.html",
-    "main.c31070dc.css.map": "/static/css/main.c31070dc.css.map",
-    "main.5ff6d786.js.map": "/static/js/main.5ff6d786.js.map",
+    "main.2a8e97b2.css.map": "/static/css/main.2a8e97b2.css.map",
+    "main.3a18199b.js.map": "/static/js/main.3a18199b.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c31070dc.css",
-    "static/js/main.5ff6d786.js"
+    "static/css/main.2a8e97b2.css",
+    "static/js/main.3a18199b.js"
   ]
 }
