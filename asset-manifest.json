@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2a8e97b2.css",
-    "main.js": "/static/js/main.3a18199b.js",
-    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "main.css": "/static/css/main.9c6f7709.css",
+    "main.js": "/static/js/main.3b156422.js",
+    "static/js/453.96892d07.chunk.js": "/static/js/453.96892d07.chunk.js",
     "static/media/BCR.png": "/static/media/BCR.25b35cc03fd5f237a246.png",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.847ce19342c249de37aa.jpg",
     "static/media/bcr-login.png": "/static/media/bcr-login.d39771fcd7e60b40032c.png",
@@ -28,12 +28,12 @@
     "static/media/shelfaware-locate.jpg": "/static/media/shelfaware-locate.6ccec5ccc238cac33ddf.jpg",
     "static/media/shelfaware-scan.jpg": "/static/media/shelfaware-scan.fdad4df9e00df63a26a4.jpg",
     "index.html": "/index.html",
-    "main.2a8e97b2.css.map": "/static/css/main.2a8e97b2.css.map",
-    "main.3a18199b.js.map": "/static/js/main.3a18199b.js.map",
-    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
+    "main.9c6f7709.css.map": "/static/css/main.9c6f7709.css.map",
+    "main.3b156422.js.map": "/static/js/main.3b156422.js.map",
+    "453.96892d07.chunk.js.map": "/static/js/453.96892d07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a8e97b2.css",
-    "static/js/main.3a18199b.js"
+    "static/css/main.9c6f7709.css",
+    "static/js/main.3b156422.js"
   ]
 }
