@@ -7,7 +7,7 @@ import HomePageBlock from "./HomePageBlock.js";
 import BCRImage from "../../images/bcr-demo.jpg";
 import AmazonImage from "../../images/amazon-intern.jpg";
 import UngatedImage from "../../images/ungated.jpg";
-import DattoImage from "../../images/bridgewater.jpg";
+import BridgewaterImage from "../../images/bridgewater.jpg";
 import BTBImage from "../../images/beating-the-bookies.jpg";
 import LinkedInGamesSolver from "../../images/linkedin-games-solver.jpg";
 import BethpageBlackBot from "../../images/bethpage-black-bot.jpg";
@@ -81,10 +81,10 @@ function HomePage() {
             <div className="home-page-blocks">
                 <HomePageBlock
                     title="Bridgewater Associates"
-                    image={DattoImage}
+                    image={BridgewaterImage}
                     position="Software Engineer"
                     description="Designing and building applications to support systemized trading logic"
-                    link="datto"
+                    link="bridgewater"
                 />
                 <HomePageBlock
                     title="Bowdoin Course Reviews"
