@@ -128,7 +128,7 @@ function AboutMe() {
                         Newton, MA and a recent grad of Bowdoin College. Now, I
                         work in the Trading Technology org at Bridgewater
                         Associates. My team is responsible for implementing the 
-                        asset-class agnostic trading logic 
+                        asset-class-agnostic trading logic 
                         that allows Bridgewater to systematically trade
                         billions of dollars monthly across thousands of markets,
                         while limiting trading costs and risk.
