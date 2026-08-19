@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c6f7709.css",
-    "main.js": "/static/js/main.a76c624f.js",
+    "main.css": "/static/css/main.6e7a51cd.css",
+    "main.js": "/static/js/main.82a0669e.js",
     "static/js/453.96892d07.chunk.js": "/static/js/453.96892d07.chunk.js",
     "static/media/BCR.png": "/static/media/BCR.25b35cc03fd5f237a246.png",
     "static/media/Zane-3.jpg": "/static/media/Zane-3.847ce19342c249de37aa.jpg",
     "static/media/bcr-login.png": "/static/media/bcr-login.d39771fcd7e60b40032c.png",
     "static/media/beating-the-bookies.jpg": "/static/media/beating-the-bookies.957a1c4d8eccee993cb7.jpg",
     "static/media/bcr-createreview.png": "/static/media/bcr-createreview.08b94c363e7495a9f154.png",
+    "static/media/drive-thru-folder.png": "/static/media/drive-thru-folder.ebbaef41443b8d0d2727.png",
+    "static/media/drive-thru-chat.png": "/static/media/drive-thru-chat.83989fe8a7874d006d3f.png",
     "static/media/bcr-department-page.png": "/static/media/bcr-department-page.a0f01467695012de657b.png",
     "static/media/ungated.png": "/static/media/ungated.a3a149f1d0ffd55d09fa.png",
+    "static/media/games-plan-2028.png": "/static/media/games-plan-2028.d716091f44c88e09aaf2.png",
     "static/media/Zane2.jpeg": "/static/media/Zane2.eb68d0adeb4cef5ce535.jpeg",
     "static/media/bcr-demo.jpg": "/static/media/bcr-demo.35a8cb59e1bd0882d374.jpg",
     "static/media/bcr.jpg": "/static/media/bcr.35a8cb59e1bd0882d374.jpg",
@@ -27,13 +30,15 @@
     "static/media/shelfaware-collections.jpg": "/static/media/shelfaware-collections.81651dd177e322134dd7.jpg",
     "static/media/shelfaware-locate.jpg": "/static/media/shelfaware-locate.6ccec5ccc238cac33ddf.jpg",
     "static/media/shelfaware-scan.jpg": "/static/media/shelfaware-scan.fdad4df9e00df63a26a4.jpg",
+    "static/media/games-plan-2028-icon.png": "/static/media/games-plan-2028-icon.bd900f2dd6cec95a1872.png",
+    "static/media/drive-thru-icon.svg": "/static/media/drive-thru-icon.74f9e613813f0e2c498a4f9568af0419.svg",
     "index.html": "/index.html",
-    "main.9c6f7709.css.map": "/static/css/main.9c6f7709.css.map",
-    "main.a76c624f.js.map": "/static/js/main.a76c624f.js.map",
+    "main.6e7a51cd.css.map": "/static/css/main.6e7a51cd.css.map",
+    "main.82a0669e.js.map": "/static/js/main.82a0669e.js.map",
     "453.96892d07.chunk.js.map": "/static/js/453.96892d07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c6f7709.css",
-    "static/js/main.a76c624f.js"
+    "static/css/main.6e7a51cd.css",
+    "static/js/main.82a0669e.js"
   ]
 }
