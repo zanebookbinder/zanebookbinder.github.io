@@ -97,6 +97,11 @@
 	border: 2px solid black;
 }
 
+/* app icons are rounded squares, not circles — a circular crop clips them */
+.project-favicon {
+	border-radius: 6px !important;
+}
+
 .logo:hover {
 	background-color: var(--primary-text);
 	border: 2px solid var(--primary-text);

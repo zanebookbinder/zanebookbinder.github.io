@@ -21,6 +21,9 @@
 .image {
 	width: 225px;
 	height: auto;
+	/* keep tall screenshots inside the fixed-height image box so they
+	   don't overlap the title below */
+	max-height: 100%;
 	/* object-fit: cover; */
 }
 

@@ -12,6 +12,12 @@ import ShelfAwareCollections from "../../images/project-images/shelfaware-collec
 import ShelfAwareLocate from "../../images/project-images/shelfaware-locate.jpg";
 import BethpageBlackBot from "../../images/project-images/bethpage-black-bot-site.png";
 import Ungated from "../../images/project-images/ungated.png";
+import DriveThruChat from "../../images/project-images/drive-thru-chat.png";
+import GamesPlanDashboard from "../../images/project-images/games-plan-2028.png";
+import DriveThruIcon from "../../images/project-images/drive-thru-icon.svg";
+import GamesPlanIcon from "../../images/project-images/games-plan-2028-icon.png";
+import BethpageIcon from "../../images/project-images/bethpage-black-bot-icon.png";
+import ShelfAwareIcon from "../../images/project-images/shelfaware-icon.png";
 
 function ExperiencePage() {
     const location = useLocation();
@@ -287,6 +293,84 @@ function ExperiencePage() {
                             startOpen={openItem === "ungated"}
                         />
                     </div>
+                    <div id="drive-thru">
+                        <ProjectBlock
+                            title="Drive Thru"
+                            date="Summer 2026"
+                            image={DriveThruChat}
+                            programmingLanguages={[
+                                "TypeScript",
+                                "React",
+                                "Node.js",
+                                "Express",
+                                "Anthropic API",
+                                "Google Drive API",
+                                "OAuth 2.0",
+                            ]}
+                            details={[
+                                "A web app that turns a Google Drive folder into something you can talk to — sign in with Google, paste a Drive link, and ask questions about the documents in plain language",
+                                "Every claim in an answer carries an inline citation that deep-links back to the exact source file in Drive, page-anchored for PDFs",
+                                "Reads Google Docs, Sheets, PDFs, and text files; access is strictly read-only and document text is never written to disk",
+                                "Assembles context against a token budget with prompt caching, size-gated ingest, and per-file scoping to keep answers focused and costs predictable",
+                            ]}
+                            link="https://github.com/zanebookbinder/drive-thru-ai-agent"
+                            liveLink="https://drive-thru-kp8u.onrender.com/"
+                            liveIcon={DriveThruIcon}
+                            startOpen={openItem === "drive-thru"}
+                        />
+                    </div>
+                    <div id="bethpage-black-bot">
+                        <ProjectBlock
+                            title="Bethpage Black Bot"
+                            date="Spring 2025"
+                            image={BethpageBlackBot}
+                            programmingLanguages={[
+                                "Python",
+                                "React/JS",
+                                "HTML/CSS",
+                                "Bash",
+                                "AWS (various services)",
+                            ]}
+                            details={[
+                                "An application built on AWS that notifies registered users of open tee times at Bethpage Black golf course on Long Island",
+                                "Allows users to configure notification requirements such as days of the week, times of day, and minimum number of players",
+                                "App includes a Python Lambda backend, AWS API Gateway endpoints, and a React frontend",
+                                "Uses AWS Lambda, DynamoDB, API Gateway Amplify, Cognito, SES, EventBridge, and Secrets Manager",
+                                "Was used to secure a 1:30pm tee time on a Saturday in June 2025 (nearly impossible to get even a weekday evening tee time normally, but especially with the Ryder Cup coming up!)",
+                                "Also added a second Lambda for the unrelated purpose of being notified when new NYC late night show tickets are released on 1iota.com",
+                            ]}
+                            link="https://github.com/zanebookbinder/Bethpage-Black-Bot"
+                            liveLink="https://bethpage-black-bot.com"
+                            liveIcon={BethpageIcon}
+                            startOpen={openItem === "bethpage-black-bot"}
+                        />
+                    </div>
+                    <div id="games-plan-2028">
+                        <ProjectBlock
+                            title="Games Plan 2028"
+                            date="Summer 2026"
+                            image={GamesPlanDashboard}
+                            programmingLanguages={[
+                                "JavaScript",
+                                "HTML/CSS",
+                                "Python",
+                                "Google Maps Routes API",
+                                "AWS S3",
+                                "Data Visualization",
+                            ]}
+                            details={[
+                                "A dashboard for planning the LA28 Olympics: all 843 sessions of the official competition schedule, filterable nine ways across 58 sports, 53 venues, and 21 days",
+                                "Precomputes 868 venue-to-venue drive times with the Google Maps Routes API, sampled at 8 AM, 1 PM, and 6 PM, to answer the question the PDF can't: which events can you actually attend together?",
+                                'Mark the sessions you hold tickets to and every unreachable one is greyed out with the reason — "Clashes with BK319 (3x3 Basketball) — 30m apart, 1h 2m drive, you would miss 32m"',
+                                "Cards, timeline, and table views with faceted filter counts, shareable URL state, starred events, saved filter presets, light/dark themes",
+                                "Hosted as a static website on AWS S3, deployed by syncing the site folder straight to the bucket — no build step, no server, and no dependencies to install",
+                            ]}
+                            link="https://github.com/zanebookbinder/games-plan-2028"
+                            liveLink="http://games-plan-2028.s3-website-us-east-1.amazonaws.com/"
+                            liveIcon={GamesPlanIcon}
+                            startOpen={openItem === "games-plan-2028"}
+                        />
+                    </div>
                     <div id="shelf-aware">
                         <ProjectBlock
                             title="ShelfAware"
@@ -312,6 +396,8 @@ function ExperiencePage() {
                                 "Thin SwiftUI client backed by a serverless AWS stack (Lambda + Bedrock + DynamoDB) deployed with CDK; HMAC-signed requests keep all API keys off the device",
                             ]}
                             link="https://github.com/zanebookbinder/Shelf-Aware"
+                            liveLink="https://apps.apple.com/us/app/shelf-aware-read-the-room/id6785301354"
+                            liveIcon={ShelfAwareIcon}
                             startOpen={openItem === "shelf-aware"}
                         />
                     </div>
@@ -329,30 +415,6 @@ function ExperiencePage() {
                             ]}
                             link="https://github.com/zanebookbinder/LinkedIn-Games-Solver"
                             startOpen={openItem === "linkedin-games-solver"}
-                        />
-                    </div>
-                    <div id="bethpage-black-bot">
-                        <ProjectBlock
-                            title="Bethpage Black Bot"
-                            date="Spring 2025"
-                            image={BethpageBlackBot}
-                            programmingLanguages={[
-                                "Python",
-                                "React/JS",
-                                "HTML/CSS",
-                                "Bash",
-                                "AWS (various services)",
-                            ]}
-                            details={[
-                                "An application built on AWS that notifies registered users of open tee times at Bethpage Black golf course on Long Island",
-                                "Allows users to configure notification requirements such as days of the week, times of day, and minimum number of players",
-                                "App includes a Python Lambda backend, AWS API Gateway endpoints, and a React frontend",
-                                "Uses AWS Lambda, DynamoDB, API Gateway Amplify, Cognito, SES, EventBridge, and Secrets Manager",
-                                "Was used to secure a 1:30pm tee time on a Saturday in June 2025 (nearly impossible to get even a weekday evening tee time normally, but especially with the Ryder Cup coming up!)",
-                                "Also added a second Lambda for the unrelated purpose of being notified when new NYC late night show tickets are released on 1iota.com",
-                            ]}
-                            link="https://github.com/zanebookbinder/Bethpage-Black-Bot"
-                            startOpen={openItem === "bethpage-black-bot"}
                         />
                     </div>
                     <div id="fml-final-project">

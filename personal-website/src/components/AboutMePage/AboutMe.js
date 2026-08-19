@@ -29,6 +29,8 @@ function AboutMe() {
         "Pandas",
         "NumPy",
         "PyTorch",
+        "Claude API / Anthropic SDK",
+        "Apple Vision (OCR)",
         "Material UI",
         "MySQL",
         "Postman",
@@ -47,12 +49,14 @@ function AboutMe() {
         "IAM",
         "ACM",
         "RDS",
+        "Bedrock",
     ];
     const concepts = [
         "System Design",
         "Cloud Architecture (AWS)",
         "Distributed Systems",
         "Full-Stack Development",
+        "LLM Application Development",
         "REST APIs",
         "Infrastructure as Code",
         "CI/CD",
@@ -223,6 +227,88 @@ function AboutMe() {
                         <Accordion
                             disableGutters
                             elevation={0}
+                            expanded={expanded3}
+                            onChange={() => setExpanded3(!expanded3)}
+                            className={expanded3 ? "accordion-expanded" : ""}
+                        >
+                            <AccordionSummary
+                                aria-controls="panel3d-content"
+                                id="panel3d-header"
+                            >
+                                30+ projects
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <p className="section-title">
+                                    Here are some of my favorites:
+                                </p>
+                                <ul className="list-with-background">
+                                    <li>
+                                        <Link
+                                            to="/experience#bcr"
+                                        >
+                                            Bowdoin Course Reviews
+                                            (React/Flask/MySQL, 2022-2023)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/experience#ungated"
+                                        >
+                                            Ungated Research (React/Flask/MySQL,
+                                            2024)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/experience#fml-final-project"
+                                        >
+                                            Beating the Bookies (Python, 2024)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/experience#drive-thru"
+                                        >
+                                            Drive Thru
+                                            (React/Node/TypeScript, 2026)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/experience#games-plan-2028"
+                                        >
+                                            Games Plan 2028
+                                            (JavaScript/Python/AWS, 2026)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/experience#shelf-aware"
+                                        >
+                                            ShelfAware (Swift/SwiftUI/AWS, 2026)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/experience#bethpage-black-bot"
+                                        >
+                                            Bethpage Black Bot
+                                            (Python/React/AWS, 2025)
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/experience#GPS"
+                                        >
+                                            Global PassStore (Python/Bash, 2022)
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </AccordionDetails>
+                        </Accordion>
+                        <Accordion
+                            disableGutters
+                            elevation={0}
                             expanded={expanded2}
                             onChange={() => setExpanded2(!expanded2)}
                             className={expanded2 ? "accordion-expanded" : ""}
@@ -357,72 +443,6 @@ function AboutMe() {
                                         </ul>
                                     </div>
                                 </div>
-                            </AccordionDetails>
-                        </Accordion>
-                        <Accordion
-                            disableGutters
-                            elevation={0}
-                            expanded={expanded3}
-                            onChange={() => setExpanded3(!expanded3)}
-                            className={expanded3 ? "accordion-expanded" : ""}
-                        >
-                            <AccordionSummary
-                                aria-controls="panel3d-content"
-                                id="panel3d-header"
-                            >
-                                30+ projects
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <p className="section-title">
-                                    Here are some of my favorites:
-                                </p>
-                                <ul className="list-with-background">
-                                    <li>
-                                        <Link
-                                            to="/experience#bcr"
-                                        >
-                                            Bowdoin Course Reviews
-                                            (React/Flask/MySQL, 2022-2023)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience#ungated"
-                                        >
-                                            Ungated Research (React/Flask/MySQL,
-                                            2024)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience#fml-final-project"
-                                        >
-                                            Beating the Bookies (Python, 2024)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience#shelf-aware"
-                                        >
-                                            ShelfAware (Swift/SwiftUI/AWS, 2026)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience#bethpage-black-bot"
-                                        >
-                                            Bethpage Black Bot
-                                            (Python/React/AWS, 2025)
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/experience#GPS"
-                                        >
-                                            Global PassStore (Python/Bash, 2022)
-                                        </Link>
-                                    </li>
-                                </ul>
                             </AccordionDetails>
                         </Accordion>
                         <Accordion

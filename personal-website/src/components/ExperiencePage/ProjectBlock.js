@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaGlobe, FaAppStoreIos } from "react-icons/fa";
 import BowdoinLogo from "../../images/bowdoin-logo.png";
 import BCRLogo from "../../images/logo192.png";
 import UngatedLogo from "../../images/ungated-logo.png";
@@ -19,6 +19,8 @@ function ProjectBlock({
     programmingLanguages,
     details,
     link,
+    liveLink,
+    liveIcon,
     startOpen,
 }) {
     let expandedStart = false;
@@ -52,6 +54,21 @@ function ProjectBlock({
         );
     }
 
+    // prefer the project's own favicon/app icon; fall back to a generic mark
+    let liveLinkImage = <FaGlobe className="logo" fontSize={29} />;
+
+    if (liveIcon) {
+        liveLinkImage = (
+            <img
+                src={liveIcon}
+                alt={`${title} icon`}
+                className="logo project-favicon"
+            />
+        );
+    } else if (liveLink && liveLink.includes("apps.apple.com")) {
+        liveLinkImage = <FaAppStoreIos className="logo" fontSize={29} />;
+    }
+
     return (
         <Accordion
             expanded={expanded}
@@ -69,8 +86,20 @@ function ProjectBlock({
                                 target="_blank"
                                 rel="noreferrer"
                                 className="project-link"
+                                title={`${title} code`}
                             >
                                 {linkImage}
+                            </a>
+                        )}
+                        {liveLink && (
+                            <a
+                                href={liveLink}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="project-link"
+                                title={`${title} live site`}
+                            >
+                                {liveLinkImage}
                             </a>
                         )}
                         <p className="date">{date}</p>

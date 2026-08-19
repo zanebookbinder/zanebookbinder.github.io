@@ -14,6 +14,8 @@ import BethpageBlackBot from "../../images/bethpage-black-bot.jpg";
 import ShelfAwareScan from "../../images/project-images/shelfaware-scan.jpg";
 import ShelfAwareCollections from "../../images/project-images/shelfaware-collections.jpg";
 import ShelfAwareLocate from "../../images/project-images/shelfaware-locate.jpg";
+import DriveThruImage from "../../images/project-images/drive-thru-folder.png";
+import GamesPlanImage from "../../images/project-images/games-plan-2028.png";
 
 function HomePage() {
     const quickLinks = (
@@ -120,6 +122,20 @@ function HomePage() {
                     position="Independent Project"
                     description="Turning a photo of your bookshelf into a ranked, browsable book catalog with AI vision and on-device OCR"
                     link="shelf-aware"
+                />
+                <HomePageBlock
+                    title="Drive Thru"
+                    image={DriveThruImage}
+                    position="Independent Project"
+                    description="Chatting with any Google Drive folder you want; every answer cited and deep-linked to the documents it came from"
+                    link="drive-thru"
+                />
+                <HomePageBlock
+                    title="Games Plan 2028"
+                    image={GamesPlanImage}
+                    position="Independent Project"
+                    description="LA 2028 Olympic events dashboard with timing, locations, event types, and travel info"
+                    link="games-plan-2028"
                 />
                 <HomePageBlock
                     title="LinkedIn Games Solver"
